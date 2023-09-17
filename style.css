@@ -4,15 +4,6 @@
       flex-direction: column;
       align-items: center;
   }
-
-  nav {
-      margin: 10px 0;
-  }
-
-  nav ul li {
-      display: block;
-      margin: 10px 0;
-  }
 }
 
 /* Define la animación de desvanecimiento gradual */
@@ -99,6 +90,7 @@ body {
   -webkit-text-stroke: 1.5px #f3860a; /* Ancho y color del borde en navegadores Webkit (Safari, Chrome) */
   background-color: rgba(77, 76, 76, 0.75);
   width: 50%;
+  max-width: 960px;
   margin-left: 25%;
   border-radius: 5px;
   white-space: nowrap;
