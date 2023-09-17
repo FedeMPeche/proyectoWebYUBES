@@ -1,0 +1,458 @@
+/* Estilos para pantallas pequeñas */
+@media (max-width: 768px) {
+  header {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  nav {
+      margin: 10px 0;
+  }
+
+  nav ul li {
+      display: block;
+      margin: 10px 0;
+  }
+}
+
+/* Define la animación de desvanecimiento gradual */
+@keyframes fadeInOut {
+  0%, 100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+
+/* Define la animación de desplazamiento horizontal */
+@keyframes marquee {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+body {
+  background-color: rgba(51, 49, 49, 0.795);
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+#page1{
+  justify-content: flex;
+  background: url('/background.png') no-repeat center center;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+}
+
+.page {
+  height: 100vh; /* Establece el alto de cada página al 100% de la ventana */
+  text-align: center;
+}
+
+#logoEdit1 {
+  opacity: 0.75;
+}
+
+#logoEdit2 {
+  opacity: 0.75;
+}
+
+.bienvenidos {
+  font-family: 'Roboto', sans-serif;
+  font-size: 35px;
+  color: rgb(209, 209, 209);
+  text-shadow: 5px 5px 5px rgba(0, 0, 0, .5);
+  margin-left: 26%;
+  margin-top: -3%;
+  border: 1px black;
+
+}
+
+/* Establece el video para que esté oculto por defecto */
+.page1-video {
+  display: block;
+  position: absolute;
+  min-height: 100%;
+  min-width: 100%;
+  z-index: -1;
+}
+
+.page:not(#page1) .page1-video {
+  display: none; /* Oculta el video en todas las páginas excepto en la página 1 */
+}
+
+.novedades {
+  font-family: 'Roboto', sans-serif;
+  color: rgb(247, 247, 247);
+  -webkit-text-stroke: 1.5px #f3860a; /* Ancho y color del borde en navegadores Webkit (Safari, Chrome) */
+  background-color: rgba(77, 76, 76, 0.75);
+  width: 50%;
+  margin-left: 25%;
+  border-radius: 5px;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: marquee 10s linear infinite, fadeInOut 10s ease-in-out infinite;
+}
+
+:root {
+  --facebook: #3b5999;
+  --instagram: #c90f5c;
+  --youtube: #bd081c;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-around;
+}
+
+.buttons a {
+  text-decoration: none;
+  font-size: 28px;
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+  background: #314652;
+  color: #f1f1f1;
+  border-radius: 50%;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, .5);
+  transition: all .4s ease-in-out;
+}
+
+.buttons a:hover {
+  transform: translateY(-3px) scale(1.5);
+  box-shadow: 0 5px 5px 0px rgba(0, 0, 0, .4);
+}
+
+#toPage3{
+  height: 47px;
+}
+
+.buttons-page3 {
+  min-width: 800px;
+  margin-top: 3%;
+  margin-left: 53%;
+  display: flex;
+  justify-content: center;
+  margin-right: 20%;
+}
+
+.buttons-page3 a {
+  font-family: 'Roboto', sans-serif;
+  font-size: 35px;
+  width: 100%;
+  height: 100%;
+  line-height: 60px;
+  text-align: center;
+  color: white;
+  border-radius: 50%;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, .5);
+  transition: all .4s ease-in-out;
+}
+
+.buttons-page3 a:hover {
+  transform: translateY(-3px) scale(1.5);
+  box-shadow: 0 5px 5px 0px rgba(0, 0, 0, .4);
+}
+
+.buttons #instagram:hover{
+  background-color: var(--instagram);
+}
+
+.buttons #youtube:hover{
+  background-color: var(--youtube);
+}
+
+.buttons #facebook:hover{
+  background-color: var(--facebook);
+}
+
+.shows {
+  margin-top: 250px;
+  min-width: 300px;
+  display: flex;
+  justify-content: space-around;
+}
+
+#botonShows {
+  font-family: 'Roboto', sans-serif;
+  text-decoration: none;
+  font-size: 12px;
+  width: 55px;
+  height: 55px;
+  line-height: 55px;
+  text-align: center;
+  background: #ffffff;
+  color: #f1f1f1;
+  border-radius: 20%;
+  border: 1px solid black;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, .5);
+  transition: all .4s ease-in-out;
+}
+
+#botonShows {
+  transform: translateY(-3px) scale(1.5);
+  box-shadow: 0 5px 5px 0px rgba(0, 0, 0, .4);
+}
+
+#botonContacto {
+  font-family: 'Roboto', sans-serif;
+  text-decoration: none;
+  font-size: 12px;
+  width: 75px;
+  height: 55px;
+  line-height: 55px;
+  text-align: center;
+  background: #ffffff;
+  color: #f1f1f1;
+  border-radius: 20%;
+  border: 1px solid black;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, .5);
+  transition: all .4s ease-in-out;
+}
+
+#botonContacto {
+  transform: translateY(-3px) scale(1.5);
+  box-shadow: 0 5px 5px 0px rgba(0, 0, 0, .4);
+}
+
+/* #iconoDown {
+  height: 50px;
+  width: 50px;
+}
+
+
+.music-player {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    padding-top: 3%;
+    padding-left: 80%;
+  }
+
+.controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0px;
+  }
+  
+.controls button {
+    margin: 0 10px;
+} */
+
+
+.header {
+  justify-content: center;
+  width: 80%;
+  margin: 0 auto;
+  display: inline-block;
+  background-color: black;
+  color: white;
+}
+
+h3 {
+  background-color: rgba(0, 0, 0, 0);
+  color: rgb(3, 3, 3);
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  text-align: center;
+}
+
+#page2 {
+  justify-content: flex;
+  background: url('/back-page2.png') no-repeat center center;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+}
+
+.cartelera {
+  margin-top: 16%;
+  margin-left: -30%;
+  width: 50%;
+  display: inline-block;
+  justify-content: center;
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  text-align: center;
+  color: white;
+}
+
+h1 {
+  background-color: rgba(201, 114, 15, 0.7);
+  border-radius: 5px;
+  border-color: solid black;
+  width: 50%;
+  margin-left: 30%;
+}
+
+#p-cartelera {
+  margin-top: -2%;
+  background-color: rgba(22, 252, 202, 0.7);
+  border-radius: 5px;
+  border-color: solid black;
+  width: 50%;
+  margin-left: 30%;
+}
+
+#p-page3 {
+  font-family: 'Roboto', sans-serif;
+  color: white;
+  justify-content: flex-end;
+  margin-left: 5%;
+
+}
+
+#page3 {
+  justify-content: flex;
+  background: url('/back-Page3-2.jpg') no-repeat center center;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+}
+
+/* FORMULARIO DE CONTACTO */
+
+.contacto {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.contactoRedes {
+  flex: 1;
+  padding: 20px;
+  margin-top: 25%;
+}
+
+#instagram-page3 {
+  background-color: var(--instagram);
+}
+
+#whatsapp-page3 {
+  background-color: rgb(13, 172, 13);
+}
+
+.tituloFormulario {
+  font-family: 'Roboto',sans-serif;
+  text-shadow: 2px 2px 2px black;
+  color: #ffffff;
+  font-size: 40px;
+  background-color: rgba(241, 176, 36, 0.253);
+  margin-left: 5%;
+  margin-top: 5%;
+  width: 32%;
+  border-radius: 5px;
+  animation: fadeInOut 7.5s ease-in-out infinite;
+}
+
+.tituloConectate {
+  font-family: 'Roboto',sans-serif;
+  text-shadow: 2px 2px 2px black;
+  color: #ffffff;
+  font-size: 30px;
+  background-color: rgba(102, 101, 101, 0.253);
+  margin-left: 60%;
+  margin-top: -13%;
+  width: 23%;
+  animation: fadeInOut 7.5s ease-in-out infinite;
+}
+
+.contact-form {
+  max-width: 500px; 
+  margin-left: 8%; 
+  padding: 20px; 
+  background-color: rgba(241, 176, 36, 0.253);
+  border-radius: 10px; 
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form h2 {
+  text-align: center; /* Centra el título */
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 20px; 
+}
+
+label {
+  text-shadow: 1px 1px 1px black;
+  color:#f19113;
+  display: block; /* Coloca las etiquetas en una línea separada */
+  margin-bottom: 5px; /* Espacio inferior entre etiquetas y campos de entrada */
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%; /* Ocupa todo el ancho disponible */
+  padding: 10px; /* Espaciado interno en campos de entrada y área de texto */
+  border: 1px solid #ccc; /* Borde del campo de entrada */
+  border-radius: 5px; /* Borde redondeado */
+}
+
+textarea {
+  height: 150px; /* Altura del área de texto */
+}
+
+button {
+  display: block; 
+  width: 100%;
+  padding: 10px; 
+  background-color: #01050a; 
+  color: #fff; 
+  border: none; 
+  border-radius: 5px; 
+  cursor: pointer; 
+}
+
+button:hover {
+  background-color: #940458; 
+}
+
+footer {
+  background-color: black;
+}
+
+h3 {
+  font-family: 'Roboto', sans-serif;
+  color: rgb(255, 255, 255);
+
+}
+
+.integrantes {
+  font-family: 'Roboto', sans-serif;
+  color: white;
+  display: flex;
+  justify-content: center;
+}
+
+.copy {
+  color: white;
+  display: flex;
+  justify-content: center;
+}
+
+#mute-button {
+  position: fixed;
+  bottom: 150px; /* Ajusta la distancia desde la parte inferior según tus preferencias */
+  right: 20px; /* Ajusta la distancia desde la derecha según tus preferencias */
+  z-index: 999; /* Asegura que el botón esté por encima de otros elementos */
+  background-color: rgba(0, 0, 0, 0.473);
+  font-size: 25px;
+  width: 3%;
+  border-radius: 5px;
+}

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Página de Yubes Rock</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="style.css">
+  <script>
+    function scrollToPage(pageNumber) {
+      var targetPage = document.getElementById("page" + pageNumber);
+      if (targetPage) {
+        targetPage.scrollIntoView({ behavior: "smooth" });
+      }
+    }
+  </script>
+</head>
+<body>
+
+  <!------------------------ PAGINA 1 -------------------------------------------------->
+
+  <!-- <div class="video-container">
+    <video autoplay muted id="background-video" class="page1-video">
+        <source src="/background-video-1920.mp4" type="video/mp4">
+    </video>
+  </div> -->
+  
+  <header>
+    <div class ="page" id="page1">
+      <h2 class="novedades"><strong>SEGUI LAS NOVEDADES EN NUESTRAS REDES SOCIALES</strong></h2>
+      <br>
+       <!-- //Redes sociales -->
+  <section class="buttons">
+    <a href="https://www.instagram.com/yubesrock/" class="fa fa-instagram" id="instagram" target="_blank"></a>
+    <a href="https://www.youtube.com/@yubesrock" class="fa fa-youtube" id="youtube" target="_blank"></a>
+    <a href="https://www.facebook.com/yubes.yubes.75" class="fa fa-facebook" id="facebook" target="_blank"></a>
+  </section>
+
+      <div id="logo">
+          <img src="/logo.png" alt="Logo" width="250" height="266" id="logoEdit1">
+          <img src="/yubesConSombra.png" alt="yubes"width="600" height="200" id="logoEdit2">
+        </div>
+        <div class ="bienvenidos">BIENVENIDOS</div>
+      </br></br></br>
+    </br>
+    
+
+
+    <!-- //BOTON SHOWS y CONTACTO -->
+    <!--<section class = "shows">
+      <button onclick="scrollToPage(2)" id="botonShows" class="spinner-grow text-dark-emphasis" role="button" data-bs-toggle="button">SHOWS</button>
+      <a href="#contacto" id="botonContacto" class="spinner-grow text-dark-emphasis" role="button" data-bs-toggle="button">CONTACTO</a>
+    </section>
+    </header> -->
+
+
+</br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br>
+<button onclick="toggleMute()" id="mute-button" class="btn btn-primary"><i class="bi bi-mic-mute"></i></button>
+  <button onclick="scrollToPage(2)" id="toPage2">Ir a "SHOWS"</button>
+  <button onclick="scrollToPage(3)" id="toPage3">Ir a "CONTACTO"</button>
+  </div>
+
+  <!-- -------------------------------PÁGINA 2 --------------------------------------- -->
+
+    <div class="page" id="page2">
+      <button onclick="scrollToPage(1)">Volver al "INICIO"</button>
+      <section class="cartelera">
+      <h1>CARTELERA DE SHOWS</h1>
+      </br>
+      <p id ="p-cartelera">Aquí apareceran los próximos shows.
+        Atento!
+      </p>
+      </section>
+    </br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br>
+    <button onclick="scrollToPage(3)" id="toPage3">Ir a "CONTACTO"</button>
+    </div>
+
+  <!--------------------------------- PÁGINA 3 ------------------------------------------>
+
+    <div class="page" id="page3">
+      <button onclick="scrollToPage(1)">Volver al "INICIO"</button>
+        <button onclick="scrollToPage(2)" id="toPage2">Volver a "SHOWS"</button>
+    </br>
+      <!-- Contenido de la tercera página -->
+      <section class="contacto">
+        <h1 class="tituloFormulario">FORMULARIO DE CONTACTO</h1>
+        </br>
+        <div class="contact-form">
+          <form>
+            <div class="form-group">
+              <label for="nombre"><strong>NOMBRE:</strong></label>
+              <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+            </div>
+            <div class="form-group">
+              <label for="email"><strong>CORREO ELECTRONICO:</strong></label>
+              <input type="email" id="email" name="email" placeholder="Tu correo electrónico" required>
+            </div>
+            <div class="form-group">
+              <label for="telefono"><strong>TELÉFONO:</strong></label>
+              <input type="text" id="telefono" name="telefono" placeholder="Tu teléfono para contactarnos" required>
+            </div>
+            <div class="form-group">
+              <label for="mensaje"><strong>MENSAJE:</strong></label>
+              <textarea id="mensaje" name="mensaje" placeholder="Tu mensaje" required></textarea>
+            </div>
+            <button type="submit" id="enviarBtn">Enviar</button>
+          </form>
+        </div>
+      
+      <h1 class="tituloConectate"> CONTACTATE CON UN CLICK</h1>
+        <div class="buttons-page3">
+          <p id="p-page3"><strong>INSTAGRAM</strong>
+            <a href="https://www.instagram.com/yubesrock/" class="bi bi-instagram" id="instagram-page3" target="_blank"></a>
+            <p id="p-page3"><strong>WHATSAPP</strong>
+              <a href="https://wa.me/<+549298469-0891>" class="bi bi-whatsapp" id="whatsapp-page3" target="_blank"></a>
+            </p>
+        </div>
+      </section>
+      </div>
+
+    <footer>
+      <div>
+        <br>
+      <h3>Quienes integran <strong>YUBES</strong></h3>
+      <br>
+      <p class="integrantes"><strong>Adriano Pagliacci</strong>: Voz y guitarra</p>
+        <p class="integrantes"><strong> Marcho del Rio</strong>: Guitarra</p>
+        <p class="integrantes"><strong>Mati Romera</strong>: Bateria</p>
+        <p class="integrantes"><strong>Fede Peche</strong>: Bajo</p>
+        <p class="integrantes"><strong>Pablo Garcés</strong>: Teclados</p>
+        <p class="integrantes"><strong>Mauri Poblete</strong>: Percusión</p></br>
+        <p class="copy">&copy; 2023 Yubes Rock. Todos los derechos reservados.</p>
+      </br>
+      </div>
+    </footer>
+
+  <!-- <section class="acercaDe">
+    <p>Hola, somos YUBES.</p>
+  </section> -->
+  <!-- <footer class="piePagina">
+        <div class="music-player">
+          <div class="controls">
+          <button id="prev-button">Anterior</button>
+          <button id="play-pause-button">Reproducir</button>
+          <button id="next-button">Siguiente</button>
+          </div>
+          <audio id="audio-player" controls>
+          <source src="/Bailando.wav" type="audio/mp3">
+          Tu navegador no soporta la reproducción de audio.
+          </audio>
+        </div>
+        <h3 class="lead">YUBES Rock, 2023. Todos los derechos reservados.</h3>
+</footer> -->
+
+    <script src="/script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+</body>
+</html>
