@@ -47,7 +47,6 @@ body {
   justify-content: flex;
   background: url('background.png') no-repeat center center;
   background-size: cover;
-  max-width: 100%;
   width: 100%;
   height: 100vh;
 }
@@ -94,7 +93,7 @@ body {
   color: rgb(247, 247, 247);
   -webkit-text-stroke: 1.5px #f3860a; /* Ancho y color del borde en navegadores Webkit (Safari, Chrome) */
   background-color: rgba(77, 76, 76, 0.75);
-  width: 50%;
+  width: 100%;
   margin-left: 25%;
   border-radius: 5px;
   white-space: nowrap;
@@ -271,7 +270,6 @@ h3 {
   justify-content: flex;
   background: url('back-page2.png') no-repeat center center;
   background-size: cover;
-  max-width: 100%;
   width: 100%;
   height: 100vh;
 }
@@ -317,7 +315,6 @@ h1 {
   justify-content: flex;
   background: url('back-Page3-2.jpg') no-repeat center center;
   background-size: cover;
-  max-width: 100%;
   width: 100%;
   height: 100vh;
 }
