@@ -1,19 +1,14 @@
 /* Estilos para pantallas pequeñas */
-@media (max-width: 100%) {
+@media (max-width: 768px) {
   header {
       flex-direction: column;
       align-items: center;
   }
 
-  nav {
-      margin: 10px 0;
-  }
-
-  nav ul li {
-      display: block;
-      margin: 10px 0;
-  }
-}
+ body {
+   width: 100%;
+   height: auto;
+ }
 
 /* Define la animación de desvanecimiento gradual */
 @keyframes fadeInOut {
