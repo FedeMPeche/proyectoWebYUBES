@@ -1,8 +1,14 @@
 /* Estilos para pantallas pequeñas */
 @media (max-width: 768px) {
     .page {
-      padding: 20px;
-      text-align: center; 
+      width: 100%;
+      height: 100vh; 
+      text-align: center;
+    }
+
+    .container-fluid {
+      width: 100%;
+      padding: 0; 
     }
 
     .novedades {
@@ -141,7 +147,6 @@
 }
 
 body {
-  background-color: rgba(51, 49, 49, 0.795);
   margin: 0;
   padding: 0;
   font-family: 'Roboto', sans-serif;
@@ -152,6 +157,17 @@ body {
   overflow-x: hidden;
 }
 
+.page {
+  width: 100%;
+  height: 100vh; 
+  text-align: center;
+}
+
+.container-fluid {
+  width: 100%;
+  padding: 0;
+}
+
 #page1{
   justify-content: flex;
   background: url('background.png') no-repeat center center;
@@ -160,10 +176,6 @@ body {
   height: 100vh;
 }
 
-.page {
-  height: 100vh; /* Establece el alto de cada página al 100% de la ventana */
-  text-align: center;
-}
 
 #logoEdit1 {
   opacity: 0.75;
@@ -194,7 +206,7 @@ body {
 }
 
 .page:not(#page1) .page1-video {
-  display: none; /* Oculta el video en todas las páginas excepto en la página 1 */
+  display: none; 
 }
 
 .novedades {
@@ -497,21 +509,21 @@ h1 {
 label {
   text-shadow: 1px 1px 1px black;
   color:#f19113;
-  display: block; /* Coloca las etiquetas en una línea separada */
-  margin-bottom: 5px; /* Espacio inferior entre etiquetas y campos de entrada */
+  display: block; 
+  margin-bottom: 5px;
 }
 
 input[type="text"],
 input[type="email"],
 textarea {
-  width: 100%; /* Ocupa todo el ancho disponible */
-  padding: 10px; /* Espaciado interno en campos de entrada y área de texto */
-  border: 1px solid #ccc; /* Borde del campo de entrada */
-  border-radius: 5px; /* Borde redondeado */
+  width: 100%; 
+  padding: 10px; 
+  border: 1px solid #ccc; 
+  border-radius: 5px; 
 }
 
 textarea {
-  height: 150px; /* Altura del área de texto */
+  height: 150px; 
 }
 
 button {
@@ -554,13 +566,11 @@ h3 {
 
 #mute-button {
   position: fixed;
-  bottom: 150px; /* Ajusta la distancia desde la parte inferior según tus preferencias */
-  right: 20px; /* Ajusta la distancia desde la derecha según tus preferencias */
-  z-index: 999; /* Asegura que el botón esté por encima de otros elementos */
+  bottom: 150px;
+  right: 20px; 
+  z-index: 999;
   background-color: rgba(0, 0, 0, 0.473);
   font-size: 25px;
   width: 3%;
   border-radius: 5px;
-}
-
 
