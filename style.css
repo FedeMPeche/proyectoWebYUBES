@@ -1,13 +1,123 @@
 /* Estilos para pantallas pequeñas */
-@media (max-width: 1080px) {
-  header {
-      flex-direction: column;
-      align-items: center;
+@media (max-width: 768px) {
+    .page {
+      padding: 20px;
+      text-align: center; 
+    }
+
+    .novedades {
+      font-size: 22px; 
+    }
+
+    .buttons {
+      margin-top: 20px; 
+    }
+
+    .buttons a {
+      font-size: 24px; 
+      margin: 10px;
+    }
+
+    #logo {
+      margin-top: 20px; 
+    }
+
+    #logoEdit1 {
+      max-width: 100%; 
+    }
+
+    #logoEdit2 {
+      max-width: 100%;
+    }
+
+    .bienvenidos {
+      font-size: 36px; 
+      margin-top: 20px; 
+    }
+
+    #toPage1 {
+      display: none;
+    }
+
+    #toPage2 {
+      display: none;
+    }
+
+    #toPage3 {
+      display: none;
+    }
+
+    #mute-button {
+      font-size: 20px;
+      background-color: rgba(255, 255, 255, 0);
+    }
+    
+     /* Estilos para la página 2 */
+
+    h1 {
+      font-size: 24px; 
+    }
+
+
+    #p-cartelera {
+      font-size: 18px; 
+    }
+
+    /* Estilos para la página 3 */
+
+    .tituloFormulario {
+      font-size: 24px; 
+      margin-top: 20px;
+    }
+
+    .contact-form {
+      margin-top: 20px; 
+      text-align: left; 
+    }
+
+    .form-group {
+      margin-bottom: 20px; 
+    }
+
+    label {
+      font-size: 18px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    textarea {
+      width: 100%; 
+      padding: 10px; 
+      font-size: 16px;
+    }
+
+    #enviarBtn {
+      background-color: #020202; 
+      color: white;
+      border: none; 
+      cursor: pointer; 
+      font-size: 18px; 
+      padding: 10px 20px; 
+    }
+
+    .tituloConectate {
+      display: none;
+    }
+
+    .buttons-page3 {
+      display: none;
+    }
+
+    .bi-instagram,
+    .bi-whatsapp {
+      display: none;
+    }
+
+    #p-page3 {
+      display: none;
+    }
   }
-  .container {
-    width: 100%;
-  }
-}
+
 
 /* Define la animación de desvanecimiento gradual */
 @keyframes fadeInOut {

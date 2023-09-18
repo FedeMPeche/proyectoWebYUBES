@@ -6,7 +6,7 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
   <link rel="stylesheet" href="style.css">
-  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script>
     function scrollToPage(pageNumber) {
       var targetPage = document.getElementById("page" + pageNumber);
@@ -25,7 +25,7 @@
         <source src="/background-video-1920.mp4" type="video/mp4">
     </video>
   </div> -->
-
+<div class="container-fluid col-md-">
   <header>
     <div class ="page" id="page1">
       <h2 class="novedades"><strong>SEGUI LAS NOVEDADES EN NUESTRAS REDES SOCIALES</strong></h2>
@@ -56,16 +56,17 @@
 
 
 </br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br>
-<button onclick="toggleMute()" id="mute-button" class="btn btn-primary"><i class="bi bi-mic-mute"></i></button>
+  <button onclick="toggleMute()" id="mute-button" class="btn btn-primary"><i class="bi bi-mic-mute"></i></button>
   <button onclick="scrollToPage(2)" id="toPage2">Ir a "SHOWS"</button>
   <button onclick="scrollToPage(3)" id="toPage3">Ir a "CONTACTO"</button>
   </div>
+</div>
 
 
   <!-- -------------------------------PÁGINA 2 --------------------------------------- -->
-  
+  <div class="container-fluid col-md-">
     <div class="page" id="page2">
-      <button onclick="scrollToPage(1)">Volver al "INICIO"</button>
+      <button onclick="scrollToPage(1)" id="toPage1">Volver al "INICIO"</button>
       <section class="cartelera">
       <h1>CARTELERA DE SHOWS</h1>
       </br>
@@ -76,12 +77,12 @@
     </br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br>
     <button onclick="scrollToPage(3)" id="toPage3">Ir a "CONTACTO"</button>
     </div>
-
+  </div>
 
   <!--------------------------------- PÁGINA 3 ------------------------------------------>
- 
+  <div class="container-fluid col-md-">
     <div class="page" id="page3">
-      <button onclick="scrollToPage(1)">Volver al "INICIO"</button>
+      <button onclick="scrollToPage(1)" id="toPage1">Volver al "INICIO"</button>
         <button onclick="scrollToPage(2)" id="toPage2">Volver a "SHOWS"</button>
     </br>
       <!-- Contenido de la tercera página -->
@@ -135,7 +136,7 @@
       </br>
       </div>
     </footer>
-
+  </div>
   <!-- <section class="acercaDe">
     <p>Hola, somos YUBES.</p>
   </section> -->
