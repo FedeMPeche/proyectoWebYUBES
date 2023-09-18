@@ -8,14 +8,6 @@
       height: 100vh; 
       text-align: center;
     }
-
-    .container-fluid {
-      width: 100%;
-      padding: 0; 
-      margin-left: 0;
-      margin-right: 0;
-    }
-
     .novedades {
       padding: 10px;
       font-size: 15px; 
