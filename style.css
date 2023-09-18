@@ -3,14 +3,24 @@
     body {
       overflow-x: hidden;
     }
+
     .page {
       width: 100%;
       height: 100vh; 
       text-align: center;
     }
+
     .novedades {
-      padding: 10px;
-      font-size: 15px; 
+      padding: 15px;
+      font-size: 15px;
+      font-family: 'Roboto', sans-serif;
+      color: rgb(255, 253, 253);
+      background-color: rgba(2, 2, 2, 0.75) !important;
+      max-width: 80%;
+      border-radius: 5px;
+      white-space: nowrap;
+      overflow: hidden;
+      animation: fadeInOut 7.5s ease-in-out infinite;
     }
 
     .buttons {
@@ -105,6 +115,19 @@
       padding: 10px 20px; 
     }
 
+    .tituloFormulario {
+      font-size: 29px !important;
+      font-family: 'Roboto',sans-serif;
+      text-shadow: 2px 2px 2px black;
+      color: #ffffff;
+      background-color: rgba(241, 176, 36, 0.253);
+      max-width: 91% !important;
+      margin-left: 8%;
+      padding: 0px;
+      border-radius: 5px;
+      animation: fadeInOut 7.5s ease-in-out infinite;
+    }
+
     .tituloConectate {
       display: none;
     }
@@ -141,7 +164,7 @@
     transform: translateX(-100%);
   }
   100% {
-    transform: translateX(100%);
+    transform: translateX(50%);
   }
 }
 
@@ -151,10 +174,10 @@ body {
   font-family: 'Roboto', sans-serif;
   display: flex;
   flex-direction: column;
-    width: 100%;
+  width: 100%;
   height: 100vh;
   overflow-y: auto;
-  overflow-x: hidden;
+  overflow-x: auto;
 }
 
 .page {
@@ -214,14 +237,11 @@ body {
 .novedades {
   font-family: 'Roboto', sans-serif;
   color: rgb(247, 247, 247);
-  -webkit-text-stroke: 1.5px #f3860a; /* Ancho y color del borde en navegadores Webkit (Safari, Chrome) */
   background-color: rgba(77, 76, 76, 0.75);
-  width: 100%;
-  margin-left: 25%;
+  max-width: 100%;
   border-radius: 5px;
   white-space: nowrap;
   overflow: hidden;
-  animation: marquee 10s linear infinite, fadeInOut 10s ease-in-out infinite;
 }
 
 :root {
@@ -471,10 +491,10 @@ h1 {
   color: #ffffff;
   font-size: 35px;
   background-color: rgba(241, 176, 36, 0.253);
-  max-width: 500px;
+  max-width: 31%;
   margin-left: 8%;
-  padding: 20px;
-  width: 100%;
+  padding: 0px;
+  white-space: nowrap;
   border-radius: 5px;
   animation: fadeInOut 7.5s ease-in-out infinite;
 }
@@ -487,7 +507,7 @@ h1 {
   background-color: rgba(102, 101, 101, 0.253);
   margin-left: 60%;
   margin-top: -13%;
-  width: 23%;
+  max-width: 23%;
   animation: fadeInOut 7.5s ease-in-out infinite;
 }
 
@@ -577,3 +597,4 @@ h3 {
   width: 10%;
   border-radius: 5px;
 }
+
