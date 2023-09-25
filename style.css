@@ -23,6 +23,10 @@
       animation: fadeInOut 7.5s ease-in-out infinite;
     }
 
+    .container-fluid {
+      min-width: 467px !important;
+    }
+
     .buttons {
       margin-top: 20px; 
     }
