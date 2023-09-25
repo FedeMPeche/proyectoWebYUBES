@@ -50,7 +50,7 @@
     }
     
     .contenedorTarjetas {
-      display: none;
+      display: none !important;
     }
     
     #toPage1 {
