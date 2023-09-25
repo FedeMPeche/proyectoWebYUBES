@@ -103,3 +103,15 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   });
 });
+
+// Función para mostrar u ocultar el formulario de contacto
+function toggleContactForm() {
+  var contactoForm = document.getElementById("contacto-formulario");
+  
+  // Si el formulario está oculto, lo mostramos; si está visible, lo ocultamos
+  if (contactoForm.style.display === "none" || !contactoForm.style.display) {
+    contactoForm.style.display = "block";
+  } else {
+    contactoForm.style.display = "none";
+  }
+}
