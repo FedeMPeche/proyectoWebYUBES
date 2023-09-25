@@ -226,7 +226,7 @@ body {
 
 #page1{
   justify-content: flex;
-  background: url('/back-page1-solar.png') no-repeat center center;
+  background: url('back-page1-solar.png') no-repeat center center;
   background-size: cover;
   width: 100%;
   height: 100vh;
@@ -682,7 +682,7 @@ h3 {
   position: absolute;
   transition: all 1s cubic-bezier(0.645, 0.045, 0.355, 1);
   background: #ff0000;
-  background-image: url("/imageTano.png");
+  background-image: url("imageTano.png");
   background-size: cover;
 }
 
@@ -692,7 +692,7 @@ h3 {
   position: absolute;
   transition: all 1s cubic-bezier(0.645, 0.045, 0.355, 1);
   background: #ff0000;
-  background-image: url("/imagenMarcho.png");
+  background-image: url("imagenMarcho.png");
   background-size: cover;
 }
 
@@ -702,7 +702,7 @@ h3 {
   position: absolute;
   transition: all 1s cubic-bezier(0.645, 0.045, 0.355, 1);
   background: #ff0000;
-  background-image: url("/imagenMati.png");
+  background-image: url("imagenMati.png");
   background-size: cover;
 }
 
@@ -712,7 +712,7 @@ h3 {
   position: absolute;
   transition: all 1s cubic-bezier(0.645, 0.045, 0.355, 1);
   background: #ff0000;
-  background-image: url("/imagenFede.png");
+  background-image: url("imagenFede.png");
   background-size: cover;
 }
 
@@ -722,7 +722,7 @@ h3 {
   position: absolute;
   transition: all 1s cubic-bezier(0.645, 0.045, 0.355, 1);
   background: #ff0000;
-  background-image: url("/imagenPablo.png");
+  background-image: url("imagenPablo.png");
   background-size: cover;
 }
 
@@ -732,7 +732,7 @@ h3 {
   position: absolute;
   transition: all 1s cubic-bezier(0.645, 0.045, 0.355, 1);
   background: #ff0000;
-  background-image: url("/imagenMauri.png");
+  background-image: url("imagenMauri.png");
   background-size: cover;
 }
 
