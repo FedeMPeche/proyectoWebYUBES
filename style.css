@@ -48,7 +48,11 @@
       font-size: 36px; 
       margin-top: 20px; 
     }
-
+    
+    .contenedorTarjetas {
+      display: none;
+    }
+    
     #toPage1 {
       display: none;
     }
