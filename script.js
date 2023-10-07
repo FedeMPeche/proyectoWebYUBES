@@ -50,14 +50,6 @@
 // nextButton.addEventListener('click', playNext);
 // prevButton.addEventListener('click', playPrev);
 
-$(document).ready(function() {
-  $('a[href^="#"]').click(function() {
-    var destino = $(this.hash); //this.hash lee el atributo href de este
-    $('html, body').animate({ scrollTop: destino.offset().top }, 700); //Llega a su destino con el tiempo deseado
-    return false;
-  });
-});
-
 function scrollToPage(pageNumber) {
   const page = document.getElementById(`page${pageNumber}`);
   page.scrollIntoView({ behavior: "smooth" });
@@ -79,30 +71,25 @@ function toggleMute() {
 //------------------SEGURIDAD---------------------
 
 document.addEventListener('DOMContentLoaded', function () {
-  const form = document.querySelector('form'); // Selecciona el formulario
+  const form = document.getElementById('formularioContacto');
 
-  // Agrega un evento al formulario cuando se envía
   form.addEventListener('submit', function (event) {
-    // Evita que el formulario se envíe automáticamente
     event.preventDefault();
 
-    // Obtiene los valores de los campos de entrada
     const nombre = document.getElementById('nombre').value;
     const email = document.getElementById('email').value;
     const telefono = document.getElementById('telefono').value;
     const mensaje = document.getElementById('mensaje').value;
 
-    // Realiza la validación de entrada aquí
     if (nombre === '' || email === '' || telefono === '' || mensaje === '') {
       alert('Todos los campos son obligatorios. Por favor, completa el formulario.');
     } else {
-      
-      alert('Mensaje enviado correctamente');
-
+      alert('Muchas gracias, pronto nos pondremos en contacto. También, puedes visitar nuestras redes sociales para recibir una respuesta rápida. ¡Saludos!');
       form.reset();
     }
   });
 });
+
 
 // Función para mostrar u ocultar el formulario de contacto
 function toggleContactForm() {
@@ -115,3 +102,4 @@ function toggleContactForm() {
     contactoForm.style.display = "none";
   }
 }
+

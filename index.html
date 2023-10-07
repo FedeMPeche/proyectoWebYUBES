@@ -21,10 +21,11 @@
   <!------------------------ PAGINA 1 -------------------------------------------------->
 
   <!-- <div class="video-container">
-    <video autoplay muted id="background-video" class="page1-video">
+    <video autoplay mute id="background-video" class="page1-video">
         <source src="/background-video-1920.mp4" type="video/mp4">
     </video>
   </div> -->
+  
 <div class="container-fluid">
     <div class ="page" id="page1">
       <h2 class="novedades"><strong>SEGUI LAS NOVEDADES EN NUESTRAS REDES SOCIALES</strong></h2>
@@ -137,10 +138,10 @@
       <!-- Contenido de la tercera página -->
       <section class="contacto">
         <h1 class="tituloFormulario">FORMULARIO DE CONTACTO</h1>
-        <button onclick="toggleContactForm()" id="botonContacto">Click aqui para llenar el formulario!</button>
+        <button onclick="toggleContactForm()" ontouchstart="toggleContactForm()" id="botonContacto">Click aqui para llenar el formulario!</button>
         <div class="contacto" id="contacto-formulario">
           <div class="contact-form">
-            <form>
+            <form id="formularioContacto">
               <div class="form-group">
                 <label for="nombre"><strong>NOMBRE:</strong></label>
                 <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
