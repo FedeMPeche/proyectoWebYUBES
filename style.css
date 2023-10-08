@@ -424,7 +424,7 @@ button:hover {
 }*/
 
 #botonContacto {
-  background-image: url('/botonFormulario1.png');
+  background-image: url('botonFormulario1.png');
   background-size: cover; 
   font-family: 'Roboto', sans-serif;
   text-decoration: solid !important;
