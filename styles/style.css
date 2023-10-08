@@ -839,7 +839,7 @@ h3 {
   position: absolute;
   transition: all 1s cubic-bezier(0.645, 0.045, 0.355, 1);
   background: #ff000000;
-  background-image: url("img/ imagenMauri.png");
+  background-image: url("img/imagenMauri.png");
   background-size: cover;
 }
 
