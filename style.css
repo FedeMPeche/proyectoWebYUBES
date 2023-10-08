@@ -20,7 +20,7 @@
       font-family: 'Roboto', sans-serif;
       color: rgb(255, 253, 253);
       background-color: rgba(2, 2, 2, 0.75) !important;
-      max-width: 80%;
+      max-width: 100%;
       border-radius: 5px;
       white-space: nowrap;
       overflow: hidden;
@@ -124,8 +124,6 @@
       background-color: #f1a643;
       color: black;
       border: none;
-      background-image: url('/paraBotonEnviar.png'); 
-      background-size: cover; 
       cursor: pointer; 
       font-size: 18px; 
       padding: 10px 20px; 
@@ -182,6 +180,10 @@
       width: 400px !important;
       margin-bottom: 20px; 
     }
+
+    #botonContacto {
+      font-size: 19.2px !important;
+    }
     
     #enviarBtn {
       width: 400px !important;
@@ -190,7 +192,7 @@
       font-size: 24px;
     }
     footer {
-      margin-top: 20px !important;
+      margin-top: 75px !important;
     }
 
     .container-fluid {
@@ -230,7 +232,6 @@ body {
   height: 100vh;
   overflow-y: auto;
   overflow-x: auto;
-  max-width: 1920px;
 }
 
 .page {
@@ -292,7 +293,7 @@ body {
   font-family: 'Roboto', sans-serif;
   color: rgb(247, 247, 247);
   background-color: rgba(3, 3, 3, 0.75);
-  max-width: 99%;
+  width: 100%;
   border-radius: 5px;
   white-space: nowrap;
   overflow: hidden;
@@ -305,19 +306,43 @@ body {
   --youtube: #bd081c;
 }
 
-button {
-  text-align: center; 
-  width: 100%; 
-  margin-bottom: 0px;
-  background-color: #01050a; 
-  color: #fff; 
-  border: none;  
-  cursor: pointer; 
+/* Estilos para los botones "toPage1", "toPage2" y "toPage3" */
+#toPage1, #toPage2, #toPage3 {
+  display: flex;
+  margin: 10px auto; /* Centra los botones horizontalmente y agrega un espacio entre ellos */
+  padding: 10px 20px;
+  background-color: rgba(241, 212, 114, 0.7);
+  color: #000000;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px; 
+  font-size: 18px; 
+  text-align: center;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
 }
 
-button:hover {
-  background-color: rgba(89,50,2); 
+#toPage1:hover, #toPage2:hover, #toPage3:hover {
+  background-color: rgba(5, 5, 5, 0.5);
+  color: white;
 }
+
+.botonesToDoPage1 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.botonesToDoPage3 {
+  display: flex;
+  justify-content: space-between; 
+}
+
+.botonesToDoPage2 {
+  display: flex;
+  justify-content: space-between; 
+}
+
+
 
 .buttons {
   display: flex;
@@ -423,38 +448,6 @@ button:hover {
   box-shadow: 0 5px 5px 0px rgba(0, 0, 0, .4);
 }*/
 
-#botonContacto {
-  background-image: url('botonFormulario1.png');
-  background-size: cover; 
-  font-family: 'Roboto', sans-serif;
-  text-decoration: solid !important;
-  text-shadow: 2px 2px 3px white !important;
-  color: black !important;
-  height: 55px;
-  text-align: center;
-  border: none;
-  border-radius: 25px; 
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5); 
-  cursor: pointer; 
-  transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
-  font-size: 24px;
-  width: auto;
-  padding: 10px;
-  display: flex;
-  justify-content: start;
-  margin-left: 12%;
-  margin-bottom: 20px;
-  margin-top: 20px;
-  border-radius: 5px;
-}
-
-#botonContacto:hover {
-  color: white !important;
-  text-shadow: 2px 2px 3px black !important;
-  transform: translateY(-3px); 
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
-}
-
 /* #iconoDown {
   height: 50px;
   width: 50px;
@@ -519,15 +512,6 @@ h3 {
   color: white;
 }
 
-h1 {
-  background-color: rgba(201, 114, 15, 0.3);
-  border-radius: 5px;
-  border-color: solid black;
-  width: 100%;
-  margin-left: 30%;
-  text-shadow: 0 0 5px black;
-}
-
 #p-cartelera {
   margin-top: -2%;
   background-color: rgba(22, 252, 202, 0.3);
@@ -575,19 +559,51 @@ h1 {
   background-color: rgb(13, 172, 13);
 }
 
+#botonContacto {
+  background-image: url('botonFormulario2.png');
+  background-size: cover; 
+  font-family: 'Roboto', sans-serif;
+  color: rgb(241, 212, 114) !important;
+  text-shadow: 2px 2px 3px black !important;
+  height: 55px;
+  text-align: center;
+  border: none;
+  border-radius: 25px; 
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5); 
+  cursor: pointer; 
+  transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+  font-size: 22px;
+  width: auto;
+  padding: 10px;
+  display: flex;
+  justify-content: start;
+  margin-left: 10%;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  border-radius: 5px;
+}
+
+#botonContacto:hover {
+  color: rgb(253, 252, 249) !important;
+  text-shadow: 2px 2px 3px black !important;
+  transform: translateY(-3px); 
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+}
+
 .tituloFormulario {
+  border-color: solid black;
+  margin-left: 10%;
+  text-shadow: 0 0 5px black;
   font-family: 'Roboto',sans-serif;
   text-shadow: 2px 2px 2px black;
   color: #ffffff;
   font-size: 30px;
   max-width: 26.5%;
-  margin-left: 10%;
-  padding: 0px;
   white-space: nowrap;
   border-radius: 5px;
-  animation: fadeInOut 7.5s ease-in-out infinite;
+  animation: fadeInOut 5s ease-in-out infinite;
   margin-bottom: 20px;
-  margin-top: 20px;
+  margin-top: 50px;
 }
 
 .tituloConectate {
@@ -598,16 +614,13 @@ h1 {
   margin-left: 60%;
   margin-top: -13%;
   max-width: 23%;
-  animation: fadeInOut 7.5s ease-in-out infinite;
+  animation: fadeInOut 5s ease-in-out infinite;
 }
 
 .contact-form {
   max-width: 300px; 
   margin-left: 8%; 
   padding: 20px; 
-}
-
-.contact-form {
   text-align: center; 
   margin-bottom: 20px;
 }
@@ -622,6 +635,7 @@ h1 {
 
 
 #enviarBtn {
+  background-image: url('botonEnviar.PNG');
   font-family: 'Roboto', sans-serif;
   text-decoration: none;
   font-size: 24px;
@@ -629,7 +643,8 @@ h1 {
   height: 55px;
   text-align: center;
   background-color: #f1a643;
-  color: black; 
+  color: rgb(241, 212, 114) !important;
+  text-shadow: 2px 2px 3px black !important;
   border: none;
   border-radius: 5px; 
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
@@ -638,15 +653,15 @@ h1 {
 }
 
 #enviarBtn:hover {
-  background: #2b2b2b;
-  color: white;
+  color: rgb(253, 252, 249) !important;
+  text-shadow: 2px 2px 3px black !important;
   transform: translateY(-3px); 
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
 }
 
 label {
   text-shadow: 1px 1px 1px black;
-  color:#f19113;
+  color:rgba(240, 238, 236, 0.8);
   display: block; 
   text-align: center;
 }
@@ -686,29 +701,13 @@ label {
   background-color: rgba(255, 255, 255, 0.3);
 }
 
-#nombre::placeholder{
-  color: #eca816;
-  text-shadow: 2px 2px 2px rgb(3, 3, 3);
+input::placeholder, textarea::placeholder{
+  text-align: center;
+  color: rgb(240, 237, 231, 0.8);
   font-size: 20px;
 }
 
-#email::placeholder{
-  color: #eca816;
-  text-shadow: 2px 2px 2px rgb(3, 3, 3);
-  font-size: 20px;
-}
 
-#telefono::placeholder{
-  color: #eca816;
-  text-shadow: 2px 2px 2px rgb(3, 3, 3);
-  font-size: 20px;
-}
-
-#mensaje::placeholder{
-  color: #eca816;
-  text-shadow: 2px 2px 2px rgb(3, 3, 3);
-  font-size: 20px;
-}
 
 input[type="text"],
 input[type="email"],
@@ -778,11 +777,11 @@ h3 {
 }
 
 .tarjetas {
-  height: 330px;
-  width: 270px;
+  height: 300px;
+  width: 240px;
   position: relative;
   border-radius: 10px;
-  box-shadow: 0 0 20px 9px #866041;
+  box-shadow: 0 0 20px 9px rgb(241, 212, 114);
   overflow: hidden;
 }
 
@@ -791,7 +790,7 @@ h3 {
   width: 100%;
   position: absolute;
   transition: all 1s cubic-bezier(0.645, 0.045, 0.355, 1);
-  background: #ff0000;
+  background: #ff000000;
   background-image: url("imageTano.png");
   background-size: cover;
 }
@@ -801,7 +800,7 @@ h3 {
   width: 100%;
   position: absolute;
   transition: all 1s cubic-bezier(0.645, 0.045, 0.355, 1);
-  background: #ff0000;
+  background: #ff000000;
   background-image: url("imagenMarcho.png");
   background-size: cover;
 }
@@ -811,7 +810,7 @@ h3 {
   width: 100%;
   position: absolute;
   transition: all 1s cubic-bezier(0.645, 0.045, 0.355, 1);
-  background: #ff0000;
+  background: #ff000000;
   background-image: url("imagenMati.png");
   background-size: cover;
 }
@@ -821,7 +820,7 @@ h3 {
   width: 100%;
   position: absolute;
   transition: all 1s cubic-bezier(0.645, 0.045, 0.355, 1);
-  background: #ff0000;
+  background: #ff000000;
   background-image: url("imagenFede.png");
   background-size: cover;
 }
@@ -831,7 +830,7 @@ h3 {
   width: 100%;
   position: absolute;
   transition: all 1s cubic-bezier(0.645, 0.045, 0.355, 1);
-  background: #ff0000;
+  background: #ff000000;
   background-image: url("imagenPablo.png");
   background-size: cover;
 }
@@ -841,7 +840,7 @@ h3 {
   width: 100%;
   position: absolute;
   transition: all 1s cubic-bezier(0.645, 0.045, 0.355, 1);
-  background: #ff0000;
+  background: #ff000000;
   background-image: url("imagenMauri.png");
   background-size: cover;
 }
@@ -876,6 +875,18 @@ h3 {
 .tarjetas:hover .detalle {
   transform: translateY(100%);
 }
+
+.tarjetas.expandida {
+  width: 600px; /* Ancho expandido */
+  height: 400px; /* Altura expandida */
+  cursor: auto; /* Elimina el cursor de puntero al estar expandida */
+}
+
+.detalle.expandida {
+  height: 100%; /* Altura completa */
+  transform: translateY(0); /* Muestra completamente el detalle */
+}
+
 
 #contacto-formulario {
   display: none;

@@ -25,7 +25,6 @@
         <source src="/background-video-1920.mp4" type="video/mp4">
     </video>
   </div> -->
-  
 <div class="container-fluid">
     <div class ="page" id="page1">
       <h2 class="novedades"><strong>SEGUI LAS NOVEDADES EN NUESTRAS REDES SOCIALES</strong></h2>
@@ -53,7 +52,6 @@
           </div>
       </div>
   </div>
- 
   <div class="tarjetas">
       <div class="imagenMarcho">   
           <div class="detalle">   
@@ -71,7 +69,6 @@
           </div>
       </div>
   </div>
-
   <div class="tarjetas">
       <div class="imagenFede">   
           <div class="detalle">   
@@ -99,16 +96,17 @@
       </div>
   </div>
 </div>
-
-</br></br>
+</br>
     <!-- //BOTON SHOWS y CONTACTO -->
     <!--<section class = "shows">
       <button onclick="scrollToPage(2)" id="botonShows" class="spinner-grow text-dark-emphasis" role="button" data-bs-toggle="button">SHOWS</button>
       <a href="#contacto" id="botonContacto" class="spinner-grow text-dark-emphasis" role="button" data-bs-toggle="button">CONTACTO</a>
     </section> -->
 <button onclick="toggleMute()" id="mute-button" class="btn btn-primary"><i class="bi bi-mic-mute"></i></button>
+<div class="botonesToDoPage1">
 <button onclick="scrollToPage(2)" id="toPage2">Ir a "SHOWS"</button>
 <button onclick="scrollToPage(3)" id="toPage3">Ir a "CONTACTO"</button>
+</div>
 </div>
 </div>
 
@@ -116,7 +114,11 @@
   <!-- -------------------------------PÁGINA 2 --------------------------------------- -->
   <div class="container-fluid">
     <div class="page" id="page2">
+      <br>
+      <div class="botonesToDoPage2">
       <button onclick="scrollToPage(1)" id="toPage1">Volver al "INICIO"</button>
+      <button onclick="scrollToPage(3)" id="toPage3">Ir a "CONTACTO"</button>
+      </div>
       <section class="cartelera">
       <h1 class="tituloCartelera">CARTELERA DE SHOWS</h1>
       </br>
@@ -124,21 +126,22 @@
         Atento!
       </p>
       </section>
-    </br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br>
-    <button onclick="scrollToPage(3)" id="toPage3">Ir a "CONTACTO"</button>
     </div>
   </div>
 
   <!--------------------------------- PÁGINA 3 ------------------------------------------>
   <div class="container-fluid">
     <div class="page" id="page3">
+      <br>
+      <div class="botonesToDoPage3">
       <button onclick="scrollToPage(1)" id="toPage1">Volver al "INICIO"</button>
         <button onclick="scrollToPage(2)" id="toPage2">Volver a "SHOWS"</button>
+      </div>
     </br>
-      <!-- Contenido de la tercera página -->
+      <!-- Contenido de la tercer página -->
       <section class="contacto">
         <h1 class="tituloFormulario">FORMULARIO DE CONTACTO</h1>
-        <button onclick="toggleContactForm()" ontouchstart="toggleContactForm()" id="botonContacto">Click aqui para llenar el formulario!</button>
+        <button onclick="toggleContactForm()" ontouchstart="toggleContactForm()" id="botonContacto"><strong>CLICK AQUI PARA LLENAR FORMULARIO</strong> </button>
         <div class="contacto" id="contacto-formulario">
           <div class="contact-form">
             <form id="formularioContacto">
@@ -158,7 +161,7 @@
                       <label for="mensaje"><strong>MENSAJE:</strong></label>
                       <textarea id="mensaje" name="mensaje" placeholder="Tu mensaje" required></textarea>
                     </div>
-                    <button type="submit" id="enviarBtn">Enviar</button>
+                    <button type="submit" id="enviarBtn"><strong>ENVIAR MENSAJE</strong></button>
           </form>
         </div>
         

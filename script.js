@@ -103,3 +103,20 @@ function toggleContactForm() {
   }
 }
 
+// Obtén todas las tarjetas
+const tarjetas = document.querySelectorAll('.tarjetas');
+
+// Agrega un evento de clic a cada tarjeta
+tarjetas.forEach((tarjeta) => {
+    tarjeta.addEventListener('click', () => {
+        // Alternar la clase 'expandida' en la tarjeta actual
+        tarjeta.classList.toggle('expandida');
+        // Obtener todas las tarjetas excepto la actual
+        const otrasTarjetas = Array.from(tarjetas).filter((t) => t !== tarjeta);
+        // Quitar la clase 'expandida' de las otras tarjetas
+        otrasTarjetas.forEach((otraTarjeta) => {
+            otraTarjeta.classList.remove('expandida');
+        });
+    });
+});
+
