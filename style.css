@@ -59,6 +59,7 @@
 
     .contenedorTarjetas {
       display: none !important;
+    }
     
     
     #toPage1 {
@@ -120,9 +121,11 @@
     }
 
     #enviarBtn {
-      background-color: #020202; 
-      color: white;
-      border: none; 
+      background-color: #f1a643;
+      color: black;
+      border: none;
+      background-image: url('/paraBotonEnviar.png'); 
+      background-size: cover; 
       cursor: pointer; 
       font-size: 18px; 
       padding: 10px 20px; 
@@ -421,23 +424,33 @@ button:hover {
 }*/
 
 #botonContacto {
+  background-image: url('/botonFormulario1.png');
+  background-size: cover; 
   font-family: 'Roboto', sans-serif;
-  text-decoration: none;
-  font-size: 16px; /* Aumenta el tamaño del texto para mejorar la legibilidad */
-  width: 150px; /* Ajusta el ancho según tus necesidades */
+  text-decoration: solid !important;
+  text-shadow: 2px 2px 3px white !important;
+  color: black !important;
   height: 55px;
   text-align: center;
-  color: #fff; /* Cambia el color del texto a blanco */
-  border: none; /* Elimina el borde */
-  border-radius: 25px; /* Aumenta el radio del borde para hacerlo más suave */
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5); /* Ajusta la sombra */
-  cursor: pointer; /* Cambia el cursor al pasar el ratón */
-  transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s; /* Agrega transiciones suaves */
+  border: none;
+  border-radius: 25px; 
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5); 
+  cursor: pointer; 
+  transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+  font-size: 24px;
+  width: auto;
+  padding: 10px;
+  display: flex;
+  justify-content: start;
+  margin-left: 12%;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  border-radius: 5px;
 }
 
 #botonContacto:hover {
-  background: #2b2b2b;
-  color: white;
+  color: white !important;
+  text-shadow: 2px 2px 3px black !important;
   transform: translateY(-3px); 
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
 }
@@ -567,7 +580,6 @@ h1 {
   text-shadow: 2px 2px 2px black;
   color: #ffffff;
   font-size: 30px;
-  background-color: rgba(241, 176, 36, 0.253);
   max-width: 26.5%;
   margin-left: 10%;
   padding: 0px;
@@ -583,7 +595,6 @@ h1 {
   text-shadow: 2px 2px 2px black;
   color: #ffffff;
   font-size: 30px;
-  background-color: rgba(241, 176, 36, 0.253);
   margin-left: 60%;
   margin-top: -13%;
   max-width: 23%;
@@ -597,17 +608,18 @@ h1 {
 }
 
 .contact-form {
-  text-align: center; /* Centra el título */
+  text-align: center; 
   margin-bottom: 20px;
 }
 
 .form-group {
-  background-color: rgba(241, 176, 36, 0.253);
+  background-color: rgba(241, 176, 36, 0.1);
   border-radius: 10px; 
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   width: 500px;
   margin-bottom: 20px; 
 }
+
 
 #enviarBtn {
   font-family: 'Roboto', sans-serif;
@@ -636,20 +648,82 @@ label {
   text-shadow: 1px 1px 1px black;
   color:#f19113;
   display: block; 
-  margin-bottom: 5px;
+  text-align: center;
+}
+
+#nombre{
+  color: #eca816;
+  text-shadow: 2px 2px 2px rgb(3, 3, 3);
+  font-size: 20px;
+  background-image: url('back-page1-solar.png'); 
+  background-size: cover; 
+  background-color: rgba(255, 255, 255, 0.3);
+}
+#email{
+  color: #eca816;
+  text-shadow: 2px 2px 2px rgb(3, 3, 3);
+  font-size: 20px;
+  background-image: url('back-page1-solar.png'); 
+  background-size: cover; 
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+#telefono{
+  color: #eca816;
+  text-shadow: 2px 2px 2px rgb(3, 3, 3);
+  font-size: 20px;
+  background-image: url('back-page1-solar.png'); 
+  background-size: cover; 
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+#mensaje{
+  color: #eca816;
+  text-shadow: 2px 2px 2px rgb(3, 3, 3);
+  font-size: 20px;
+  background-image: url('back-page1-solar.png'); 
+  background-size: cover; 
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+#nombre::placeholder{
+  color: #eca816;
+  text-shadow: 2px 2px 2px rgb(3, 3, 3);
+  font-size: 20px;
+}
+
+#email::placeholder{
+  color: #eca816;
+  text-shadow: 2px 2px 2px rgb(3, 3, 3);
+  font-size: 20px;
+}
+
+#telefono::placeholder{
+  color: #eca816;
+  text-shadow: 2px 2px 2px rgb(3, 3, 3);
+  font-size: 20px;
+}
+
+#mensaje::placeholder{
+  color: #eca816;
+  text-shadow: 2px 2px 2px rgb(3, 3, 3);
+  font-size: 20px;
 }
 
 input[type="text"],
 input[type="email"],
 textarea {
+  color: black;
+  text-decoration: solid;
+  text-shadow: 2px 2px 4px #eca816;
+  font-size: 20px;
   width: 100%; 
-  padding: 10px; 
-  border: 1px solid #ccc; 
+  padding: 10px;  
   border-radius: 5px; 
 }
 
 textarea {
-  height: 150px; 
+  height: 180px; 
 }
 
 footer {
@@ -801,22 +875,6 @@ h3 {
 
 .tarjetas:hover .detalle {
   transform: translateY(100%);
-}
-
-#botonContacto {
-  font-family: 'Roboto', sans-serif;
-  font-size: 24px;
-  width: auto;
-  padding: 10px;
-  display: flex;
-  justify-content: start;
-  margin-left: 12%;
-  margin-bottom: 20px;
-  margin-top: 20px;
-  border-radius: 5px;
-  background-color: rgb(235, 190, 68);
-  color: black;
-
 }
 
 #contacto-formulario {
