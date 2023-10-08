@@ -124,7 +124,7 @@
       background-color: #f1a643;
       color: black;
       border: none;
-      background-image: url('/paraBotonEnviar.png'); 
+      background-image: url('paraBotonEnviar.png'); 
       background-size: cover; 
       cursor: pointer; 
       font-size: 18px; 
