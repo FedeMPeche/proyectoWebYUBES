@@ -249,7 +249,7 @@ body {
 
 #page1{
   justify-content: flex;
-  background: url('/img/back-page1-solar.png') no-repeat center center;
+  background: url('img/back-page1-solar.png') no-repeat center center;
   background-size: cover;
   width: 100%;
   height: 100vh;
@@ -491,7 +491,7 @@ h3 {
 
 #page2 {
   justify-content: flex;
-  background: url('/img/back-page2.png') no-repeat center center;
+  background: url('img/back-page2.png') no-repeat center center;
   background-size: cover;
   max-width: 100%;
   width: 100%;
@@ -529,7 +529,7 @@ h3 {
 
 #page3 {
   justify-content: flex;
-  background: url('/img/back-Page3-2.jpg') no-repeat center center;
+  background: url('img/back-Page3-2.jpg') no-repeat center center;
   background-size: cover;
   max-width: 100%;
   width: 100%;
@@ -558,7 +558,7 @@ h3 {
 }
 
 #botonContacto {
-  background-image: url('/img/botonFormulario2.png');
+  background-image: url('img/botonFormulario2.png');
   background-size: cover; 
   font-family: 'Roboto', sans-serif;
   color: rgb(241, 212, 114) !important;
@@ -633,7 +633,7 @@ h3 {
 
 
 #enviarBtn {
-  background-image: url('/img/botonEnviar.PNG');
+  background-image: url('img/botonEnviar.PNG');
   font-family: 'Roboto', sans-serif;
   text-decoration: none;
   font-size: 24px;
@@ -668,7 +668,7 @@ label {
   color: #eca816;
   text-shadow: 2px 2px 2px rgb(3, 3, 3);
   font-size: 20px;
-  background-image: url('/img/back-page1-solar.png'); 
+  background-image: url('img/back-page1-solar.png'); 
   background-size: cover; 
   background-color: rgba(255, 255, 255, 0.3);
 }
@@ -676,7 +676,7 @@ label {
   color: #eca816;
   text-shadow: 2px 2px 2px rgb(3, 3, 3);
   font-size: 20px;
-  background-image: url('/img/back-page1-solar.png'); 
+  background-image: url('img/back-page1-solar.png'); 
   background-size: cover; 
   background-color: rgba(255, 255, 255, 0.3);
 }
@@ -685,7 +685,7 @@ label {
   color: #eca816;
   text-shadow: 2px 2px 2px rgb(3, 3, 3);
   font-size: 20px;
-  background-image: url('/img/back-page1-solar.png'); 
+  background-image: url('img/back-page1-solar.png'); 
   background-size: cover; 
   background-color: rgba(255, 255, 255, 0.3);
 }
@@ -694,7 +694,7 @@ label {
   color: #eca816;
   text-shadow: 2px 2px 2px rgb(3, 3, 3);
   font-size: 20px;
-  background-image: url('/img/back-page1-solar.png'); 
+  background-image: url('img/back-page1-solar.png'); 
   background-size: cover; 
   background-color: rgba(255, 255, 255, 0.3);
 }
@@ -789,7 +789,7 @@ h3 {
   position: absolute;
   transition: all 1s cubic-bezier(0.645, 0.045, 0.355, 1);
   background: #ff000000;
-  background-image: url("/img/imageTano.png");
+  background-image: url("img/imageTano.png");
   background-size: cover;
 }
 
@@ -799,7 +799,7 @@ h3 {
   position: absolute;
   transition: all 1s cubic-bezier(0.645, 0.045, 0.355, 1);
   background: #ff000000;
-  background-image: url("/img/imagenMarcho.png");
+  background-image: url("img/imagenMarcho.png");
   background-size: cover;
 }
 
@@ -809,7 +809,7 @@ h3 {
   position: absolute;
   transition: all 1s cubic-bezier(0.645, 0.045, 0.355, 1);
   background: #ff000000;
-  background-image: url("/img/imagenMati.png");
+  background-image: url("img/imagenMati.png");
   background-size: cover;
 }
 
@@ -819,7 +819,7 @@ h3 {
   position: absolute;
   transition: all 1s cubic-bezier(0.645, 0.045, 0.355, 1);
   background: #ff000000;
-  background-image: url("/img/imagenFede.png");
+  background-image: url("img/imagenFede.png");
   background-size: cover;
 }
 
@@ -829,7 +829,7 @@ h3 {
   position: absolute;
   transition: all 1s cubic-bezier(0.645, 0.045, 0.355, 1);
   background: #ff000000;
-  background-image: url("/img/imagenPablo.png");
+  background-image: url("img/imagenPablo.png");
   background-size: cover;
 }
 
@@ -839,7 +839,7 @@ h3 {
   position: absolute;
   transition: all 1s cubic-bezier(0.645, 0.045, 0.355, 1);
   background: #ff000000;
-  background-image: url("/img/imagenMauri.png");
+  background-image: url("img/imagenMauri.png");
   background-size: cover;
 }
 
