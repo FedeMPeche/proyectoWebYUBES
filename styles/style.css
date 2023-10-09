@@ -1,5 +1,5 @@
 /* Estilos para pantallas pequeñas */
-@media (max-width: 768px) and (orientation: landscape) {
+@media (max-width: 768px) {
     body {
       overflow-x: hidden;
     }
@@ -22,6 +22,10 @@
       white-space: nowrap;
       overflow: hidden;
       animation: fadeInOut 7.5s ease-in-out infinite;
+    }
+
+    #Logoedit2 {
+      width: 500px;
     }
 
     .container-fluid {
@@ -119,11 +123,10 @@
       border: none;
       cursor: pointer; 
       font-size: 18px; 
-      padding: 10px 20px; 
     }
 
     .tituloFormulario {
-      font-size: 14px !important;
+      font-size: 24px !important;
       font-family: 'Roboto',sans-serif;
       text-shadow: 2px 2px 2px black;
       color: #ffffff;
@@ -137,7 +140,7 @@
     .tituloConectate {
       display: flex;
       justify-content: center !important;
-      font-size: 18px !important;
+      font-size: 24px !important;
       font-family: 'Roboto',sans-serif;
       text-shadow: 2px 2px 2px black;
       color: #ffffff;
@@ -168,7 +171,7 @@
       background-color: rgba(241, 176, 36, 0.253);
       border-radius: 10px; 
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-      width: 300px !important;
+      width: 400px !important;
       margin-bottom: 20px; 
     }
 
@@ -569,7 +572,7 @@ h3 {
   padding: 10px;
   display: flex;
   justify-content: start;
-  margin-left: 10%;
+  margin-left: 5%;
   margin-bottom: 20px;
   margin-top: 20px;
   border-radius: 5px;
@@ -584,7 +587,7 @@ h3 {
 
 .tituloFormulario {
   border-color: solid black;
-  margin-left: 10%;
+  margin-left: 5%;
   text-shadow: 0 0 5px black;
   font-family: 'Roboto',sans-serif;
   text-shadow: 2px 2px 2px black;
@@ -610,8 +613,8 @@ h3 {
 }
 
 .contact-form {
-  max-width: 300px; 
-  margin-left: 8%; 
+  max-width: 450px; 
+  margin-left: 5%; 
   padding: 20px; 
   text-align: center; 
   margin-bottom: 20px;
@@ -621,7 +624,7 @@ h3 {
   background-color: rgba(241, 176, 36, 0.1);
   border-radius: 10px; 
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  width: 500px;
+  width: 450px;
   margin-bottom: 20px; 
 }
 
@@ -631,7 +634,7 @@ h3 {
   font-family: 'Roboto', sans-serif;
   text-decoration: none;
   font-size: 24px;
-  width: 500px; 
+  width: 450px; 
   height: 55px;
   margin-top: 20px;
   text-align: center;
