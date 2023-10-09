@@ -1,5 +1,5 @@
 /* Estilos para pantallas pequeñas */
-@media (max-width: 1250px) {
+@media (max-width: 768px) {
     body {
       overflow-x: hidden;
     }
@@ -25,7 +25,7 @@
     }
 
     .container-fluid {
-      min-width: 467px !important;
+      max-width: 90% !important;
     }
 
     .buttons {
