@@ -1,11 +1,7 @@
 /* Estilos para pantallas pequeñas */
-@media (max-width: 768px) {
+@media (max-width: 1250px) {
     body {
       overflow-x: hidden;
-    }
-
-    .container-fluid {
-      min-width: 430px !important;
     }
 
     .page {
