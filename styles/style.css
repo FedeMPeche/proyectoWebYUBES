@@ -1,5 +1,5 @@
 /* Estilos para pantallas pequeñas */
-@media (max-width: 768px) {
+@media (max-width: 768px) and (orientation: landscape) {
     body {
       overflow-x: hidden;
     }
