@@ -120,9 +120,11 @@
     #enviarBtn {
       background-color: #f1a643;
       color: black;
-      border: none;
       cursor: pointer; 
       font-size: 18px; 
+      width: 400px !important;
+      height: 60px;
+      border-radius: 10px;
     }
 
     .tituloFormulario {
@@ -176,16 +178,10 @@
     }
 
     #botonContacto {
-      font-size: 19.2px !important;
+      max-width: 350 !important;
+      font-size: 18px !important;
     }
     
-    #enviarBtn {
-      width: 400px !important;
-      height: 60px;
-      border-radius: 10px;
-      font-size: 24px;
-    }
-
     .container-fluid {
       background-color: black;
     }
@@ -568,7 +564,6 @@ h3 {
   cursor: pointer; 
   transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
   font-size: 20px;
-  width: 450px;
   padding: 10px 20px;
   display: flex;
   margin-left: 6%;
@@ -623,8 +618,8 @@ h3 {
   background-color: rgba(241, 176, 36, 0.1);
   border-radius: 10px; 
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  width: 450px;
   margin-bottom: 20px; 
+  width: 440px;
 }
 
 
@@ -633,7 +628,7 @@ h3 {
   font-family: 'Roboto', sans-serif;
   text-decoration: none;
   font-size: 24px;
-  width: 450px; 
+  width: 440px; 
   height: 55px;
   margin-top: 20px;
   text-align: center;
