@@ -5,10 +5,11 @@
     }
 
     .container-fluid {
-      min-width: 467px !important;
+      min-width: 430px !important;
     }
 
     .page {
+      background-color: black;
       width: 100%;
       height: 100vh; 
       text-align: center;
@@ -134,7 +135,6 @@
       font-family: 'Roboto',sans-serif;
       text-shadow: 2px 2px 2px black;
       color: #ffffff;
-      background-color: rgba(241, 176, 36, 0.253);
       max-width: 91% !important;
       margin-left: 8%;
       padding: 0px;
@@ -149,7 +149,6 @@
       font-family: 'Roboto',sans-serif;
       text-shadow: 2px 2px 2px black;
       color: #ffffff;
-      background-color: rgba(241, 176, 36, 0.253);
       margin-top: 20px !important;
       max-width: 91% !important;
       margin-left: 12% !important;
@@ -191,12 +190,13 @@
       border-radius: 10px;
       font-size: 24px;
     }
-    footer {
-      margin-top: 75px !important;
-    }
 
     .container-fluid {
       background-color: black;
+    }
+
+    footer {
+      margin-top: 20%;
     }
   }
 
@@ -249,7 +249,7 @@ body {
 
 #page1{
   justify-content: flex;
-  background: url('/img/back-page1-solar.png') no-repeat center center;
+  background: url('../img/back-page1-solar.png') no-repeat center center;
   background-size: cover;
   width: 100%;
   height: 100vh;
@@ -491,7 +491,7 @@ h3 {
 
 #page2 {
   justify-content: flex;
-  background: url('/img/back-page2.png') no-repeat center center;
+  background: url('../img/back-page2.png') no-repeat center center;
   background-size: cover;
   max-width: 100%;
   width: 100%;
@@ -529,7 +529,7 @@ h3 {
 
 #page3 {
   justify-content: flex;
-  background: url('/img/back-Page3-2.jpg') no-repeat center center;
+  background: url('../img/back-Page3-2.jpg') no-repeat center center;
   background-size: cover;
   max-width: 100%;
   width: 100%;
@@ -558,7 +558,7 @@ h3 {
 }
 
 #botonContacto {
-  background-image: url('/img/botonFormulario2.png');
+  background-image: url('../img/botonFormulario2.png');
   background-size: cover; 
   font-family: 'Roboto', sans-serif;
   color: rgb(241, 212, 114) !important;
@@ -633,7 +633,7 @@ h3 {
 
 
 #enviarBtn {
-  background-image: url('/img/botonEnviar.PNG');
+  background-image: url('../img/botonEnviar.png');
   font-family: 'Roboto', sans-serif;
   text-decoration: none;
   font-size: 24px;
@@ -669,7 +669,7 @@ label {
   color: #eca816;
   text-shadow: 2px 2px 2px rgb(3, 3, 3);
   font-size: 20px;
-  background-image: url('/img/back-page1-solar.png'); 
+  background-image: url('../img/back-page1-solar.png'); 
   background-size: cover; 
   background-color: rgba(255, 255, 255, 0.3);
 }
@@ -677,7 +677,7 @@ label {
   color: #eca816;
   text-shadow: 2px 2px 2px rgb(3, 3, 3);
   font-size: 20px;
-  background-image: url('/img/back-page1-solar.png'); 
+  background-image: url('../img/back-page1-solar.png'); 
   background-size: cover; 
   background-color: rgba(255, 255, 255, 0.3);
 }
@@ -686,7 +686,7 @@ label {
   color: #eca816;
   text-shadow: 2px 2px 2px rgb(3, 3, 3);
   font-size: 20px;
-  background-image: url('/img/back-page1-solar.png'); 
+  background-image: url('../img/back-page1-solar.png'); 
   background-size: cover; 
   background-color: rgba(255, 255, 255, 0.3);
 }
@@ -695,7 +695,7 @@ label {
   color: #eca816;
   text-shadow: 2px 2px 2px rgb(3, 3, 3);
   font-size: 20px;
-  background-image: url('/img/back-page1-solar.png'); 
+  background-image: url('../img/back-page1-solar.png'); 
   background-size: cover; 
   background-color: rgba(255, 255, 255, 0.3);
 }
@@ -725,8 +725,13 @@ textarea {
 }
 
 footer {
-  background-color: black;
-  height: 100vh;
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 20px 0; 
+    position: relative;
+    bottom: 0;
+    width: 100%;
 }
 
 h3 {
@@ -790,7 +795,7 @@ h3 {
   position: absolute;
   transition: all 1s cubic-bezier(0.645, 0.045, 0.355, 1);
   background: #ff000000;
-  background-image: url("/img/imageTano.png");
+  background-image: url("../img/imageTano.png");
   background-size: cover;
 }
 
@@ -800,7 +805,7 @@ h3 {
   position: absolute;
   transition: all 1s cubic-bezier(0.645, 0.045, 0.355, 1);
   background: #ff000000;
-  background-image: url("/img/imagenMarcho.png");
+  background-image: url("../img/imagenMarcho.png");
   background-size: cover;
 }
 
@@ -810,7 +815,7 @@ h3 {
   position: absolute;
   transition: all 1s cubic-bezier(0.645, 0.045, 0.355, 1);
   background: #ff000000;
-  background-image: url("/img/imagenMati.png");
+  background-image: url("../img/imagenMati.png");
   background-size: cover;
 }
 
@@ -820,7 +825,7 @@ h3 {
   position: absolute;
   transition: all 1s cubic-bezier(0.645, 0.045, 0.355, 1);
   background: #ff000000;
-  background-image: url("/img/imagenFede.png");
+  background-image: url("../img/imagenFede.png");
   background-size: cover;
 }
 
@@ -830,7 +835,7 @@ h3 {
   position: absolute;
   transition: all 1s cubic-bezier(0.645, 0.045, 0.355, 1);
   background: #ff000000;
-  background-image: url("/img/imagenPablo.png");
+  background-image: url("../img/imagenPablo.png");
   background-size: cover;
 }
 
@@ -840,7 +845,7 @@ h3 {
   position: absolute;
   transition: all 1s cubic-bezier(0.645, 0.045, 0.355, 1);
   background: #ff000000;
-  background-image: url("/img/imagenMauri.png");
+  background-image: url("../img/imagenMauri.png");
   background-size: cover;
 }
 
