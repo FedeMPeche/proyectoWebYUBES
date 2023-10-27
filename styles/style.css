@@ -1,5 +1,5 @@
 /* Estilos para pantallas pequeñas */
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     body {
       overflow-x: hidden;
     }
@@ -57,11 +57,6 @@
       font-size: 36px; 
       margin-top: 20px; 
     }
-
-    .contenedorTarjetas {
-      display: none !important;
-    }
-    
     
     #toPage1 {
       display: none;
@@ -192,6 +187,21 @@
     }
   }
 
+@media (max-width: 1435px) {
+  .contenedorTarjetas {
+    display: none !important;
+  }
+
+  .integrantes {
+    visibility: visible !important;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    display: flex;
+    justify-content: center;
+  }
+
+}
+
 
 /* Define la animación de desvanecimiento gradual */
 @keyframes fadeInOut {
@@ -212,6 +222,16 @@
   100% {
     transform: translateX(50%);
   }
+}
+
+#video-bienvenida {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1; /* Para que esté detrás del contenido */
 }
 
 body {
@@ -242,7 +262,7 @@ body {
 
 #page1{
   justify-content: flex;
-  background: url('../img/back-page1-solar.png') no-repeat center center;
+  background: url('../img/backgroundPage1DORADO.jpg') no-repeat center center;
   background-size: cover;
   width: 100%;
   height: 100vh;
@@ -250,6 +270,7 @@ body {
 
 
 #logoEdit1 {
+  margin-top: 20px;
   opacity: 0.55;
 }
 
@@ -260,26 +281,74 @@ body {
 .bienvenidos {
   font-family: 'Roboto', sans-serif;
   font-size: 35px;
-  color: rgb(209, 209, 209);
-  text-shadow: 1px 1px 10px rgb(241, 212, 114);
+  color: rgb(223, 219, 219);
+  text-shadow: 1px 1px 10px rgba(8, 8, 8, 0.718);
   margin-left: 26%;
   margin-top: -3%;
-  border: 1px black;
-  opacity: 0.75;
+  border: 1px rgb(248, 244, 244);
 
 }
 
-/* Establece el video para que esté oculto por defecto */
-.page1-video {
-  display: block;
+.discos {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.disco {
+  position: relative;
+  width: 58%;
+  margin-left: 10%;
+  margin-top: 5%;
+}
+
+.imagen {
+  background-size: cover;
+  background-position: center center;
+  width: 65%;
+  height: 400px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.menu {
   position: absolute;
-  min-height: 100%;
-  min-width: 100%;
-  z-index: -1;
+  top: 0;
+  border: 1px solid black;
+  border-radius: 5px;
+  right: -400px;
+  width: 300px;
+  height: 100%;
+  background: radial-gradient(circle, rgba(242, 129, 30, 0.3) 0%, rgba(236, 120, 12, 0.3) 29%, rgba(240, 8, 114, 0.3) 68%);
+  color: white;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: right 0.3s;
+  z-index: 1;
 }
 
-.page:not(#page1) .page1-video {
-  display: none; 
+.pMenu {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  line-height: 1;
+  text-shadow: 2px 2px 5px black;
+}
+
+.disco:hover .imagen {
+  transform: scale(1.1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.disco:hover .menu {
+  display: flex;
+  right: 0;
+}
+
+.disco:not(:hover) .menu {
+  right: -300px;
 }
 
 .novedades {
@@ -297,6 +366,7 @@ body {
   --facebook: #3b5999;
   --instagram: #c90f5c;
   --youtube: #bd081c;
+  --spotify: #047a04;
 }
 
 /* Estilos para los botones "toPage1", "toPage2" y "toPage3" */
@@ -411,6 +481,10 @@ body {
   background-color: var(--facebook);
 }
 
+.buttons #spotify:hover{
+  background-color: var(--spotify);
+}
+
 /* .shows {
   margin-top: 250px;
   min-width: 300px;
@@ -478,7 +552,7 @@ h3 {
   background-color: rgba(0, 0, 0, 0);
   color: rgb(3, 3, 3);
   font-family: 'Roboto', sans-serif;
-  font-size: 20px;
+  font-size: 24px;
   text-align: center;
 }
 
@@ -550,34 +624,6 @@ h3 {
   background-color: rgb(13, 172, 13);
 }
 
-#botonContacto {
-  background-image: url('../img/botonFormulario2.png');
-  background-size: cover; 
-  font-family: 'Roboto', sans-serif;
-  color: rgb(241, 212, 114) !important;
-  text-shadow: 2px 2px 3px black !important;
-  height: 55px;
-  text-align: center;
-  border: none;
-  border-radius: 25px; 
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5); 
-  cursor: pointer; 
-  transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
-  font-size: 20px;
-  padding: 10px 20px;
-  display: flex;
-  margin-left: 6%;
-  margin-bottom: 10px;
-  margin-top: 20px;
-  border-radius: 5px;
-}
-
-#botonContacto:hover {
-  color: rgb(253, 252, 249) !important;
-  text-shadow: 2px 2px 3px black !important;
-  transform: translateY(-3px); 
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
-}
 
 .tituloFormulario {
   border-color: solid black;
@@ -624,7 +670,6 @@ h3 {
 
 
 #enviarBtn {
-  background-image: url('../img/botonEnviar.png');
   font-family: 'Roboto', sans-serif;
   text-decoration: none;
   font-size: 24px;
@@ -733,6 +778,7 @@ h3 {
 }
 
 .integrantes {
+  visibility: hidden;
   font-family: 'Roboto', sans-serif;
   color: white;
   display: flex;
@@ -880,11 +926,6 @@ h3 {
 .detalle.expandida {
   height: 100%; /* Altura completa */
   transform: translateY(0); /* Muestra completamente el detalle */
-}
-
-
-#contacto-formulario {
-  display: none;
 }
 
 /* LOGOS CONTACTO PAGE 3 */

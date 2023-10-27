@@ -1,5 +1,6 @@
 `use strict`;
 
+
 // const audioPlayer = document.getElementById('audio-player');
 
 // audioPlayer.addEventListener('play', () => {
@@ -50,6 +51,20 @@
 // nextButton.addEventListener('click', playNext);
 // prevButton.addEventListener('click', playPrev);
 
+// Espera a que el documento esté listo
+document.addEventListener('DOMContentLoaded', function () {
+  // Muestra el video de bienvenida
+  var videoBienvenida = document.getElementById('video-bienvenida');
+  videoBienvenida.style.display = 'block';
+
+  // Espera unos segundos (por ejemplo, 5 segundos)
+  setTimeout(function () {
+    // Oculta el video de bienvenida
+    videoBienvenida.style.display = 'none';
+  }, 10000); // 5000 milisegundos = 5 segundos
+});
+
+
 function scrollToPage(pageNumber) {
   const page = document.getElementById(`page${pageNumber}`);
   page.scrollIntoView({ behavior: "smooth" });
@@ -90,18 +105,6 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 });
 
-
-// Función para mostrar u ocultar el formulario de contacto
-function toggleContactForm() {
-  var contactoForm = document.getElementById("contacto-formulario");
-  
-  // Si el formulario está oculto, lo mostramos; si está visible, lo ocultamos
-  if (contactoForm.style.display === "none" || !contactoForm.style.display) {
-    contactoForm.style.display = "block";
-  } else {
-    contactoForm.style.display = "none";
-  }
-}
 
 // Obtén todas las tarjetas
 const tarjetas = document.querySelectorAll('.tarjetas');
