@@ -20,7 +20,7 @@
   }
 
   .menu {
-    visibility: hidden;
+    visibility: hidden !important;
   }
   .disco{
     width: 200px !important;
