@@ -122,3 +122,6 @@ tarjetas.forEach((tarjeta) => {
     });
 });
 
+
+
+
