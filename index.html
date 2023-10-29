@@ -53,6 +53,21 @@
                 <a href="https://open.spotify.com/intl-es/album/2xDcMNr4xA2bGOUxJMXZ2E" target="_blank">
                 <div class="imagen" style="background-image: url('../img/destinoA.png');"></div>
                 <div class="menu" id="menu1">
+                  <p class="pMenu"><strong>01- Bailando entre las nubes</strong></p>
+                  <p class="pMenu"><strong>02- El espectador</strong></p>
+                  <p class="pMenu"><strong>03- En el fondo del bar</strong></p>
+                  <p class="pMenu"><strong>04- Llevame</strong></p>
+                  <p class="pMenu"><strong>05- No pares de brillar</strong></p>
+                  <p class="pMenu"><strong>06- Pecho Frío</strong></p>
+                  <p class="pMenu"><strong>07- Robotizado</strong></p>
+                  <p class="pMenu"><strong>08- Sueños</strong></p>
+                  <p class="pMenu">CLICK PARA ESCUCHAR</p>
+                </div></a>
+              </div>
+              <div class="disco">
+                <a href="https://open.spotify.com/intl-es/album/2xDcMNr4xA2bGOUxJMXZ2E" target="_blank">
+                <div class="imagen" style="background-image: url('../img/destinoB.png');" id="imagen2"></div>
+                <div class="menu" id= "menu2">
                   <p class="pMenu"><strong>01- Meditare</strong></p>
                   <p class="pMenu"><strong>02- Rutero</strong></p>
                   <p class="pMenu"><strong>03- Naufragio</strong></p>
@@ -64,22 +79,7 @@
                   <p class="pMenu"><strong>09- Portuguesa</strong></p>
                   <p class="pMenu"><strong>10- Es tarde</strong></p>
                   <p class="pMenu">CLICK PARA ESCUCHAR</p>
-                </div></a>
-              </div>
-              <div class="disco">
-                <a href="https://open.spotify.com/intl-es/album/2xDcMNr4xA2bGOUxJMXZ2E" target="_blank">
-                <div class="imagen" style="background-image: url('../img/destinoB.png');" id="imagen2"></div>
-                <div class="menu" id= "menu2">
-                  <p class="pMenu"><strong>01- Bailando entre las nubes</strong></p>
-                  <p class="pMenu"><strong>02- El espectador</strong></p>
-                  <p class="pMenu"><strong>03- En el fondo del bar</strong></p>
-                  <p class="pMenu"><strong>04- Llevame</strong></p>
-                  <p class="pMenu"><strong>05- No pares de brillar</strong></p>
-                  <p class="pMenu"><strong>06- Pecho Frío</strong></p>
-                  <p class="pMenu"><strong>07- Robotizado</strong></p>
-                  <p class="pMenu"><strong>08- Sueños</strong></p>
-                  <p class="pMenu">CLICK PARA ESCUCHAR</p>
-
+                  
                 </div></a>
               </div>
             </div>
@@ -175,7 +175,7 @@
         <h1 class="tituloFormulario">FORMULARIO DE CONTACTO</h1>
         <div class="contacto" id="contacto-formulario">
           <div class="contact-form">
-            <form id="formularioContacto">
+            <form id="formularioContacto" action="procesar_formulario.php" method="post">
               <div class="form-group">
                 <label for="nombre"><strong>NOMBRE:</strong></label>
                 <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
