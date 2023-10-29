@@ -13,7 +13,7 @@
 
 }
 
-@media screen and (min-width: 458px) and (max-width: 920px) {
+@media screen and (min-width: 458px) and (max-width: 720px) {
 
   #page1 {
     background: url('../img/logo.png') no-repeat center center;
