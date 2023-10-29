@@ -21,9 +21,15 @@
 
   <!------------------------ PAGINA 1 -------------------------------------------------->
 
-  <video id="video-bienvenida" autoplay muted loop>
-    <source src="../videoBienvenida/background-video-1920232323adw.mp4" type="video/mp4">
-  </video>
+  <!-- <video id="video-bienvenida" autoplay muted loop>
+    <source src="../videobienvenida/VideoBienvenida.mp4" type="video/mp4">
+  </video> -->
+
+  <div id="video-container">
+    <video id="video-bienvenida" autoplay muted loop>
+      <source src="../videoBienvenida/FondoPage1.mp4" type="video/mp4">
+    </video>
+  </div>
 <div class="container-fluid">
     <div class ="page" id="page1">
       <h2 class="novedades"><strong>SEGUI LAS NOVEDADES EN NUESTRAS REDES SOCIALES</strong></h2>
@@ -42,14 +48,15 @@
           </div>
           <br>
 
-            <div class ="bienvenidos">BIENVENIDOS</div>
+            <!-- <div class ="bienvenidos">BIENVENIDOS</div> -->
+            <br><br><br><br><br>
             
 
             <div class="discos">
               <div class="disco">
                 <a href="https://open.spotify.com/intl-es/album/2xDcMNr4xA2bGOUxJMXZ2E" target="_blank">
                 <div class="imagen" style="background-image: url('../img/destinoA.png');"></div>
-                <div class="menu">
+                <div class="menu" id="menu1">
                   <p class="pMenu"><strong>01- Meditare</strong></p>
                   <p class="pMenu"><strong>02- Rutero</strong></p>
                   <p class="pMenu"><strong>03- Naufragio</strong></p>
@@ -65,8 +72,8 @@
               </div>
               <div class="disco">
                 <a href="https://open.spotify.com/intl-es/album/2xDcMNr4xA2bGOUxJMXZ2E" target="_blank">
-                <div class="imagen" style="background-image: url('../img/destinoB.png');"></div>
-                <div class="menu">
+                <div class="imagen" style="background-image: url('../img/destinoB.png');" id="imagen2"></div>
+                <div class="menu" id= "menu2">
                   <p class="pMenu"><strong>01- Bailando entre las nubes</strong></p>
                   <p class="pMenu"><strong>02- El espectador</strong></p>
                   <p class="pMenu"><strong>03- En el fondo del bar</strong></p>

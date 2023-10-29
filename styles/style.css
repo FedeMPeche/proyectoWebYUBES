@@ -224,15 +224,15 @@
   }
 }
 
-#video-bienvenida {
+/* #video-bienvenida {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   object-fit: cover;
-  z-index: 1; /* Para que esté detrás del contenido */
-}
+  z-index: 1; 
+} */
 
 body {
   margin: 0;
@@ -253,19 +253,27 @@ body {
 }
 
 .container-fluid {
-  background-color: black;
   width: 100%;
   padding: 0;
   margin-left: 0;
   margin-right: 0;
 }
 
+#video-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1; 
+}
+
 #page1{
   justify-content: flex;
-  background: url('../img/backgroundPage1DORADO.jpg') no-repeat center center;
   background-size: cover;
   width: 100%;
   height: 100vh;
+  z-index: 1;
 }
 
 
@@ -275,10 +283,11 @@ body {
 }
 
 #logoEdit2 {
+  margin-top: -2%;
   opacity: 0.85;
 }
 
-.bienvenidos {
+/* .bienvenidos {
   font-family: 'Roboto', sans-serif;
   font-size: 35px;
   color: rgb(223, 219, 219);
@@ -287,29 +296,35 @@ body {
   margin-top: -3%;
   border: 1px rgb(248, 244, 244);
 
-}
+} */
 
 .discos {
+  margin-top: 10%;
+  margin-left: 5%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 80%;
+  width: 90%;
   margin: 0 auto;
 }
 
 .disco {
   position: relative;
-  width: 58%;
-  margin-left: 10%;
-  margin-top: 5%;
+  width: 350px;
+  height: 350px;
+  margin: 0;
 }
 
 .imagen {
   background-size: cover;
   background-position: center center;
-  width: 65%;
-  height: 400px;
+  width: 100%;
+  height: 100%;
   transition: transform 0.3s, box-shadow 0.3s;
+}
+
+#imagen2 {
+  margin-left: 15%;
 }
 
 .menu {
@@ -317,9 +332,9 @@ body {
   top: 0;
   border: 1px solid black;
   border-radius: 5px;
-  right: -400px;
+  right: -300px;
   width: 300px;
-  height: 100%;
+  height: 120%;
   background: radial-gradient(circle, rgba(242, 129, 30, 0.3) 0%, rgba(236, 120, 12, 0.3) 29%, rgba(240, 8, 114, 0.3) 68%);
   color: white;
   display: none;
@@ -328,6 +343,14 @@ body {
   justify-content: center;
   transition: right 0.3s;
   z-index: 1;
+}
+
+#menu1 {
+  left: 300px;
+}
+
+#menu2 {
+  right: 200px;
 }
 
 .pMenu {
