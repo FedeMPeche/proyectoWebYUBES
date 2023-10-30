@@ -13,22 +13,36 @@
 
 }
 
-@media screen and (min-width: 458px) and (max-width: 720px) {
+@media screen and (max-width: 720px) {
+  #video-container {
+    display: none !important;
+  }
 
+  body {
+    background-color: black;
+    overflow-x: hidden;
+  }
+
+  #logoedit2 {
+    width: 500px;
+  }
+  
   #page1 {
     background: url('../img/logo.png') no-repeat center center;
   }
 
-  .menu {
-    visibility: hidden !important;
-  }
-  .disco{
-    width: 200px !important;
-    height: 200px !important;
+  .imagen {
+    display: flex;
+    width: 225px !important;
+    height: 225px !important;
   }
 
-  body {
-    overflow-x: hidden;
+  .menu {
+    visibility: hidden;
+  }
+  .disco{
+    width: 200px;
+    height: 200px;
   }
 
   #imagen2.imagen {
@@ -58,60 +72,6 @@
     overflow: hidden;
     animation: fadeInOut 7.5s ease-in-out infinite;
   }
-
-  #Logoedit2 {
-    width: 500px;
-  }
-
-  .container-fluid {
-    max-width: 100% !important;
-  }
-
-  .buttons {
-    margin-top: 20px; 
-  }
-
-  .buttons a {
-    font-size: 24px; 
-    margin: 10px;
-  }
-
-  #logo {
-    margin-top: 20px; 
-  }
-
-  #logoEdit1 {
-    max-width: 100%; 
-  }
-
-  #logoEdit2 {
-    max-width: 100%;
-  }
-
-  /* .bienvenidos {
-    font-size: 36px; 
-    margin-top: 20px; 
-  } */
-  
-
-  /* #mute-button {
-    position: fixed;
-    bottom: 150px;
-    right: 20px; 
-    z-index: 999;
-    background-color: rgba(0, 0, 0, 0.473);
-    font-size: 10px;
-    width: 10%;
-    border-radius: 5px;
-    min-width: 10%;
-  }
-   */
-   /* Estilos para la página 2 */
-
-  h1 {
-    font-size: 18px;
-  }
-
 
   #p-cartelera {
     font-size: 18px; 
@@ -147,7 +107,7 @@
   }
 
   .tituloFormulario {
-    font-size: 24px !important;
+    font-size: 24px;
     font-family: 'Roboto',sans-serif;
     text-shadow: 2px 2px 2px black;
     color: #ffffff;
@@ -160,28 +120,24 @@
 
   .tituloConectate {
     display: flex;
-    justify-content: center !important;
-    font-size: 24px !important;
+    font-size: 16px !important;
     font-family: 'Roboto',sans-serif;
     text-shadow: 2px 2px 2px black;
     color: #ffffff;
-    margin-top: 20px !important;
+    margin-top: 30px !important;
+    width: 350px !important;
     max-width: 100% !important;
     margin-left: 12% !important;
+    height: 81px;
     border-radius: 5px;
     animation: fadeInOut 7.5s ease-in-out infinite;
   }
 
   .buttons-page3 {
-    margin-top: 20px !important;
     margin-left: 12% !important;
-    justify-content: space-evenly !important;
+    margin-top: 20px;
+    justify-content: space-between;
   }
-
-  .btn-primary {
-    height: 30px !important;
-  }
-
 
   #p-page3 {
     display: none;
@@ -192,24 +148,17 @@
     background-color: rgba(241, 176, 36, 0.253);
     border-radius: 10px; 
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    width: 400px !important;
+    width: 350px;
     margin-bottom: 20px; 
   }
-
-  #botonContacto {
-    max-width: 350 !important;
-    font-size: 18px !important;
-  }
   
-  .container-fluid {
-    background-color: black;
-  }
 
   footer {
     margin-bottom: 0;
     margin-top: 20%;
   }
 }
+
 
 /* Define la animación de desvanecimiento gradual */
 @keyframes fadeInOut {
