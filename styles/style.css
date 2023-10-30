@@ -31,18 +31,13 @@
     background: url('../img/logo.png') no-repeat center center;
   }
 
-  .imagen {
-    display: flex;
-    width: 225px !important;
-    height: 225px !important;
-  }
-
   .menu {
     visibility: hidden;
   }
+
   .disco{
-    width: 200px;
-    height: 200px;
+    width: 200px !important;
+    height: 200px !important;
   }
 
   #imagen2.imagen {
@@ -84,6 +79,19 @@
     text-align: left; 
   }
 
+  #formularioContacto {
+    margin-left: -10% !important;
+    max-width: 350px !important;
+  }
+
+  .form-group {
+    max-width: 375px !important;
+    background-color: rgba(241, 176, 36, 0.253);
+    border-radius: 10px; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px; 
+  }
+
   label {
     font-size: 18px;
   }
@@ -120,7 +128,7 @@
 
   .tituloConectate {
     display: flex;
-    font-size: 16px !important;
+    font-size: 24px !important;
     font-family: 'Roboto',sans-serif;
     text-shadow: 2px 2px 2px black;
     color: #ffffff;
@@ -142,16 +150,6 @@
   #p-page3 {
     display: none;
   }
-
-  
-  .form-group {
-    background-color: rgba(241, 176, 36, 0.253);
-    border-radius: 10px; 
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    width: 350px;
-    margin-bottom: 20px; 
-  }
-  
 
   footer {
     margin-bottom: 0;
@@ -932,7 +930,6 @@ i {
   background-color: #0077B5; 
   color: #fff; 
 }
-
 
 
 
