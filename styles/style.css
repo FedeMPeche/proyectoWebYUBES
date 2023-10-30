@@ -129,21 +129,6 @@
     animation: fadeInOut 7.5s ease-in-out infinite;
   }
 
-  .tituloConectate {
-    justify-content: center;
-    font-size: 12px !important;
-    font-family: 'Roboto',sans-serif;
-    text-shadow: 2px 2px 2px black;
-    color: #ffffff;
-    margin-top: 30px !important;
-    width: 350px !important;
-    max-width: 100% !important;
-    margin-left: 12% !important;
-    height: 81px;
-    border-radius: 5px;
-    animation: fadeInOut 7.5s ease-in-out infinite;
-  }
-
   .buttons-page3 {
     width: 350px !important;
     margin-left: 12% !important;
