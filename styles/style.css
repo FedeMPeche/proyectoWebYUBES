@@ -26,18 +26,38 @@
     background-color: black;
   }
 
+  .buttons #instagram {
+    background-color: var(--instagram);
+  }
+
+  .buttons #youtube {
+    background-color: var(--youtube);
+  }
+
+  .buttons #spotify {
+    background-color: var(--spotify);
+  }
+
+  .buttons #facebook {
+    background-color: var(--facebook);
+  }
+
   #logoedit2 {
     width: 350px;
   }
   
   #page1 {
-    background: url('../img/backgroundPage1DORADO.jpg') no-repeat center center;
+    background: url('../img/backPage1Mobile.png') no-repeat center center;
   }
 
   .menu {
     visibility: hidden;
   }
 
+  .discos {
+    margin-top: 40% !important;
+
+  }
   .disco{
     width: 180px !important;
     height: 180px !important;
@@ -53,7 +73,7 @@
     height: 100vh; 
     text-align: center;
   }
-
+  
   .novedades {
     padding: 15px;
     font-size: 15px;
@@ -112,6 +132,7 @@
     width: 375px !important;
     height: 60px;
     border-radius: 10px;
+    margin-left: 3%;
   }
 
   .tituloFormulario {
@@ -127,8 +148,8 @@
   }
 
   .buttons-page3 {
-    width: 350px !important;
-    margin-left: 12% !important;
+    width: 100%;
+    margin-left: 5%;
     margin-top: 20px;
     justify-content: space-between;
   }
@@ -408,7 +429,6 @@ body {
   margin-top: 3%;
   display: flex;
   justify-content: space-evenly;
-  margin-left: 45%;
 }
 
 .buttons-page3 a {
@@ -565,7 +585,7 @@ h3 {
   background-size: cover;
   max-width: 100%;
   width: 100%;
-  height: 100vh;
+  height: 1080px;
 }
 
 /* FORMULARIO DE CONTACTO */
@@ -611,9 +631,9 @@ h3 {
   text-shadow: 2px 2px 2px black;
   color: #ffffff;
   font-size: 30px;
-  margin-left: 60%;
-  margin-top: -13%;
-  max-width: 23%;
+  margin: 0 auto;
+  max-width: 100%;
+  text-align: center;
   animation: fadeInOut 5s ease-in-out infinite;
 }
 
@@ -812,16 +832,6 @@ h3 {
   background-size: cover;
 }
 
-.imagenMati {
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  transition: all 1s cubic-bezier(0.645, 0.045, 0.355, 1);
-  background: #ff000000;
-  background-image: url("../img/imagenMati.png");
-  background-size: cover;
-}
-
 .imagenFede {
   height: 100%;
   width: 100%;
@@ -917,6 +927,12 @@ i {
   background-color: #0077B5; 
   color: #fff; 
 }
+
+
+
+
+
+
 
 
 
