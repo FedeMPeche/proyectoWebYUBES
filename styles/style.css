@@ -39,8 +39,8 @@
   }
 
   .disco{
-    width: 190px !important;
-    height: 190px !important;
+    width: 180px !important;
+    height: 180px !important;
   }
 
   #imagen2.imagen {
@@ -142,9 +142,10 @@
 
   footer {
     margin-bottom: 0;
-    margin-top: 35%;
+    margin-top: 55%;
   }
 }
+
 
 
 /* Define la animación de desvanecimiento gradual */
