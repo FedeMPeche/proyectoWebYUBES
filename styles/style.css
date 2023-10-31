@@ -47,7 +47,7 @@
   }
   
   #page1 {
-    background: url('../img/backPage1Mobile.png') no-repeat center center;
+    background: url('../img/LogoPage1MobileTransparente.jpeg') no-repeat center center;
   }
 
   .menu {
@@ -109,7 +109,7 @@
     border-radius: 10px; 
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     margin-bottom: 20px; 
-    margin-left: 3%;  
+    margin-left: 8%;  
   }
 
   label {
@@ -132,7 +132,7 @@
     width: 375px !important;
     height: 60px;
     border-radius: 10px;
-    margin-left: 3%;
+    margin-left: 8%;
   }
 
   .tituloFormulario {
@@ -470,60 +470,6 @@ body {
   background-color: var(--spotify);
 }
 
-/* .shows {
-  margin-top: 250px;
-  min-width: 300px;
-  display: flex;
-  justify-content: space-around;
-}
-
-#botonShows {
-  font-family: 'Roboto', sans-serif;
-  text-decoration: none;
-  font-size: 12px;
-  width: 55px;
-  height: 55px;
-  line-height: 55px;
-  text-align: center;
-  background: #ffffff;
-  color: #f1f1f1;
-  border-radius: 20%;
-  border: 1px solid black;
-  box-shadow: 2px 2px 5px rgba(0, 0, 0, .5);
-  transition: all .4s ease-in-out;
-}
-
-#botonShows {
-  transform: translateY(-3px) scale(1.5);
-  box-shadow: 0 5px 5px 0px rgba(0, 0, 0, .4);
-}*/
-
-/* #iconoDown {
-  height: 50px;
-  width: 50px;
-}
-
-
-.music-player {
-    width: 100%;
-    margin: auto;
-    text-align: center;
-    padding-top: 3%;
-    padding-left: 80%;
-  }
-
-.controls {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 0px;
-  }
-  
-.controls button {
-    margin: 0 10px;
-} */
-
-
 .header {
   justify-content: center;
   width: 80%;
@@ -612,18 +558,18 @@ h3 {
 
 .tituloFormulario {
   border-color: solid black;
-  margin-left: 4%;
+  margin-left: 14%;
   text-shadow: 0 0 5px black;
   font-family: 'Roboto',sans-serif;
   text-shadow: 2px 2px 2px black;
   color: #ffffff;
-  font-size: 30px;
-  max-width: 26.5%;
-  white-space: nowrap;
-  border-radius: 5px;
-  animation: fadeInOut 5s ease-in-out infinite;
   margin-bottom: 20px;
   margin-top: 50px;
+  font-size: 30px;
+  max-width: 50%;
+  border-radius: 5px;
+  animation: fadeInOut 5s ease-in-out infinite;
+ 
 }
 
 .tituloConectate {
@@ -894,14 +840,14 @@ h3 {
 }
 
 .tarjetas.expandida {
-  width: 600px; /* Ancho expandido */
-  height: 400px; /* Altura expandida */
-  cursor: auto; /* Elimina el cursor de puntero al estar expandida */
+  width: 600px; 
+  height: 400px; 
+  cursor: auto; 
 }
 
 .detalle.expandida {
-  height: 100%; /* Altura completa */
-  transform: translateY(0); /* Muestra completamente el detalle */
+  height: 100%; 
+  transform: translateY(0);
 }
 
 /* LOGOS CONTACTO PAGE 3 */
