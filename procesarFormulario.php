@@ -1,24 +1,32 @@
 <?php
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $nombre = $_POST["nombre"];
+    $name = $_POST["nombre"];
     $email = $_POST["email"];
-    $telefono = $_POST["telefono"];
-    $mensaje = $_POST["mensaje"];
+    $subject = $_POST["telefono"];
+    $message = $_POST["mensaje"];
+    error_log(print_r($_POST, true));
 
-    $to = "yubesrock@gmail.com";
-    $subject = "Nuevo mensaje de contacto de $nombre";
-    $message = "Nombre: $nombre\n";
-    $message .= "Email: $email\n";
-    $message .= "Teléfono: $telefono\n";
-    $message .= "Mensaje:\n$mensaje";
+    // Validación de reCAPTCHA
+    $secretAPIkey = '6Lc43eUoAAAAAEth8I45VAjLymQtAfzoZT0fCJRc';
+    $verifyResponse = file_get_contents('https://www.google.com/recaptcha/api/siteverify?secret=' . $secretAPIkey . '&response=' . $_POST['g-recaptcha-response']);
+    $response = json_decode($verifyResponse);
 
-    $headers = "From: $email" . "\r\n" .
-        "Reply-To: $email" . "\r\n" .
-        "X-Mailer: PHP/" . phpversion();
+    if ($response->success) {
+        $to = "yubesrock@gmail.com";
 
-    if (mail($to, $subject, $message, $headers)) {
-        echo "¡Gracias por tu mensaje! Te contactaremos pronto.";
+        $response = array(
+            "status" => "success",
+            "message" => "¡Muchas gracias! Pronto nos pondremos en contacto. También puedes visitar nuestras redes sociales para recibir una respuesta rápida. ¡Saludos!"
+        );
     } else {
-        echo "Hubo un error al enviar el mensaje. Por favor, intenta de nuevo más tarde.";
+        $response = array(
+            "status" => "error",
+            "message" => "Verificación de reCAPTCHA fallida. Inténtalo de nuevo."
+        );
     }
+
+    // Devuelve la respuesta como JSON
+    header('Content-Type: application/json');
+    echo json_encode($response);
 }
+?>
