@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Página de Yubes Rock</title>
+  <title>Yubes Rock</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
@@ -83,67 +83,7 @@
                 </div></a>
               </div>
             </div>
-
-              <!-- <div class="contenedorTarjetas">
-                <div class="tarjetas">
-                  <div class="imagenTano">   
-                      <div class="detalle">   
-                          <p class="tituloTarjetaTano">Adriano 'Tano' Pagliacci</p>
-                          <p class="contenidoTarjetaTano">Voz y Guitarra</p>
-                      </div>
-                  </div>
-              </div>
-              <div class="tarjetas">
-                  <div class="imagenMarcho">   
-                      <div class="detalle">   
-                          <p class="tituloTarjetaTano">Martín 'Marcho' del Río</p>
-                          <p class="contenidoTarjetaTano">Guitarra</p>
-                      </div>
-                  </div>
-              </div>
-
-              <div class="tarjetas">
-                  <div class="imagenMati">   
-                      <div class="detalle">   
-                          <p class="tituloTarjetaTano">Matias Romera</p>
-                          <p class="contenidoTarjetaTano">Bateria</p>
-                      </div>
-                  </div>
-              </div>
-              <div class="tarjetas">
-                  <div class="imagenFede">   
-                      <div class="detalle">   
-                          <p class="tituloTarjetaTano">Federico Peche</p>
-                          <p class="contenidoTarjetaTano">Bajo</p>
-                      </div>
-                  </div>
-              </div>
-
-              <div class="tarjetas">
-                  <div class="imagenPablo">   
-                      <div class="detalle">   
-                          <p class="tituloTarjetaTano">Pablo Garcés</p>
-                          <p class="contenidoTarjetaTano">Teclado</p>
-                      </div>
-                  </div>
-              </div>
-
-              <div class="tarjetas">
-                  <div class="imagenMauri">   
-                      <div class="detalle">   
-                          <p class="tituloTarjetaTano">Mauricio Poblete</p>
-                          <p class="contenidoTarjetaTano">Percusión</p>
-                      </div>
-                  </div>
-              </div>
-            </div> -->
             </br>
-              
-            <!-- <button onclick="toggleMute()" id="mute-button" class="btn btn-primary"><i class="bi bi-mic-mute"></i></button> -->
-            <!-- <div class="botonesToDoPage1">
-            <button onclick="scrollToPage(2)" id="toPage2">Ir a "SHOWS"</button>
-            <button onclick="scrollToPage(3)" id="toPage3">Ir a "CONTACTO"</button>
-          </div> -->
     </div>
 
 
@@ -157,42 +97,41 @@
             <section class="cartelera">
               <h1 class="tituloCartelera">CARTELERA DE SHOWS</h1>
               </br>
-              <p id ="p-cartelera">Aquí apareceran los próximos shows. Atento!
+              <p id ="p-cartelera">Aqui apareceran los priximos shows. Atento!
               </p>
             </section>
     </div>
 
   <!--------------------------------- PÁGINA 3 ------------------------------------------>
     <div class="page" id="page3">
-      <br>
-      <!-- <div class="botonesToDoPage3">
-        <button onclick="scrollToPage(1)" id="toPage1">Volver al "INICIO"</button>
-        <button onclick="scrollToPage(2)" id="toPage2">Volver a "SHOWS"</button>
-      </div> -->
-    </br>
+      <br> </br>
+
       <!-- Contenido de la tercer página -->
       <section class="contacto">
-        <h1 class="tituloFormulario">FORMULARIO DE CONTACTO</h1>
+        <h1 class="tituloFormulario mt-5">FORMULARIO DE CONTACTO</h1>
+        <div class="container mt-5">
         <div class="contacto" id="contacto-formulario">
           <div class="contact-form">
-            <form id="formularioContacto" action="procesarformulario.php" method="post">
+            <form id="formularioContacto">
               <div class="form-group">
                 <label for="nombre"><strong>NOMBRE:</strong></label>
                 <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
               </div>
-                <div class="form-group">
-                  <label for="email"><strong>CORREO ELECTRONICO:</strong></label>
-                  <input type="email" id="email" name="email" placeholder="Tu correo electrónico" required>
-                </div>
-                  <div class="form-group">
-                    <label for="telefono"><strong>TELÉFONO:</strong></label>
-                    <input type="text" id="telefono" name="telefono" placeholder="Tu teléfono para contactarnos" required>
-                  </div>
-                    <div class="form-group">
-                      <label for="mensaje"><strong>MENSAJE:</strong></label>
-                      <textarea id="mensaje" name="mensaje" placeholder="Tu mensaje" required></textarea>
-                    </div>
-                  <button type="submit" id="enviarBtn"><strong>ENVIAR MENSAJE</strong></button>
+              <div class="form-group">
+                <label for="email"><strong>CORREO ELECTRONICO:</strong></label>
+                <input type="email" id="email" name="email" placeholder="Tu correo electronico" required>
+              </div>
+              <div class="form-group">
+                <label for="telefono"><strong>TELEFONO:</strong></label>
+                <input type="text" id="telefono" name="telefono" placeholder="Tu telefono para contactarnos" required>
+              </div>
+              <div class="form-group">
+                <label for="mensaje"><strong>MENSAJE:</strong></label>
+                <textarea id="mensaje" name="mensaje" placeholder="Tu mensaje" required></textarea>
+              </div>
+              <div class="form-group">
+                <button class="g-recaptcha" name="g-recaptcha-response" data-sitekey="6Lc43eUoAAAAAABEXPZwlzaRnKmJ0jdxBlY4Eq3i" type="submit" id="enviarBtn"><strong>ENVIAR MENSAJE</strong></button>
+              </div>
             </form>
           </div>
             <h1 class="tituloConectate"> CONTACTATE CON UN CLICK</h1>
@@ -229,20 +168,11 @@
             <div class="tarjetas">
                 <div class="imagenMarcho">   
                     <div class="detalle">   
-                        <p class="tituloTarjetaTano">Martín 'Marcho' del Río</p>
+                        <p class="tituloTarjetaTano">Martin 'Marcho' del Rio</p>
                         <p class="contenidoTarjetaTano">Guitarra</p>
                     </div>
                 </div>
-            </div>
-
-            <!-- <div class="tarjetas">
-                <div class="imagenMati">   
-                    <div class="detalle">   
-                        <p class="tituloTarjetaTano">Matias Romera</p>
-                        <p class="contenidoTarjetaTano">Bateria</p>
-                    </div>
-                </div>
-            </div> -->
+              </div>
             <div class="tarjetas">
                 <div class="imagenFede">   
                     <div class="detalle">   
@@ -265,7 +195,7 @@
             <div class="tarjetas">
                 <div class="imagenPablo">   
                     <div class="detalle">   
-                        <p class="tituloTarjetaTano">Pablo Garcés</p>
+                        <p class="tituloTarjetaTano">Pablo Garces</p>
                         <p class="contenidoTarjetaTano">Teclado</p>
                     </div>
                 </div>
@@ -274,34 +204,15 @@
         </br></br>
               <p class="copy">&copy; 2023 Yubes Rock. Todos los derechos reservados.</p></br>
             </br></br></br></br>
-              <p class="copy">Página creada por Federico Peche.</>
+              <p class="copy">Pagina creada por Federico Peche.</>
               <p class="copy"><a href="https://www.linkedin.com/in/federicopch" target="_blank">LinkedIn</a></p>
         </div>
       </footer>
     </div>
-  
-  <!-- <section class="acercaDe">
-    <p>Hola, somos YUBES.</p>
-  </section> -->
-  <!-- <footer class="piePagina">
-        <div class="music-player">
-          <div class="controls">
-          <button id="prev-button">Anterior</button>
-          <button id="play-pause-button">Reproducir</button>
-          <button id="next-button">Siguiente</button>
-          </div>
-          <audio id="audio-player" controls>
-          <source src="/Bailando.wav" type="audio/mp3">
-          Tu navegador no soporta la reproducción de audio.
-          </audio>
-        </div>
-        <h3 class="lead">YUBES Rock, 2023. Todos los derechos reservados.</h3>
-</footer> -->
-
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
     <script src="script.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
-    
   </body>
 </html>
 
