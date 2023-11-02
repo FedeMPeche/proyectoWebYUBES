@@ -7,7 +7,6 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles/style.css">
-  
   <script>
     function scrollToPage(pageNumber) {
       var targetPage = document.getElementById("page" + pageNumber);
@@ -16,6 +15,7 @@
       }
     }
   </script>
+  <script src="https://www.google.com/recaptcha/api.js?render=6LdjeOYoAAAAAN3lH1tcA0PBRtFwvfN3Ub9PbF1r"></script>
 </head>
 <body>
 
@@ -50,7 +50,7 @@
 
             <div class="discos">
               <div class="disco">
-                <a href="https://open.spotify.com/intl-es/album/2xDcMNr4xA2bGOUxJMXZ2E" target="_blank">
+                <a href="https://open.spotify.com/album/1J7EEjvk4WpI7pUazFO6Ee" target="_blank">
                 <div class="imagen" style="background-image: url('img/destinoA.png');"></div>
                 <div class="menu" id="menu1">
                   <p class="pMenu"><strong>01- Bailando entre las nubes</strong></p>
@@ -79,11 +79,29 @@
                   <p class="pMenu"><strong>09- Portuguesa</strong></p>
                   <p class="pMenu"><strong>10- Es tarde</strong></p>
                   <p class="pMenu">CLICK PARA ESCUCHAR</p>
-                  
                 </div></a>
               </div>
             </div>
-            </br>
+            <br><br>
+            <h1 id="player-title">Reproductor de YUBES</h1>
+            <div id="song-info">
+              <p id="song-title"></p>
+            </div>
+            <div id="audio-controls">
+              <button id="previousButton">
+                  <img src="img/player-track-prev.png" alt="Cancion Previa">
+              </button>
+              <button id="playButton">
+                  <img src="img/player-play.png" alt="Reproducir">
+              </button>
+              <button id="pauseButton">
+                  <img src="img/player-pause.png" alt="Pausa">
+              </button>
+              <button id="nextButton">
+                  <img src="img/player-track-next.png" alt="Siguiente Cancion">
+              </button>
+          </div>
+            </br></br></br>
     </div>
 
 
@@ -108,7 +126,7 @@
 
       <!-- Contenido de la tercer página -->
       <section class="contacto">
-        <h1 class="tituloFormulario mt-5">FORMULARIO DE CONTACTO</h1>
+        <h1 class="tituloFormulario mt-5" id="titulo1Formulario">FORMULARIO DE CONTACTO</h1>
         <div class="container mt-5">
         <div class="contacto" id="contacto-formulario">
           <div class="contact-form">
@@ -134,7 +152,7 @@
               </div>
             </form>
           </div>
-            <h1 class="tituloConectate"> CONTACTATE CON UN CLICK</h1>
+            <h1 class="tituloFormulario mt-5" id="titulo2Formulario"> CONTACTATE CON UN CLICK</h1>
             <div class="buttons-page3">
               <a href="https://wa.me/+5492984685737" target="_blank" class="btn btn-success">
               <i class="bi bi-whatsapp"></i> WhatsApp
@@ -201,6 +219,7 @@
                 </div>
             </div>
           </div>
+          <div id="audio-container" style="display: none;"></div>
         </br></br>
               <p class="copy">&copy; 2023 Yubes Rock. Todos los derechos reservados.</p></br>
             </br></br></br></br>
@@ -209,8 +228,7 @@
         </div>
       </footer>
     </div>
-    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
-    <script src="script.js"></script>
+    <script src="/script.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
   </body>
