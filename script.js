@@ -1,13 +1,7 @@
 `use strict`;
 
-function scrollToPage(pageNumber) {
-  const page = document.getElementById(`page${pageNumber}`);
-  page.scrollIntoView({ behavior: "smooth" });
-}
-
-//------------------SEGURIDAD---------------------
 document.addEventListener("DOMContentLoaded", function () {
-  document.getElementById("contact-form").addEventListener("submit", function (event) {
+  document.querySelector("#formularioContacto").addEventListener("submit", function (event){
     event.preventDefault();
     const nombre = document.getElementById("nombre").value;
     const email = document.getElementById("email").value;
@@ -16,7 +10,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Realiza una solicitud de verificación al servidor antes de enviar el formulario
     grecaptcha.ready(function () {
-      grecaptcha.execute("6LdjeOYoAAAAAN3lH1tcA0PBRtFwvfN3Ub9PbF1r", { action: "submit" }).then((recaptchaToken) => {
+      grecaptcha.execute("6Ld8FuooAAAAAK1ceZUVisI8Bi-TaCSQU91-mYgk", { action: "submit" }).then((recaptchaToken) => {
         verifyRecaptcha(recaptchaToken)
           .then((recaptchaData) => {
             if (recaptchaData.success) {
@@ -36,7 +30,7 @@ document.addEventListener("DOMContentLoaded", function () {
   async function verifyRecaptcha(recaptchaToken) {
     const url = "https://www.google.com/recaptcha/api/siteverify";
     const data = {
-      secret: "6LdjeOYoAAAAAE6Sv63qqL-NwNDgFe8DrvVgtned", // Reemplaza con tu clave secreta
+      secret: "6Ld8FuooAAAAAJmCtPE3a71k1-8Px88-vXdqTZcR", // Reemplaza con tu clave secreta
       response: recaptchaToken,
     };
 
@@ -81,84 +75,29 @@ document.addEventListener("DOMContentLoaded", function () {
 
 const audioFiles = [
   '/audio/Bailando.mp3',
-  '/audio/De Reojo.wav',
-  '/audio/El Espectador.mp3',
-  '/audio/En el Fondo del Bar.mp3',
-  '/audio/Es Tarde.wav',
-  '/audio/La Maquina del Tiempo.wav',
+  '/audio/ElEspectador.mp3',
+  '/audio/EnelFondodelBar.mp3',
   '/audio/LLevame.mp3',
-  '/audio/Loveland.wav',
-  '/audio/Meditare.wav',
-  '/audio/Naufragio.wav',
-  '/audio/No Pares de Brillar.mp3',
-  '/audio/Pecho Frío.mp3',
-  '/audio/Portuguesa.wav',
+  '/audio/NoParesdeBrillar.mp3',
+  '/audio/PechoFrio.mp3',
   '/audio/Robotizado.mp3',
-  '/audio/Rutero.wav',
   '/audio/Sueños.mp3',
-  '/audio/Toxicar.wav',
-  '/audio/Vendedor de Ilusiones.wav',
+  '/audio/Meditare.mp3',
+  '/audio/Rutero.mp3',
+  '/audio/Naufragio.mp3',
+  '/audio/LaMaquinadelTiempo.mp3',
+  '/audio/VendedordeIlusiones.mp3',
+  '/audio/Loveland.mp3',
+  '/audio/Toxicar.mp3',
+  '/audio/DeReojo.mp3',
+  '/audio/Portuguesa.mp3',
+  '/audio/EsTarde.mp3',
 ];
 
 let audio;
 let currentSongIndex = 0;
-
-document.getElementById("playButton").addEventListener("click", function() {
-  if (!audio) {
-    audio = createAudioElements();
-    audio.play();
-    document.getElementById("playButton");
-  } else {
-    audio.play();
-  }
-});
-
-document.getElementById("pauseButton").addEventListener("click", function() {
-  if (audio) {
-    audio.pause();
-  }
-});
-
-document.getElementById("previousButton").addEventListener("click", function() {
-  currentSongIndex = (currentSongIndex - 1 + audioFiles.length) % audioFiles.length;
-  playSong();
-});
-
-document.getElementById("nextButton").addEventListener("click", function() {
-  currentSongIndex = (currentSongIndex + 1) % audioFiles.length;
-  playSong();
-});
-
-function createAudioElements() {
-  const audio = new Audio(audioFiles[currentSongIndex]);
-  audio.preload = "auto";
-  audio.addEventListener('ended', function() {
-    currentSongIndex = (currentSongIndex + 1) % audioFiles.length;
-    playSong();
-  });
-  return audio;
-}
-
-const songTitles = [
-  'Bailando entre las nubes',
-  'De Reojo',
-  'El Espectador',
-  'En el Fondo del Bar',
-  'Es Tarde',
-  'La Maquina del Tiempo',
-  'LLevame',
-  'Loveland',
-  'Meditare',
-  'Naufragio',
-  'No Pares de Brillar',
-  'Pecho Frío',
-  'Portuguesa',
-  'Robotizado',
-  'Rutero',
-  'Sueños',
-  'Toxicar',
-  'Vendedor de Ilusiones',
-];
+let isPaused = false;
+let audioPosition = 0;
 
 const playerTitle = document.getElementById('player-title');
 const songInfo = document.getElementById('song-info');
@@ -167,36 +106,82 @@ const playButton = document.getElementById('playButton');
 const pauseButton = document.getElementById('pauseButton');
 const previousButton = document.getElementById('previousButton');
 const nextButton = document.getElementById('nextButton');
-const titleWidth = songTitle.clientWidth; 
+const titleWidth = songTitle.clientWidth;
+
+
+document.getElementById("playButton").addEventListener("click", function() {
+  if (!audio) {
+    playerTitle.style.display = 'none';
+    songTitle.textContent = songTitles[currentSongIndex];
+    songInfo.style.opacity = 1;
+    audio = createAudioElements();
+  }
+  if (isPaused) {
+    isPaused = false;
+  }
+  audio.play();
+});
+
+document.getElementById("pauseButton").addEventListener("click", function() {
+  if (audio) {
+    audio.pause();
+    isPaused = true;
+    audioPosition = audio.currentTime;
+  }
+});
+
+document.getElementById("previousButton").addEventListener("click", function() {
+  if (currentSongIndex > 0) {
+    currentSongIndex--;
+  } else {
+    currentSongIndex = audioFiles.length - 1;
+  }
+  playSong();
+});
+
+document.getElementById("nextButton").addEventListener("click", function() {
+  if (currentSongIndex < audioFiles.length - 1) {
+    currentSongIndex++;
+  } else {
+    currentSongIndex = 0;
+  }
+  playSong();
+});
+
+function createAudioElements() {
+  const audio = new Audio(audioFiles[currentSongIndex]);
+  audio.preload = "auto";
+  return audio;
+}
+
+const songTitles = [
+  '[LADO A] 01- Bailando entre las nubes',
+  '[LADO A] 02- El espectador',
+  '[LADO A] 03- En el fondo del bar',
+  '[LADO A] 04- LLevame',
+  '[LADO A] 05- No pares de brillar',
+  '[LADO A] 06- Pecho frio',
+  '[LADO A] 07- Robotizado',
+  '[LADO A] 08- Sueños',
+  '[LADO B] 01- Meditare',
+  '[LADO B] 02- Rutero',
+  '[LADO B] 03- Naufragio',
+  '[LADO B] 04- La maquina del tiempo',
+  '[LADO B] 05- Vendedor de ilusiones',
+  '[LADO B] 06- Loveland',
+  '[LADO B] 07- Toxicar',
+  '[LADO B] 08- De reojo',
+  '[LADO B] 09- Portuguesa',
+  '[LADO B] 10- Es tarde',
+];
 
 document.documentElement.style.setProperty('--title-width', `${titleWidth}px`); //
-
-playButton.addEventListener('click', function() {
-  playerTitle.style.display = 'none';
-  const currentSongTitle = "Bailando entre las nubes";
-  songTitle.textContent = currentSongTitle;
-  songInfo.style.opacity = 1;
-  playSong();
-});
-
-pauseButton.addEventListener('click', function() {
-  songInfo.style.opacity = 1;
-  pauseSong();
-});
-
-previousButton.addEventListener('click', function() {
-  currentSongIndex = (currentSongIndex - 1 + audioFiles.length) % audioFiles.length;
-  playSong();
-});
-
-nextButton.addEventListener('click', function() {
-  currentSongIndex = (currentSongIndex + 1) % audioFiles.length;
-  playSong();
-});
 
 function playSong() {
   if (audio) {
     audio.pause();
+    audio.currentTime = 0;
+    audioPosition = 0;
   }
   audio = createAudioElements();
   songTitle.textContent = songTitles[currentSongIndex];
@@ -207,8 +192,8 @@ function playSong() {
 function pauseSong() {
   if (audio) {
     audio.pause();
+    isPaused = true;
   }
-  songInfo.style.opacity = 1;
 }
 
 // Obtén todas las tarjetas
