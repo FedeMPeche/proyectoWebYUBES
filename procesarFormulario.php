@@ -6,7 +6,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $mensaje = $_POST["mensaje"];
 
     // Clave secreta de reCAPTCHA v3
-    $clave_secreta = "6LdjeOYoAAAAAE6Sv63qqL-NwNDgFe8DrvVgtned"; // Reemplaza con tu clave secreta
+    $clave_secreta = "6Ld8FuooAAAAAJmCtPE3a71k1-8Px88-vXdqTZcR"; // Reemplaza con tu clave secreta
 
     // Verificación de reCAPTCHA
     $recaptcha_response = $_POST["g-recaptcha-response"];
@@ -44,3 +44,5 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 }
 ?>
+
+
