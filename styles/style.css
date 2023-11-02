@@ -5,7 +5,7 @@
 
   .integrantes {
     visibility: visible !important;
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
     color: white;
     display: flex;
     justify-content: center;
@@ -25,7 +25,7 @@
     background-color: black;
     margin: 0;
     padding: 0;
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -53,9 +53,10 @@
   #logoedit2 {
     width: 350px;
   }
-  
+
   #page1 {
-    background: url('../img/LogoPage1MobileTransparente.jpeg') no-repeat center center;
+    background: url("../img/LogoPage1MobileTransparente.jpeg") no-repeat center
+      center;
   }
 
   .menu {
@@ -64,9 +65,8 @@
 
   .discos {
     margin-top: 40% !important;
-
   }
-  .disco{
+  .disco {
     width: 180px !important;
     height: 180px !important;
   }
@@ -78,14 +78,14 @@
   .page {
     background-color: black;
     width: 100%;
-    height: 100vh; 
+    height: 100vh;
     text-align: center;
   }
-  
+
   .novedades {
     padding: 15px;
     font-size: 15px;
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
     color: rgb(255, 253, 253);
     background-color: rgba(2, 2, 2, 0.75) !important;
     max-width: 100%;
@@ -96,15 +96,15 @@
   }
 
   #p-cartelera {
-    font-size: 18px; 
+    font-size: 18px;
   }
 
   /* Estilos para la página 3 */
 
   .contact-formulario {
     margin-left: 0 auto;
-    margin-top: 20px; 
-    text-align: left; 
+    margin-top: 20px;
+    text-align: left;
   }
 
   #formularioContacto {
@@ -115,9 +115,9 @@
   .form-group {
     max-width: 375px !important;
     background-color: rgba(241, 176, 36, 0.253);
-    border-radius: 10px; 
+    border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin-bottom: 20px;   
+    margin-bottom: 20px;
   }
 
   label {
@@ -127,16 +127,16 @@
   input[type="text"],
   input[type="email"],
   textarea {
-    width: 100%; 
-    padding: 10px; 
+    width: 100%;
+    padding: 10px;
     font-size: 16px;
   }
 
   #enviarBtn {
     background-color: #f1a643;
     color: black;
-    cursor: pointer; 
-    font-size: 18px; 
+    cursor: pointer;
+    font-size: 18px;
     width: 350px !important;
     height: 60px;
     border-radius: 10px;
@@ -149,12 +149,12 @@
 
   .tituloFormulario {
     font-size: 18px;
-    font-family: 'Roboto',sans-serif;
+    font-family: "Roboto", sans-serif;
     text-shadow: 2px 2px 2px black;
     color: #ffffff;
-    width: auto; 
+    width: auto;
     white-space: nowrap;
-    overflow: visible; 
+    overflow: visible;
     margin-left: 8%;
     padding: 0px;
     border-radius: 5px;
@@ -173,7 +173,7 @@
     height: 50px !important;
     align-items: center;
   }
-  
+
   .btn.btn-primary {
     margin-left: 40px;
     height: 50px !important;
@@ -185,11 +185,10 @@
   }
 }
 
-
-
 /* Define la animación de desvanecimiento gradual */
 @keyframes fadeInOut {
-  0%, 100% {
+  0%,
+  100% {
     opacity: 0;
   }
   50% {
@@ -197,14 +196,13 @@
   }
 }
 
-
 /* Define la animación de desplazamiento horizontal */
 @keyframes marquee {
   20% {
-      transform: translateX(100%);
+    transform: translateX(100%);
   }
   100% {
-      transform: translateX(calc(-100% - var(--title-width)));
+    transform: translateX(calc(-100% - var(--title-width)));
   }
 }
 
@@ -221,7 +219,7 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -232,7 +230,7 @@ body {
 
 .page {
   width: 100%;
-  height: 100vh; 
+  height: 100vh;
   text-align: center;
 }
 
@@ -249,17 +247,16 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  z-index: -1; 
+  z-index: -1;
 }
 
-#page1{
+#page1 {
   justify-content: flex;
   background-size: cover;
   width: 100%;
   height: 1180px;
   z-index: 1;
 }
-
 
 #logoEdit1 {
   margin-top: 20px;
@@ -319,7 +316,12 @@ body {
   right: -300px;
   width: 300px;
   height: 120%;
-  background: radial-gradient(circle, rgba(242, 129, 30, 0.3) 0%, rgba(236, 120, 12, 0.3) 29%, rgba(240, 8, 114, 0.3) 68%);
+  background: radial-gradient(
+    circle,
+    rgba(242, 129, 30, 0.3) 0%,
+    rgba(236, 120, 12, 0.3) 29%,
+    rgba(240, 8, 114, 0.3) 68%
+  );
   color: white;
   display: none;
   flex-direction: column;
@@ -338,7 +340,7 @@ body {
 }
 
 .pMenu {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 16px;
   line-height: 1;
   text-shadow: 2px 2px 5px black;
@@ -359,7 +361,7 @@ body {
 }
 
 .novedades {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   color: rgb(247, 247, 247);
   background-color: rgba(3, 3, 3, 0.75);
   width: 100%;
@@ -376,7 +378,7 @@ body {
   transition: opacity 1s ease-in-out;
   overflow: hidden;
   white-space: nowrap;
-  width: 300px;
+  width: 430px;
   margin: 0 auto;
 }
 
@@ -388,10 +390,10 @@ body {
 }
 
 #song-title {
-  font-size: 28px;
+  width: 100%;
+  font-size: 22px;
   font-weight: bold;
   margin: 0;
-  animation: marquee 10s linear infinite;
   text-shadow: 0 0 5px gold, 0 0 10px gold, 0 0 15px gold;
 }
 
@@ -402,15 +404,21 @@ body {
 }
 
 #audio-controls button {
-  background: linear-gradient(84deg, rgba(237,14,209,0.5466561624649859) 7%, rgba(233,199,25,0.6250875350140056) 87%, rgba(241,237,239,0.4430147058823529) 98%);  border-radius: 20%;
+  background: linear-gradient(
+    84deg,
+    rgba(237, 14, 209, 0.5466561624649859) 7%,
+    rgba(233, 199, 25, 0.6250875350140056) 87%,
+    rgba(241, 237, 239, 0.4430147058823529) 98%
+  );
+  border-radius: 20%;
   margin: 10px;
   border: 1px solid black;
   border-radius: 15%;
 }
 
 #audio-controls img {
-  opacity: 1; 
-  width: 40px; 
+  opacity: 1;
+  width: 40px;
   height: 40px;
   /* filter: blur(1px); */
 }
@@ -423,7 +431,9 @@ body {
 }
 
 /* Estilos para los botones "toPage1", "toPage2" y "toPage3" */
-#toPage1, #toPage2, #toPage3 {
+#toPage1,
+#toPage2,
+#toPage3 {
   display: flex;
   margin: 10px auto; /* Centra los botones horizontalmente y agrega un espacio entre ellos */
   padding: 10px 20px;
@@ -431,14 +441,16 @@ body {
   color: #000000;
   border: none;
   cursor: pointer;
-  border-radius: 5px; 
-  font-size: 18px; 
+  border-radius: 5px;
+  font-size: 18px;
   text-align: center;
   text-decoration: none;
   transition: background-color 0.3s ease;
 }
 
-#toPage1:hover, #toPage2:hover, #toPage3:hover {
+#toPage1:hover,
+#toPage2:hover,
+#toPage3:hover {
   background-color: rgba(5, 5, 5, 0.5);
   color: white;
 }
@@ -450,12 +462,12 @@ body {
 
 .botonesToDoPage3 {
   display: flex;
-  justify-content: space-between; 
+  justify-content: space-between;
 }
 
 .botonesToDoPage2 {
   display: flex;
-  justify-content: space-between; 
+  justify-content: space-between;
 }
 
 .buttons {
@@ -473,28 +485,28 @@ body {
   background: #314652;
   color: #f1f1f1;
   border-radius: 50%;
-  box-shadow: 2px 2px 5px rgba(0, 0, 0, .5);
-  transition: all .4s ease-in-out;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  transition: all 0.4s ease-in-out;
 }
 
 .buttons a:hover {
   transform: translateY(-3px) scale(1.5);
-  box-shadow: 0 5px 5px 0px rgba(0, 0, 0, .4);
+  box-shadow: 0 5px 5px 0px rgba(0, 0, 0, 0.4);
 }
 
-#toPage1 {    
+#toPage1 {
   height: 47px;
 }
-#toPage2 {    
+#toPage2 {
   height: 47px;
 }
-#toPage3{
+#toPage3 {
   height: 47px;
 }
 
 .btn-primary {
   background-color: var(--instagram);
-  border:1px pink;
+  border: 1px pink;
   height: 50px !important;
 }
 
@@ -502,20 +514,19 @@ body {
   background-color: var(--instagram);
 }
 
-
-.buttons #instagram:hover{
+.buttons #instagram:hover {
   background-color: var(--instagram);
 }
 
-.buttons #youtube:hover{
+.buttons #youtube:hover {
   background-color: var(--youtube);
 }
 
-.buttons #facebook:hover{
+.buttons #facebook:hover {
   background-color: var(--facebook);
 }
 
-.buttons #spotify:hover{
+.buttons #spotify:hover {
   background-color: var(--spotify);
 }
 
@@ -531,14 +542,14 @@ body {
 h3 {
   background-color: rgba(0, 0, 0, 0);
   color: rgb(3, 3, 3);
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 24px;
   text-align: center;
 }
 
 #page2 {
   justify-content: flex;
-  background: url('../img/back-page2.png') no-repeat center center;
+  background: url("../img/back-page2.png") no-repeat center center;
   background-size: cover;
   max-width: 100%;
   width: 100%;
@@ -551,11 +562,10 @@ h3 {
   width: 50%;
   display: inline-block;
   justify-content: center;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 20px;
   text-align: center;
   color: white;
-  
 }
 
 #p-cartelera {
@@ -569,7 +579,7 @@ h3 {
 
 #page3 {
   justify-content: flex;
-  background: url('../img/back-Page3-2.jpg') no-repeat center center;
+  background: url("../img/back-Page3-2.jpg") no-repeat center center;
   background-size: cover;
   max-width: 100%;
   width: 100%;
@@ -606,12 +616,12 @@ h3 {
 
 .tituloFormulario {
   font-size: 28px;
-  font-family: 'Roboto',sans-serif;
+  font-family: "Roboto", sans-serif;
   text-shadow: 2px 2px 2px black;
   color: #ffffff;
-  width: auto; 
+  width: auto;
   white-space: nowrap;
-  overflow: visible; 
+  overflow: visible;
   padding: 0px;
   border-radius: 5px;
   animation: fadeInOut 7.5s ease-in-out infinite;
@@ -640,27 +650,26 @@ h3 {
 }
 
 .contact-form {
-  max-width: 450px; 
-  margin-left: 5%; 
-  padding: 24px; 
-  text-align: center; 
+  max-width: 450px;
+  margin-left: 5%;
+  padding: 24px;
+  text-align: center;
   margin-bottom: 20px;
 }
 
 .form-group {
   background-color: rgba(241, 176, 36, 0.1);
-  border-radius: 10px; 
+  border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  margin-bottom: 20px; 
+  margin-bottom: 20px;
   width: 440px;
 }
 
-
 #enviarBtn {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   text-decoration: none;
   font-size: 24px;
-  width: 440px; 
+  width: 440px;
   height: 55px;
   margin-top: 20px;
   text-align: center;
@@ -668,71 +677,72 @@ h3 {
   color: rgb(241, 212, 114) !important;
   text-shadow: 2px 2px 3px black !important;
   border: none;
-  border-radius: 5px; 
+  border-radius: 5px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
-  cursor: pointer; 
-  transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s; 
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
 }
 
 #enviarBtn:hover {
   color: rgb(253, 252, 249) !important;
   text-shadow: 2px 2px 3px black !important;
-  transform: translateY(-3px); 
+  transform: translateY(-3px);
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
 }
 
 label {
   text-shadow: 1px 1px 1px black;
-  color:rgba(240, 238, 236, 0.8);
-  display: block; 
+  color: rgba(240, 238, 236, 0.8);
+  display: block;
   text-align: center;
 }
 
-#nombre{
-  font-family: 'Roboto',sans-serif;
+#nombre {
+  font-family: "Roboto", sans-serif;
   font-size: 24px;
   font-weight: bold;
   margin: 0;
   text-shadow: 0 0 5px gold, 0 0 10px gold, 0 0 15px gold;
-  background-image: url('../img/back-page1-solar.png'); 
-  background-size: cover; 
+  background-image: url("../img/back-page1-solar.png");
+  background-size: cover;
   background-color: rgba(255, 255, 255, 0.027);
 }
-#email{
-  font-family: 'Roboto',sans-serif;
+#email {
+  font-family: "Roboto", sans-serif;
   font-size: 24px;
   font-weight: bold;
   margin: 0;
   text-shadow: 0 0 5px gold, 0 0 10px gold, 0 0 15px gold;
-  background-image: url('../img/back-page1-solar.png'); 
-  background-size: cover; 
-  background-color: rgba(255, 255, 255, 0.027);
-}
-
-#telefono{
-  font-family: 'Roboto',sans-serif;
-  font-size: 24px;
-  font-weight: bold;
-  margin: 0;
-  text-shadow: 0 0 5px gold, 0 0 10px gold, 0 0 15px gold;
-  background-image: url('../img/back-page1-solar.png'); 
-  background-size: cover; 
+  background-image: url("../img/back-page1-solar.png");
+  background-size: cover;
   background-color: rgba(255, 255, 255, 0.027);
 }
 
-#mensaje{
-  font-family: 'Roboto',sans-serif;
+#telefono {
+  font-family: "Roboto", sans-serif;
   font-size: 24px;
   font-weight: bold;
   margin: 0;
   text-shadow: 0 0 5px gold, 0 0 10px gold, 0 0 15px gold;
-  background-image: url('../img/back-page1-solar.png'); 
-  background-size: cover; 
+  background-image: url("../img/back-page1-solar.png");
+  background-size: cover;
   background-color: rgba(255, 255, 255, 0.027);
 }
 
-input::placeholder, textarea::placeholder{
-  font-family: 'Roboto',sans-serif;
+#mensaje {
+  font-family: "Roboto", sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0;
+  text-shadow: 0 0 5px gold, 0 0 10px gold, 0 0 15px gold;
+  background-image: url("../img/back-page1-solar.png");
+  background-size: cover;
+  background-color: rgba(255, 255, 255, 0.027);
+}
+
+input::placeholder,
+textarea::placeholder {
+  font-family: "Roboto", sans-serif;
   text-align: center;
   font-size: 18px;
   color: black;
@@ -741,8 +751,6 @@ input::placeholder, textarea::placeholder{
   text-shadow: 0 0 5px gold, 0 0 5px gold, 0 0 5px gold;
 }
 
-
-
 input[type="text"],
 input[type="email"],
 textarea {
@@ -750,35 +758,34 @@ textarea {
   text-decoration: none;
   text-shadow: 2px 2px 4px #eca816;
   font-size: 20px;
-  width: 100%; 
-  padding: 10px;  
-  border-radius: 5px; 
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
 }
 
 textarea {
-  height: 200px; 
+  height: 200px;
 }
 
 footer {
-    background-color: black;
-    color: white;
-    text-align: center;
-    padding: 20px 0; 
-    position: relative;
-    bottom: 0;
-    width: 100%;
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  position: relative;
+  bottom: 0;
+  width: 100%;
 }
 
 h3 {
   margin-top: 2%;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   color: rgb(255, 255, 255);
-
 }
 
 .integrantes {
   visibility: hidden;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   color: white;
   display: flex;
   justify-content: center;
@@ -793,7 +800,7 @@ h3 {
 #mute-button {
   position: fixed;
   bottom: 150px;
-  right: 20px; 
+  right: 20px;
   z-index: 999;
   background-color: rgba(0, 0, 0, 0.473);
   font-size: 25px;
@@ -880,9 +887,13 @@ h3 {
   display: flex;
   position: absolute;
   color: rgb(156, 153, 149);
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   flex-direction: column;
-  background: linear-gradient(129deg, rgb(5, 5, 5, 0.75) 0%, rgba(5, 3, 0, 1) 94%);
+  background: linear-gradient(
+    129deg,
+    rgb(5, 5, 5, 0.75) 0%,
+    rgba(5, 3, 0, 1) 94%
+  );
   height: 60%;
   width: 100%;
   bottom: 0;
@@ -908,38 +919,37 @@ h3 {
 }
 
 .tarjetas.expandida {
-  width: 600px; 
-  height: 400px; 
-  cursor: auto; 
+  width: 600px;
+  height: 400px;
+  cursor: auto;
 }
 
 .detalle.expandida {
-  height: 100%; 
+  height: 100%;
   transform: translateY(0);
 }
 
 /* LOGOS CONTACTO PAGE 3 */
 
 i {
-  font-size: 24px; 
+  font-size: 24px;
   padding: 10px;
-
 }
 
 /* Estilo del enlace de LinkedIn */
 .copy a {
   margin-bottom: 20px;
   text-decoration: none;
-  color: #f9fbfc; 
-  border: 2px solid #0077B5; 
-  padding: 5px 10px; 
-  border-radius: 5px; 
-  transition: background-color 0.3s, color 0.3s; 
+  color: #f9fbfc;
+  border: 2px solid #0077b5;
+  padding: 5px 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s;
 }
 
 .copy a:hover {
-  background-color: #0077B5; 
-  color: #fff; 
+  background-color: #0077b5;
+  color: #fff;
 }
 
 
