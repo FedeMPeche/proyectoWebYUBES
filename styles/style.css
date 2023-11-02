@@ -10,10 +10,9 @@
     display: flex;
     justify-content: center;
   }
-
 }
 
-@media screen and (max-width: 730px) {
+@media screen and (max-width: 768px) {
   #video-container {
     display: none !important;
   }
@@ -24,6 +23,15 @@
 
   body {
     background-color: black;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    overflow-y: auto;
+    overflow-x: auto;
   }
 
   .buttons #instagram {
@@ -93,7 +101,8 @@
 
   /* Estilos para la página 3 */
 
-  .contact-form {
+  .contact-formulario {
+    margin-left: 0 auto;
     margin-top: 20px; 
     text-align: left; 
   }
@@ -108,8 +117,7 @@
     background-color: rgba(241, 176, 36, 0.253);
     border-radius: 10px; 
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin-bottom: 20px; 
-    margin-left: 8%;  
+    margin-bottom: 20px;   
   }
 
   label {
@@ -129,33 +137,46 @@
     color: black;
     cursor: pointer; 
     font-size: 18px; 
-    width: 375px !important;
+    width: 350px !important;
     height: 60px;
     border-radius: 10px;
-    margin-left: 8%;
+    margin-left: 0;
+  }
+
+  .contacto {
+    width: 100%;
   }
 
   .tituloFormulario {
-    font-size: 20px;
+    font-size: 18px;
     font-family: 'Roboto',sans-serif;
     text-shadow: 2px 2px 2px black;
     color: #ffffff;
-    max-width: 100% !important;
+    width: auto; 
+    white-space: nowrap;
+    overflow: visible; 
     margin-left: 8%;
     padding: 0px;
     border-radius: 5px;
     animation: fadeInOut 7.5s ease-in-out infinite;
   }
 
-  .buttons-page3 {
-    width: 100%;
-    margin-left: 5%;
-    margin-top: 20px;
-    justify-content: space-between;
+  #titulo1Formulario {
+    margin-left: 20% !important;
   }
 
-  #p-page3 {
-    display: none;
+  .buttons-page3 {
+    width: 400px !important;
+    margin-left: 5%;
+    margin-top: 40px;
+    justify-content: space-evenly !important;
+    height: 50px !important;
+    align-items: center;
+  }
+  
+  .btn.btn-primary {
+    margin-left: 40px;
+    height: 50px !important;
   }
 
   footer {
@@ -179,11 +200,11 @@
 
 /* Define la animación de desplazamiento horizontal */
 @keyframes marquee {
-  0% {
-    transform: translateX(-100%);
+  20% {
+      transform: translateX(100%);
   }
   100% {
-    transform: translateX(50%);
+      transform: translateX(calc(-100% - var(--title-width)));
   }
 }
 
@@ -235,7 +256,7 @@ body {
   justify-content: flex;
   background-size: cover;
   width: 100%;
-  height: 100vh;
+  height: 1180px;
   z-index: 1;
 }
 
@@ -348,6 +369,52 @@ body {
   animation: fadeInOut 7.5s ease-in-out infinite;
 }
 
+#song-info {
+  justify-content: center;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 300px;
+  margin: 0 auto;
+}
+
+#player-title {
+  font-size: 28px;
+  font-weight: bold;
+  margin: 0;
+  text-shadow: 0 0 5px gold, 0 0 10px gold, 0 0 15px gold;
+}
+
+#song-title {
+  font-size: 28px;
+  font-weight: bold;
+  margin: 0;
+  animation: marquee 10s linear infinite;
+  text-shadow: 0 0 5px gold, 0 0 10px gold, 0 0 15px gold;
+}
+
+#audio-controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#audio-controls button {
+  background: linear-gradient(84deg, rgba(237,14,209,0.5466561624649859) 7%, rgba(233,199,25,0.6250875350140056) 87%, rgba(241,237,239,0.4430147058823529) 98%);  border-radius: 20%;
+  margin: 10px;
+  border: 1px solid black;
+  border-radius: 15%;
+}
+
+#audio-controls img {
+  opacity: 1; 
+  width: 40px; 
+  height: 40px;
+  /* filter: blur(1px); */
+}
+
 :root {
   --facebook: #3b5999;
   --instagram: #c90f5c;
@@ -425,24 +492,6 @@ body {
   height: 47px;
 }
 
-.buttons-page3 {
-  margin-top: 3%;
-  display: flex;
-  justify-content: space-evenly;
-}
-
-.buttons-page3 a {
-  font-family: 'Roboto', sans-serif;
-  font-size: 20px;
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  color: white;
-  max-width: 170px;
-  box-shadow: 2px 2px 5px rgba(0, 0, 0, .5);
-  transition: all .4s ease-in-out;
-}
-
 .btn-primary {
   background-color: var(--instagram);
   border:1px pink;
@@ -493,7 +542,7 @@ h3 {
   background-size: cover;
   max-width: 100%;
   width: 100%;
-  height: 100vh;
+  height: 1080px;
 }
 
 .cartelera {
@@ -506,6 +555,7 @@ h3 {
   font-size: 20px;
   text-align: center;
   color: white;
+  
 }
 
 #p-cartelera {
@@ -517,28 +567,27 @@ h3 {
   margin-left: 30%;
 }
 
-#p-page3 {
-  font-family: 'Roboto', sans-serif;
-  color: white;
-  justify-content: flex-end;
-  margin-left: 5%;
-
-}
-
 #page3 {
   justify-content: flex;
   background: url('../img/back-Page3-2.jpg') no-repeat center center;
   background-size: cover;
   max-width: 100%;
   width: 100%;
-  height: 1080px;
+  height: 1180px;
 }
 
 /* FORMULARIO DE CONTACTO */
 
+.container {
+  align-items: center;
+}
+
 .contacto {
+  float: left;
+  width: 50%;
   flex: 1;
   margin-right: 20px;
+  padding: 20px;
 }
 
 .contactoRedes {
@@ -555,38 +604,45 @@ h3 {
   background-color: rgb(13, 172, 13);
 }
 
-
 .tituloFormulario {
-  border-color: solid black;
-  margin-left: 14%;
-  text-shadow: 0 0 5px black;
+  font-size: 28px;
   font-family: 'Roboto',sans-serif;
   text-shadow: 2px 2px 2px black;
   color: #ffffff;
-  margin-bottom: 20px;
-  margin-top: 50px;
-  font-size: 30px;
-  max-width: 50%;
+  width: auto; 
+  white-space: nowrap;
+  overflow: visible; 
+  padding: 0px;
   border-radius: 5px;
-  animation: fadeInOut 5s ease-in-out infinite;
- 
+  animation: fadeInOut 7.5s ease-in-out infinite;
 }
 
-.tituloConectate {
-  font-family: 'Roboto',sans-serif;
-  text-shadow: 2px 2px 2px black;
-  color: #ffffff;
-  font-size: 30px;
-  margin: 0 auto;
-  max-width: 100%;
-  text-align: center;
-  animation: fadeInOut 5s ease-in-out infinite;
+#titulo1Formulario {
+  margin-left: -35%;
+}
+
+#titulo2Formulario {
+  margin-left: 9%;
+}
+
+.buttons-page3 {
+  width: 400px !important;
+  margin-left: 5%;
+  margin-top: 40px;
+  justify-content: space-evenly !important;
+  height: 50px !important;
+  align-items: center;
+}
+
+.btn.btn-primary {
+  margin-left: 40px;
+  height: 50px !important;
 }
 
 .contact-form {
   max-width: 450px; 
   margin-left: 5%; 
-  padding: 20px; 
+  padding: 24px; 
   text-align: center; 
   margin-bottom: 20px;
 }
@@ -633,44 +689,56 @@ label {
 }
 
 #nombre{
-  color: #eca816;
-  text-shadow: 2px 2px 2px rgb(3, 3, 3);
-  font-size: 20px;
+  font-family: 'Roboto',sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0;
+  text-shadow: 0 0 5px gold, 0 0 10px gold, 0 0 15px gold;
   background-image: url('../img/back-page1-solar.png'); 
   background-size: cover; 
-  background-color: rgba(255, 255, 255, 0.3);
+  background-color: rgba(255, 255, 255, 0.027);
 }
 #email{
-  color: #eca816;
-  text-shadow: 2px 2px 2px rgb(3, 3, 3);
-  font-size: 20px;
+  font-family: 'Roboto',sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0;
+  text-shadow: 0 0 5px gold, 0 0 10px gold, 0 0 15px gold;
   background-image: url('../img/back-page1-solar.png'); 
   background-size: cover; 
-  background-color: rgba(255, 255, 255, 0.3);
+  background-color: rgba(255, 255, 255, 0.027);
 }
 
 #telefono{
-  color: #eca816;
-  text-shadow: 2px 2px 2px rgb(3, 3, 3);
-  font-size: 20px;
+  font-family: 'Roboto',sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0;
+  text-shadow: 0 0 5px gold, 0 0 10px gold, 0 0 15px gold;
   background-image: url('../img/back-page1-solar.png'); 
   background-size: cover; 
-  background-color: rgba(255, 255, 255, 0.3);
+  background-color: rgba(255, 255, 255, 0.027);
 }
 
 #mensaje{
-  color: #eca816;
-  text-shadow: 2px 2px 2px rgb(3, 3, 3);
-  font-size: 20px;
+  font-family: 'Roboto',sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0;
+  text-shadow: 0 0 5px gold, 0 0 10px gold, 0 0 15px gold;
   background-image: url('../img/back-page1-solar.png'); 
   background-size: cover; 
-  background-color: rgba(255, 255, 255, 0.3);
+  background-color: rgba(255, 255, 255, 0.027);
 }
 
 input::placeholder, textarea::placeholder{
+  font-family: 'Roboto',sans-serif;
   text-align: center;
-  color: rgb(240, 237, 231, 0.8);
-  font-size: 20px;
+  font-size: 18px;
+  color: black;
+  font-weight: bold;
+  margin: 0;
+  text-shadow: 0 0 5px gold, 0 0 5px gold, 0 0 5px gold;
 }
 
 
@@ -679,7 +747,7 @@ input[type="text"],
 input[type="email"],
 textarea {
   color: black;
-  text-decoration: solid;
+  text-decoration: none;
   text-shadow: 2px 2px 4px #eca816;
   font-size: 20px;
   width: 100%; 
@@ -688,7 +756,7 @@ textarea {
 }
 
 textarea {
-  height: 180px; 
+  height: 200px; 
 }
 
 footer {
@@ -873,6 +941,7 @@ i {
   background-color: #0077B5; 
   color: #fff; 
 }
+
 
 
 
