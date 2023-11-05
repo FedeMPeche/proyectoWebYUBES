@@ -2,6 +2,7 @@
 <html>
 <head>
   <title>Yubes Rock</title>
+  <link rel="icon" href="/img/logo.png">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
@@ -15,8 +16,6 @@
       }
     }
   </script>
-  <script src="https://www.google.com/recaptcha/api.js?render=6Ld8FuooAAAAAK1ceZUVisI8Bi-TaCSQU91-mYgk
-  "></script>
 </head>
 <body>
 
@@ -36,7 +35,7 @@
           <a href="https://www.instagram.com/yubesrock/" class="fa fa-instagram" id="instagram" target="_blank"></a>
           <a href="https://www.youtube.com/@yubesrock" class="fa fa-youtube" id="youtube" target="_blank"></a>
           <a href="https://open.spotify.com/intl-es/artist/2OqJjWVsq21Gwfm8qjJd7u" class="fa fa-spotify" id="spotify" target="_blank"></a>
-          <a href="https://www.facebook.com/yubes.yubes.75" class="fa fa-facebook" id="facebook" target="_blank"></a>
+          <a href="https://www.facebook.com/YUBESRock" class="fa fa-facebook" id="facebook" target="_blank"></a>
         </section>
         <br>
           <div id="logo">
@@ -56,12 +55,12 @@
                 <div class="menu" id="menu1">
                   <p class="pMenu"><strong>01- Bailando entre las nubes</strong></p>
                   <p class="pMenu"><strong>02- El espectador</strong></p>
-                  <p class="pMenu"><strong>03- En el fondo del bar</strong></p>
-                  <p class="pMenu"><strong>04- Llevame</strong></p>
-                  <p class="pMenu"><strong>05- No pares de brillar</strong></p>
-                  <p class="pMenu"><strong>06- Pecho Frío</strong></p>
-                  <p class="pMenu"><strong>07- Robotizado</strong></p>
-                  <p class="pMenu"><strong>08- Sueños</strong></p>
+                  <p class="pMenu"><strong>03- Robotizado</strong></p>
+                  <p class="pMenu"><strong>04- No pares de brillar</strong></p>
+                  <p class="pMenu"><strong>05- Llevame</strong></p>
+                  <p class="pMenu"><strong>06- Pecho Frio</strong></p>
+                  <p class="pMenu"><strong>07- Sueños</strong></p>
+                  <p class="pMenu"><strong>08- En el fondo del bar</strong></p>
                   <p class="pMenu">CLICK PARA ESCUCHAR</p>
                 </div></a>
               </div>
@@ -70,14 +69,14 @@
                 <div class="imagen" style="background-image: url('img/destinoB.png');" id="imagen2"></div>
                 <div class="menu" id= "menu2">
                   <p class="pMenu"><strong>01- Meditare</strong></p>
-                  <p class="pMenu"><strong>02- Rutero</strong></p>
-                  <p class="pMenu"><strong>03- Naufragio</strong></p>
+                  <p class="pMenu"><strong>02- De reojo</strong></p>
+                  <p class="pMenu"><strong>03- Toxicar</strong></p>
                   <p class="pMenu"><strong>04- La maquina del tiempo</strong></p>
-                  <p class="pMenu"><strong>05- Vendedor de ilusiones</strong></p>
-                  <p class="pMenu"><strong>06- Loveland</strong></p>
-                  <p class="pMenu"><strong>07- Toxicar</strong></p>
-                  <p class="pMenu"><strong>08- De reojo</strong></p>
-                  <p class="pMenu"><strong>09- Portuguesa</strong></p>
+                  <p class="pMenu"><strong>05- Loveland</strong></p>
+                  <p class="pMenu"><strong>06- Vendedor de ilusiones</strong></p>
+                  <p class="pMenu"><strong>07- Rutero</strong></p>
+                  <p class="pMenu"><strong>08- Portuguesa</strong></p>
+                  <p class="pMenu"><strong>09- Naufragio</strong></p>
                   <p class="pMenu"><strong>10- Es tarde</strong></p>
                   <p class="pMenu">CLICK PARA ESCUCHAR</p>
                 </div></a>
@@ -90,16 +89,16 @@
             </div>
               <div id="audio-controls">
                 <button id="previousButton">
-                  <img src="img/player-track-prev.png" alt="Cancion Previa">
+                  <img src="img/player-prev2.png" alt="Cancion Previa">
                 </button>
                   <button id="playButton">
-                    <img src="img/player-play.png" alt="Reproducir">
+                    <img src="img/player-play2.png" alt="Reproducir">
                   </button>
                     <button id="pauseButton">
-                      <img src="img/player-pause.png" alt="Pausa">
+                      <img src="img/player-pause2.png" alt="Pausa">
                     </button>
                       <button id="nextButton">
-                        <img src="img/player-track-next.png" alt="Siguiente Cancion">
+                        <img src="img/player-next2.png" alt="Siguiente Cancion">
                       </button>
               </div>
             </br></br></br>
@@ -113,12 +112,20 @@
           <button onclick="scrollToPage(1)" id="toPage1">Volver al "INICIO"</button>
           <button onclick="scrollToPage(3)" id="toPage3">Ir a "CONTACTO"</button>
         </div> -->
-            <section class="cartelera">
-              <h1 class="tituloCartelera">CARTELERA DE SHOWS</h1>
-              </br>
-              <p id ="p-cartelera">Aqui apareceran los priximos shows. Atento!
-              </p>
-            </section>
+      <section class="cartelera">
+        <h1 id="tituloCartelera">CARTELERA DE SHOWS</h1>
+        </br>
+         <p id ="p-cartelera">Aqui apareceran los priximos shows. Atento!</p>
+          <div class="proximoDestinoCartelera">
+          <img src="img/logo.png" alt="destino" id="destino">
+          </div>
+          <div class="proximoDestinoCartelera">
+          <img src="img/flechaDown.png" alt="flecha" id="flecha">
+          </div>
+            <div class="proximoDestinoCartelera">
+            <p id="fecha"><br>Jueves 7/12 en 'Hay Producto'<br>PRESENTACION<br>"Un viaje de ida"</p>
+            </div>
+      </section>
     </div>
 
   <!--------------------------------- PÁGINA 3 ------------------------------------------>
@@ -127,11 +134,10 @@
 
       <!-- Contenido de la tercer página -->
       <section class="contacto">
-        <h1 class="tituloFormulario mt-5" id="titulo1Formulario">FORMULARIO DE CONTACTO</h1>
-        <div class="container mt-5">
+        <h1 class="tituloFormulario" id="titulo1Formulario">FORMULARIO DE CONTACTO</h1>
         <div class="contacto" id="contacto-formulario">
           <div class="contact-form">
-            <form id="formularioContacto">
+            <form id="formularioContacto" action="https://formsubmit.co/yubesrock@gmail.com" method="POST">
               <div class="form-group">
                 <label for="nombre"><strong>NOMBRE:</strong></label>
                 <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
@@ -148,12 +154,12 @@
                 <label for="mensaje"><strong>MENSAJE:</strong></label>
                 <textarea id="mensaje" name="mensaje" placeholder="Tu mensaje" required></textarea>
               </div>
-              <div class="form-group">
-                <button class="g-recaptcha" name="g-recaptcha-response" data-sitekey="6Ld8FuooAAAAAK1ceZUVisI8Bi-TaCSQU91-mYgk" type="submit" id="enviarBtn"><strong>ENVIAR MENSAJE</strong></button>
-              </div>
+              <button type="submit" id="enviarBtn"><strong>ENVIAR MENSAJE</strong></button>
+              <input type="hidden" name="_next" value="https://yubes.com.ar">             
+              <input type="hidden" name="_subject" value="Nuevo correo desde YUBES!">
             </form>
           </div>
-            <h1 class="tituloFormulario mt-5" id="titulo2Formulario"> CONTACTATE CON UN CLICK</h1>
+            <h1 class="tituloFormulario" id="titulo2Formulario"> CONTACTATE CON UN CLICK</h1>
             <div class="buttons-page3">
               <a href="https://wa.me/+5492984685737" target="_blank" class="btn btn-success">
               <i class="bi bi-whatsapp"></i> WhatsApp
@@ -173,7 +179,7 @@
             <p class="integrantes"><strong>Marcho del Rio</strong>: Guitarra</p>
             <p class="integrantes"><strong>Mauri Poblete</strong>: Bateria</p>
             <p class="integrantes"><strong>Fede Peche</strong>: Bajo</p>
-            <p class="integrantes"><strong>Pablo Garcés</strong>: Teclados</p>
+            <p class="integrantes"><strong>Pablo Garces</strong>: Teclados</p>
 
             <div class="contenedorTarjetas">
               <div class="tarjetas">
@@ -209,7 +215,6 @@
                   </div>
               </div>
             </div>
-            
 
             <div class="tarjetas">
                 <div class="imagenPablo">   
