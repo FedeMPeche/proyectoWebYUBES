@@ -447,7 +447,7 @@ body {
   font-size: 28px;
   font-weight: bold;
   margin: 0;
-  text-shadow: 0 0 5px gold, 0 0 10px gold, 0 0 15px gold;
+  text-shadow: 0 0 5px rgb(211, 126, 228), 0 0 10px rgb(211, 117, 219), 0 0 15px rgb(207, 126, 228);
 }
 
 #song-title {
@@ -455,7 +455,7 @@ body {
   font-size: 22px;
   font-weight: bold;
   margin: 0;
-  text-shadow: 0 0 5px gold, 0 0 10px gold, 0 0 15px gold;
+  text-shadow: 0 0 5px rgb(211, 126, 228), 0 0 10px rgb(211, 117, 219), 0 0 15px rgb(207, 126, 228);
 }
 
 #audio-controls {
@@ -1049,7 +1049,6 @@ i {
   background-color: #0077b5;
   color: #fff;
 }
-
 
 
 
