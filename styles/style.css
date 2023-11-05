@@ -1,24 +1,6 @@
-@media (max-width: 1435px) {
-  .contenedorTarjetas {
-    display: none !important;
-  }
-
-  .integrantes {
-    visibility: visible !important;
-    font-family: "Roboto", sans-serif;
-    color: white;
-    display: flex;
-    justify-content: center;
-  }
-}
-
 @media screen and (max-width: 768px) {
   #video-container {
     display: none !important;
-  }
-
-  .container-fluid {
-    width: 100%;
   }
 
   body {
@@ -30,9 +12,15 @@
     flex-direction: column;
     width: 100%;
     height: 100vh;
-    overflow-y: auto;
-    overflow-x: auto;
   }
+
+  .page {
+    background-color: black;
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+  }
+
 
   .buttons #instagram {
     background-color: var(--instagram);
@@ -54,9 +42,26 @@
     width: 350px;
   }
 
-  #page1 {
-    background: url("../img/LogoPage1MobileTransparente.jpeg") no-repeat center
-      center;
+  #page1.page {
+    background: url("../img/LogoPage1MobileTransparente.jpeg") no-repeat center center;
+    background-size: cover !important;
+    width: 100%;
+    height: 1080px;
+    z-index: 1;
+  }
+
+  #page2.page {
+    background: url("../img/back-page2.png") no-repeat center center;
+    background-size: cover !important;
+    width: 100% !important;
+    height: 1080px;
+  }
+
+  #page3.page {
+    background: url("../img/back-Page3-2.jpg") no-repeat center center;
+    background-size: cover !important;
+    width: 100% !important;
+    height: 1180px;
   }
 
   .menu {
@@ -66,30 +71,18 @@
   .discos {
     margin-top: 40% !important;
   }
+
   .disco {
-    width: 180px !important;
-    height: 180px !important;
-  }
-
-  #imagen2.imagen {
-    margin-left: 5px;
-  }
-
-  .page {
-    background-color: black;
-    width: 100%;
-    height: 100vh;
-    text-align: center;
+    width: 175px !important;
+    height: 175px !important;
   }
 
   .novedades {
-    padding: 15px;
-    font-size: 15px;
+    font-size: 16px;
     font-family: "Roboto", sans-serif;
     color: rgb(255, 253, 253);
     background-color: rgba(2, 2, 2, 0.75) !important;
     max-width: 100%;
-    border-radius: 5px;
     white-space: nowrap;
     overflow: hidden;
     animation: fadeInOut 7.5s ease-in-out infinite;
@@ -99,18 +92,68 @@
     font-size: 18px;
   }
 
+  /* Estilos para la página 2 */
+
+  #tituloCartelera{
+    display: flex;
+    justify-content: center;
+    margin-left: 30%;
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px; 
+    font-weight: bold;
+    width: 100%;
+    text-shadow: 0 0 2px rgb(187, 6, 6), 0 0 2px rgb(196, 17, 17), 0 0 25px rgb(236, 61, 17);
+  }
+  
+  .cartelera {
+    margin-top: 16%;
+    margin-left: -30%;
+    width: 50%;
+    display: inline-block;
+    justify-content: center;
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    text-align: center;
+    color: white;
+  }
+
+  .proximoDestinoCartelera {
+    display: flex;
+    background-color: rgba(7, 7, 7, 0.5) !important;
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  #p-cartelera { 
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px; 
+    margin-top: -2%;
+    background-color: rgba(22, 252, 202, 0.3);
+    border-radius: 5px;
+    text-shadow: 0 0 5px black;
+    width: 100%;
+    font-weight: bold;
+  }
+  
+  #destino {
+    width: 140px;
+    height: 140px;
+    opacity: 0.75;
+  }
+  
+  #fecha {
+    display: inline-flex;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    text-shadow: 0 0 2px gold, 0 0 2px gold, 0 0 25px gold;
+  }
+
   /* Estilos para la página 3 */
+  #contacto-formulario.contacto {
+    margin-left: -10%;
+  } 
 
-  .contact-formulario {
-    margin-left: 0 auto;
-    margin-top: 20px;
-    text-align: left;
-  }
-
-  #formularioContacto {
-    margin-left: -10% !important;
-    max-width: 350px !important;
-  }
 
   .form-group {
     max-width: 375px !important;
@@ -137,7 +180,7 @@
     color: black;
     cursor: pointer;
     font-size: 18px;
-    width: 350px !important;
+    width: 375px !important;
     height: 60px;
     border-radius: 10px;
     margin-left: 0;
@@ -147,22 +190,28 @@
     width: 100%;
   }
 
-  .tituloFormulario {
-    font-size: 18px;
+  #titulo1Formulario.tituloFormulario {
+    font-size: 26px;
     font-family: "Roboto", sans-serif;
     text-shadow: 2px 2px 2px black;
+    font-weight: bold;
     color: #ffffff;
-    width: auto;
-    white-space: nowrap;
-    overflow: visible;
-    margin-left: 8%;
+    width: 100%;
+    margin-left: 13%;
     padding: 0px;
-    border-radius: 5px;
     animation: fadeInOut 7.5s ease-in-out infinite;
   }
 
-  #titulo1Formulario {
-    margin-left: 20% !important;
+  #titulo2Formulario.tituloFormulario {
+    font-size: 26px;
+    font-family: "Roboto", sans-serif;
+    text-shadow: 2px 2px 2px black;
+    font-weight: bold;
+    color: #ffffff;
+    width: 100%;
+    margin-left: 45% !important;
+    padding: 0px;
+    animation: fadeInOut 7.5s ease-in-out infinite;
   }
 
   .buttons-page3 {
@@ -181,7 +230,19 @@
 
   footer {
     margin-bottom: 0;
-    margin-top: 15%;
+    margin-top: 10%;
+  }
+
+  .contenedorTarjetas {
+    display: none !important;
+  }
+
+  .integrantes {
+    visibility: visible !important;
+    font-family: "Roboto", sans-serif;
+    color: white;
+    display: flex;
+    justify-content: center;
   }
 }
 
@@ -404,23 +465,21 @@ body {
 }
 
 #audio-controls button {
-  background: linear-gradient(
-    84deg,
-    rgba(237, 14, 209, 0.5466561624649859) 7%,
-    rgba(233, 199, 25, 0.6250875350140056) 87%,
-    rgba(241, 237, 239, 0.4430147058823529) 98%
-  );
-  border-radius: 20%;
+  background: linear-gradient(84deg, rgba(36,34,34,0.87718837535014) 28%, rgba(98,96,95,0.938813025210084) 49%, rgba(124,123,119,0.989233193277311) 98%);  
   margin: 10px;
-  border: 1px solid black;
+  border: 2px solid black;
   border-radius: 15%;
 }
 
 #audio-controls img {
-  opacity: 1;
   width: 40px;
   height: 40px;
+  border-radius: 15%;
   /* filter: blur(1px); */
+}
+
+.button-clicked {
+  animation: fadeInOut 1s ease;
 }
 
 :root {
@@ -548,12 +607,21 @@ h3 {
 }
 
 #page2 {
-  justify-content: flex;
   background: url("../img/back-page2.png") no-repeat center center;
   background-size: cover;
   max-width: 100%;
   width: 100%;
   height: 1080px;
+}
+
+
+.tituloCartelera{
+  display: flex;
+  justify-content: center;
+  margin-left: 30%;
+  font-family: 'Roboto', sans-serif;
+  font-size: 44px; 
+  font-weight: bold;
 }
 
 .cartelera {
@@ -568,17 +636,47 @@ h3 {
   color: white;
 }
 
-#p-cartelera {
+#p-cartelera { 
+  font-family: 'Roboto', sans-serif;
+  font-size: 24px; 
   margin-top: -2%;
   background-color: rgba(22, 252, 202, 0.3);
   border-radius: 5px;
   text-shadow: 0 0 5px black;
   width: 100%;
   margin-left: 30%;
+  font-weight: bold;
+}
+
+#destino {
+  width: 140px;
+  height: 140px;
+}
+
+#flecha {
+  width: 50px;
+  height: 50px;
+  animation: fadeInOut 1s ease-in-out infinite;
+}
+
+#fecha {
+  margin-top: -3%;
+  font-weight: bold;
+  text-shadow: 0 0 2px gold, 0 0 2px gold, 0 0 25px gold;
+}
+
+.proximoDestinoCartelera {
+  display: flex;
+  justify-content: center;
+  margin-left: 30%;
+  background-color: rgba(7, 7, 7, 0.5);
+  text-shadow: 0 0 5px black;
+  width: 100%;
+  font-family: 'Roboto', sans-serif;
+  font-size: 24px;
 }
 
 #page3 {
-  justify-content: flex;
   background: url("../img/back-Page3-2.jpg") no-repeat center center;
   background-size: cover;
   max-width: 100%;
@@ -951,7 +1049,6 @@ i {
   background-color: #0077b5;
   color: #fff;
 }
-
 
 
 
