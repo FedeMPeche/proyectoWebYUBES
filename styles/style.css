@@ -43,7 +43,7 @@
   }
 
   #page1.page {
-    background: url("../img/LogoPage1MobileTransparente.jpeg") no-repeat center center;
+    background: url("../img/LogoPage1MobileTransparente.webp") no-repeat center center;
     background-size: cover !important;
     width: 100%;
     height: 1080px;
@@ -51,14 +51,14 @@
   }
 
   #page2.page {
-    background: url("../img/back-page2.png") no-repeat center center;
+    background: url("../img/back-page2.webp") no-repeat center center;
     background-size: cover !important;
     width: 100% !important;
     height: 1080px;
   }
 
   #page3.page {
-    background: url("../img/back-Page3-2.jpg") no-repeat center center;
+    background: url("../img/back-Page3-2.webp") no-repeat center center;
     background-size: cover !important;
     width: 100% !important;
     height: 1180px;
@@ -86,6 +86,14 @@
     white-space: nowrap;
     overflow: hidden;
     animation: fadeInOut 7.5s ease-in-out infinite;
+  }
+
+  #player-title {
+    margin-top: 5% !important;
+  }
+
+  #song-title {
+    margin-top: 5% !important; 
   }
 
   #p-cartelera {
@@ -147,6 +155,18 @@
     font-size: 20px;
     font-weight: bold;
     text-shadow: 0 0 2px gold, 0 0 2px gold, 0 0 25px gold;
+  }
+
+  #video-page2 {
+    margin-left: 7% !important;
+    background-color: rgba(7, 7, 7, 0.5);
+    position: inherit;
+    justify-content: center;
+    top: 0;
+    left: 0;
+    width: 340px !important;
+    height: 640px;
+    z-index: -1;
   }
 
   /* Estilos para la página 3 */
@@ -358,6 +378,7 @@ body {
 }
 
 .imagen {
+  margin-top: 30%;
   background-size: cover;
   background-position: center center;
   width: 100%;
@@ -370,6 +391,7 @@ body {
 }
 
 .menu {
+  margin-top: 30%;
   position: absolute;
   top: 0;
   border: 1px solid black;
@@ -424,7 +446,7 @@ body {
 .novedades {
   font-family: "Roboto", sans-serif;
   color: rgb(247, 247, 247);
-  background-color: rgba(3, 3, 3, 0.75);
+  background-color: rgba(240, 10, 87, 0.75);
   width: 100%;
   border-radius: 5px;
   white-space: nowrap;
@@ -573,19 +595,19 @@ body {
   background-color: var(--instagram);
 }
 
-.buttons #instagram:hover {
+.buttons #instagram {
   background-color: var(--instagram);
 }
 
-.buttons #youtube:hover {
+.buttons #youtube {
   background-color: var(--youtube);
 }
 
-.buttons #facebook:hover {
+.buttons #facebook {
   background-color: var(--facebook);
 }
 
-.buttons #spotify:hover {
+.buttons #spotify {
   background-color: var(--spotify);
 }
 
@@ -607,25 +629,36 @@ h3 {
 }
 
 #page2 {
-  background: url("../img/back-page2.png") no-repeat center center;
+  background: url("../img/back-page2.webp") no-repeat center center;
   background-size: cover;
   max-width: 100%;
   width: 100%;
   height: 1080px;
 }
 
+#video-page2 {
+  display: flex;
+  margin-left: 30%;
+  justify-content: center;
+  background-color: rgba(7, 7, 7, 0.5);
+  top: 0;
+  left: 0;
+  width: 926px;
+  height: 640px;
+  z-index: -1;
+}
+
 
 .tituloCartelera{
   display: flex;
-  justify-content: center;
-  margin-left: 30%;
+  margin-left: 45%;
   font-family: 'Roboto', sans-serif;
   font-size: 44px; 
   font-weight: bold;
 }
 
 .cartelera {
-  margin-top: 16%;
+  margin-top: 3%;
   margin-left: -30%;
   width: 50%;
   display: inline-block;
@@ -677,7 +710,7 @@ h3 {
 }
 
 #page3 {
-  background: url("../img/back-Page3-2.jpg") no-repeat center center;
+  background: url("../img/back-Page3-2.webp") no-repeat center center;
   background-size: cover;
   max-width: 100%;
   width: 100%;
@@ -801,7 +834,7 @@ label {
   font-weight: bold;
   margin: 0;
   text-shadow: 0 0 5px gold, 0 0 10px gold, 0 0 15px gold;
-  background-image: url("../img/back-page1-solar.png");
+  background-image: url("../img/back-page1-solar.webp");
   background-size: cover;
   background-color: rgba(255, 255, 255, 0.027);
 }
@@ -811,7 +844,7 @@ label {
   font-weight: bold;
   margin: 0;
   text-shadow: 0 0 5px gold, 0 0 10px gold, 0 0 15px gold;
-  background-image: url("../img/back-page1-solar.png");
+  background-image: url("../img/back-page1-solar.webp");
   background-size: cover;
   background-color: rgba(255, 255, 255, 0.027);
 }
@@ -822,7 +855,7 @@ label {
   font-weight: bold;
   margin: 0;
   text-shadow: 0 0 5px gold, 0 0 10px gold, 0 0 15px gold;
-  background-image: url("../img/back-page1-solar.png");
+  background-image: url("../img/back-page1-solar.webp");
   background-size: cover;
   background-color: rgba(255, 255, 255, 0.027);
 }
@@ -833,7 +866,7 @@ label {
   font-weight: bold;
   margin: 0;
   text-shadow: 0 0 5px gold, 0 0 10px gold, 0 0 15px gold;
-  background-image: url("../img/back-page1-solar.png");
+  background-image: url("../img/back-page1-solar.webp");
   background-size: cover;
   background-color: rgba(255, 255, 255, 0.027);
 }
@@ -937,7 +970,7 @@ h3 {
   position: absolute;
   transition: all 1s cubic-bezier(0.645, 0.045, 0.355, 1);
   background: #ff000000;
-  background-image: url("../img/imageTano.png");
+  background-image: url("../img/tanoWebp.webp");
   background-size: cover;
 }
 
@@ -947,7 +980,7 @@ h3 {
   position: absolute;
   transition: all 1s cubic-bezier(0.645, 0.045, 0.355, 1);
   background: #ff000000;
-  background-image: url("../img/imagenMarcho.png");
+  background-image: url("../img/marchoWebp.webp");
   background-size: cover;
 }
 
@@ -957,7 +990,7 @@ h3 {
   position: absolute;
   transition: all 1s cubic-bezier(0.645, 0.045, 0.355, 1);
   background: #ff000000;
-  background-image: url("../img/imagenFede.png");
+  background-image: url("../img/fede2Webp.webp");
   background-size: cover;
 }
 
@@ -967,7 +1000,7 @@ h3 {
   position: absolute;
   transition: all 1s cubic-bezier(0.645, 0.045, 0.355, 1);
   background: #ff000000;
-  background-image: url("../img/imagenPablo.png");
+  background-image: url("../img/pabloWebp.webp");
   background-size: cover;
 }
 
@@ -977,7 +1010,7 @@ h3 {
   position: absolute;
   transition: all 1s cubic-bezier(0.645, 0.045, 0.355, 1);
   background: #ff000000;
-  background-image: url("../img/imagenMauri.png");
+  background-image: url("../img/mauriWebp.webp");
   background-size: cover;
 }
 
@@ -1049,7 +1082,6 @@ i {
   background-color: #0077b5;
   color: #fff;
 }
-
 
 
 
