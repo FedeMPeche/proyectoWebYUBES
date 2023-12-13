@@ -21,13 +21,13 @@
 
   <!------------------------ PAGINA 1 -------------------------------------------------->
 
-  <div id="video-container">
+  <!-- <div id="video-container">
     <video id="video-bienvenida" autoplay muted loop>
       <source src="videoBienvenida/FondoPage1.mp4" type="video/mp4">
     </video>
-  </div>
+  </div> -->
 <div class="container-fluid">
-    <div class ="page" id="page1">
+    <div class ="page" id="page1" style="background-image: url('img/backgroundPage1Hp2.webp');">
       <h2 class="novedades"><strong>SEGUI LAS NOVEDADES EN NUESTRAS REDES SOCIALES</strong></h2>
       <br>
        <!-- //Redes sociales -->
@@ -40,7 +40,7 @@
         <br>
           <div id="logo">
             <!-- <img src="img/logo.png" alt="Logo" width="250" height="266" id="logoEdit1"> -->
-            <img src="img/yubesConSombra.png" alt="yubes" width="600" height="200" id="logoedit2">
+            <img src="img/yubesConSombra.webp" alt="yubes" width="600" height="200" id="logoedit2">
           </div>
           <br>
 
@@ -51,7 +51,7 @@
             <div class="discos">
               <div class="disco">
                 <a href="https://open.spotify.com/album/1J7EEjvk4WpI7pUazFO6Ee" target="_blank">
-                <div class="imagen" style="background-image: url('img/destinoA.png');"></div>
+                <div class="imagen" style="background-image: url('img/destinoA.webp');"></div>
                 <div class="menu" id="menu1">
                   <p class="pMenu"><strong>01- Bailando entre las nubes</strong></p>
                   <p class="pMenu"><strong>02- El espectador</strong></p>
@@ -66,7 +66,7 @@
               </div>
               <div class="disco">
                 <a href="https://open.spotify.com/intl-es/album/2xDcMNr4xA2bGOUxJMXZ2E" target="_blank">
-                <div class="imagen" style="background-image: url('img/destinoB.png');" id="imagen2"></div>
+                <div class="imagen" style="background-image: url('img/destinoB.webp');" id="imagen2"></div>
                 <div class="menu" id= "menu2">
                   <p class="pMenu"><strong>01- Meditare</strong></p>
                   <p class="pMenu"><strong>02- De reojo</strong></p>
@@ -107,7 +107,6 @@
 
   <!-- -------------------------------PÁGINA 2 --------------------------------------- -->
     <div class="page" id="page2">
-      <br>
         <!-- <div class="botonesToDoPage2">
           <button onclick="scrollToPage(1)" id="toPage1">Volver al "INICIO"</button>
           <button onclick="scrollToPage(3)" id="toPage3">Ir a "CONTACTO"</button>
@@ -117,14 +116,14 @@
         </br>
          <p id ="p-cartelera">Aqui apareceran los priximos shows. Atento!</p>
           <div class="proximoDestinoCartelera">
-          <img src="img/logo.png" alt="destino" id="destino">
+          <img src="img/logo.webp" alt="destino" id="destino">
           </div>
           <div class="proximoDestinoCartelera">
           <img src="img/flechaDown.png" alt="flecha" id="flecha">
           </div>
-            <div class="proximoDestinoCartelera">
-            <p id="fecha"><br>Jueves 7/12 en 'Hay Producto'<br>PRESENTACION<br>"Un viaje de ida"</p>
-            </div>
+              <video id="video-page2" autoplay muted loop>
+                <source src="videoBienvenida/fechaHPmp4Ok2.mp4" type="video/mp4">
+              </video>
       </section>
     </div>
 
@@ -239,7 +238,5 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
   </body>
 </html>
-
-
 
 
