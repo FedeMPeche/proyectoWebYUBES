@@ -188,4 +188,3 @@ tarjetas.forEach((tarjeta) => {
 
 
 
-
