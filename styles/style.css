@@ -1,24 +1,30 @@
-@media screen and (max-width: 768px) {
+@media (min-width: 350px) and (max-width: 648px) {
   #video-container {
-    display: none !important;
+    display: none;
   }
 
   body {
-    background-color: black;
     margin: 0;
     padding: 0;
     font-family: "Roboto", sans-serif;
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: 100vh;
   }
 
   .page {
-    background-color: black;
-    width: 100%;
-    height: 100vh;
     text-align: center;
+  }
+
+  .container-fluid {
+    width: 100%;
+    margin: 0 auto;
+    flex-direction: column;
+  }
+
+  .buttons{
+    max-width: 648px !important;
+  }
+
+  .buttons a {
+    margin-right: 40px;
   }
 
 
@@ -45,7 +51,7 @@
   #page1.page {
     background: url("../img/LogoPage1MobileTransparente.webp") no-repeat center center;
     background-size: cover !important;
-    width: 100%;
+    width: 648px !important;
     height: 1080px;
     z-index: 1;
   }
@@ -53,47 +59,53 @@
   #page2.page {
     background: url("../img/back-page2.webp") no-repeat center center;
     background-size: cover !important;
-    width: 100% !important;
+    width: 648px !important;
     height: 1080px;
   }
 
   #page3.page {
     background: url("../img/back-Page3-2.webp") no-repeat center center;
     background-size: cover !important;
-    width: 100% !important;
-    height: 1180px;
+    width: 648px !important;
+    height: 1080px;
   }
 
   .menu {
     visibility: hidden;
   }
 
-  .discos {
-    margin-top: 40% !important;
-  }
-
-  .disco {
-    width: 175px !important;
-    height: 175px !important;
+  .discos .disco{
+    margin-top: 55% !important;
+    max-width: 200px;
+    height: 200px;
+    margin: 0 auto;
   }
 
   .novedades {
-    font-size: 16px;
+    font-size: 20px;
     font-family: "Roboto", sans-serif;
     color: rgb(255, 253, 253);
-    background-color: rgba(2, 2, 2, 0.75) !important;
-    max-width: 100%;
+    background-color: rgba(2, 2, 2, 1) !important;
+    max-width: 648px;
     white-space: nowrap;
     overflow: hidden;
     animation: fadeInOut 7.5s ease-in-out infinite;
   }
 
   #player-title {
-    margin-top: 5% !important;
+    margin-top: 15% !important;
+    font-size: 24px !important;
+    margin-bottom: -5% !important;
   }
 
   #song-title {
-    margin-top: 5% !important; 
+    width: 100% !important;
+    margin-top: 15% !important; 
+    font-size: 24px !important;
+  }
+
+  #audio-controls {
+    margin-top: 0;
   }
 
   #p-cartelera {
@@ -116,11 +128,12 @@
   .cartelera {
     margin-top: 16%;
     margin-left: -30%;
-    width: 50%;
-    display: inline-block;
+    width: 100%;
+    height: 100vh;
+    display: flex;
     justify-content: center;
     font-family: "Roboto", sans-serif;
-    font-size: 20px;
+    font-size: 18px;
     text-align: center;
     color: white;
   }
@@ -149,15 +162,34 @@
     opacity: 0.75;
   }
   
-  #fecha {
-    display: inline-flex;
-    font-family: 'Roboto', sans-serif;
-    font-size: 20px;
+  .fechas {
+    display: flex;
+    width: 80%;
+    margin-top: 5%;
+    text-align: center;
+    justify-content: center;
+    font-family: "Roboto", sans-serif;
+    font-size: 12px !important;
+    background-color: rgba(3, 97, 16, 0.75);
+    padding: 25px !important;
+    text-shadow: 2px 2px 0 rgb(18, 78, 3);
+    border-radius: 2px;
+    border: solid black 2px;
+    color: rgb(248, 245, 245);
     font-weight: bold;
-    text-shadow: 0 0 2px gold, 0 0 2px gold, 0 0 25px gold;
   }
 
-  #video-page2 {
+  .botonEntradas {
+    display: flex-end !important;
+    font-size: 12px !important;
+    padding: 5px !important;
+  }
+
+  .auspiciantes{
+    display: none !important;
+  }
+
+  /* #video-page2 {
     margin-left: 7% !important;
     background-color: rgba(7, 7, 7, 0.5);
     position: inherit;
@@ -167,16 +199,16 @@
     width: 340px !important;
     height: 640px;
     z-index: -1;
-  }
+  } */
 
   /* Estilos para la página 3 */
   #contacto-formulario.contacto {
-    margin-left: -10%;
+    max-width: 400px !important;
   } 
 
 
   .form-group {
-    max-width: 375px !important;
+    max-width: 400px !important;
     background-color: rgba(241, 176, 36, 0.253);
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -200,7 +232,7 @@
     color: black;
     cursor: pointer;
     font-size: 18px;
-    width: 375px !important;
+    width: 400px !important;
     height: 60px;
     border-radius: 10px;
     margin-left: 0;
@@ -208,29 +240,326 @@
 
   .contacto {
     width: 100%;
+    height: 100vh;
   }
 
   #titulo1Formulario.tituloFormulario {
-    font-size: 26px;
+    font-size: 22px;
     font-family: "Roboto", sans-serif;
     text-shadow: 2px 2px 2px black;
     font-weight: bold;
     color: #ffffff;
     width: 100%;
-    margin-left: 13%;
-    padding: 0px;
     animation: fadeInOut 7.5s ease-in-out infinite;
   }
 
   #titulo2Formulario.tituloFormulario {
-    font-size: 26px;
+    font-size: 22px;
     font-family: "Roboto", sans-serif;
     text-shadow: 2px 2px 2px black;
     font-weight: bold;
     color: #ffffff;
     width: 100%;
-    margin-left: 45% !important;
-    padding: 0px;
+    animation: fadeInOut 7.5s ease-in-out infinite;
+  }
+
+  .buttons-page3 {
+    width: 300px !important;
+    margin-top: 10%;
+    height: 50px !important;
+  }
+
+  .btn.btn-primary, .btn.btn-success {
+    justify-content: center;
+  }
+
+  footer {
+    margin-top: 0 !important;
+    background-size: cover !important;
+    width: 648px !important;
+    height: 100vh;
+    background-color: black;
+  }
+
+  .contenedorTarjetas {
+    display: none !important;
+  }
+
+  .integrantes {
+    visibility: visible !important;
+    font-family: "Roboto", sans-serif;
+    color: white;
+    display: flex;
+    justify-content: center;
+    text-shadow: 0 0 5px rgb(187, 6, 6), 0 0 5px rgb(196, 17, 17), 0 0 35px rgb(236, 61, 17);
+  }
+}
+
+@media screen and (min-width: 649px) and (max-width: 768px) {
+  #video-container {
+    display: none;
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+  }
+
+  .page {
+    text-align: center;
+  }
+
+  .container-fluid {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+
+  .buttons #instagram {
+    background-color: var(--instagram);
+  }
+
+  .buttons #youtube {
+    background-color: var(--youtube);
+  }
+
+  .buttons #spotify {
+    background-color: var(--spotify);
+  }
+
+  .buttons #facebook {
+    background-color: var(--facebook);
+  }
+
+  #logoedit2 {
+    width: 550px;
+  }
+
+  #page1.page {
+    background: url("../img/LogoPage1MobileTransparente.webp") no-repeat center center;
+    background-size: cover !important;
+    width: 768px;
+    height: 1080px;
+    z-index: 1;
+  }
+
+  #page2.page {
+    background: url("../img/back-page2.webp") no-repeat center center;
+    background-size: cover !important;
+    width: 768px;
+    height: 1080px;
+  }
+
+  #page3.page {
+    background: url("../img/back-Page3-2.webp") no-repeat center center;
+    background-size: cover !important;
+    width: 768px;
+    height: 1080px;
+  }
+
+  footer {
+    width: 768px !important;
+    background: url("../img/footer.webp") no-repeat center center;
+    background-size: cover; 
+    margin: 0 auto;
+    height: 100vh;
+    margin-top: 0;
+  }
+
+  .integrantes {
+    font-size: 24px;
+    text-shadow: 0 0 2px rgb(187, 6, 6), 0 0 2px rgb(196, 17, 17), 0 0 25px rgb(236, 61, 17);
+
+  }
+
+  .menu {
+    visibility: hidden;
+  }
+
+  .discos .disco{
+    margin-top: 10%;
+    width: 250px;
+    height: 250px;
+    padding: 20px;
+  }
+
+  .novedades {
+    font-size: 20px;
+    font-family: "Roboto", sans-serif;
+    color: rgb(255, 253, 253);
+    background-color: rgba(2, 2, 2, 1) !important;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: fadeInOut 7.5s ease-in-out infinite;
+  }
+
+  #player-title {
+    margin-top: 7% !important;
+  }
+
+  #song-title {
+    margin-top: 7% !important; 
+  }
+
+  #p-cartelera {
+    font-size: 18px;
+  }
+
+  /* Estilos para la página 2 */
+
+  #tituloCartelera{
+    margin-top: 5%;
+    display: flex;
+    justify-content: center;
+    margin-left: 30%;
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px; 
+    font-weight: bold;
+    width: 100%;
+    text-shadow: 0 0 2px rgb(187, 6, 6), 0 0 2px rgb(196, 17, 17), 0 0 25px rgb(236, 61, 17);
+  }
+  
+  .cartelera {
+    margin-top: 16%;
+    max-width: 768px;
+    justify-content: center;
+    font-family: "Roboto", sans-serif;
+    font-size: 18px;
+    text-align: center;
+    color: white;
+  }
+
+  .proximoDestinoCartelera {
+    display: flex;
+    background-color: rgba(7, 7, 7, 0.5) !important;
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  #p-cartelera { 
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px; 
+    background-color: rgba(22, 252, 202, 0.3);
+    border-radius: 5px;
+    text-shadow: 0 0 5px black;
+    width: 100%;
+    font-weight: bold;
+  }
+  
+  #destino {
+    margin-top: 5%;
+    width: 140px;
+    height: 140px;
+    opacity: 0.75;
+  }
+
+  #flecha{
+    margin-top: 5%;
+  }
+  
+  .fechas {
+    margin-top: 5%;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    font-family: "Roboto", sans-serif;
+    font-size: 18px;
+    background-color: rgba(3, 97, 16, 0.75);
+    padding: 5px;
+    text-shadow: 2px 2px 0 rgb(18, 78, 3);
+    border-radius: 2px;
+    border: solid black 2px;
+    margin-right: 10px; 
+    color: rgb(248, 245, 245);
+  }
+
+  .fechas .botonEntradas {
+    font-size: 12px;
+    margin: 0 auto;
+    padding: 5px;
+    background-color:#3b5999;
+    border: 2px solid #1e07e7;
+  }
+
+  .auspiciantes{
+    display: none !important;
+  }
+
+  /* #video-page2 {
+    margin-left: 7% !important;
+    background-color: rgba(7, 7, 7, 0.5);
+    position: inherit;
+    justify-content: center;
+    top: 0;
+    left: 0;
+    width: 340px !important;
+    height: 640px;
+    z-index: -1;
+  } */
+
+  /* Estilos para la página 3 */
+  #contacto-formulario.contacto {
+    margin-left: 0;
+    margin: 0 auto;
+    max-width: 400px;
+  } 
+
+
+  .form-group {
+    width: 100% !important;
+    background-color: rgba(241, 176, 36, 0.253);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+  }
+
+  label {
+    font-size: 18px;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    max-width: 768px;
+    padding: 10px;
+    font-size: 16px;
+  }
+
+  #enviarBtn {
+    background-color: #f1a643;
+    color: black;
+    cursor: pointer;
+    font-size: 18px;
+    width: 375px;
+    height: 60px;
+    border-radius: 10px;
+    margin-left: 0;
+  }
+
+  .contacto {
+    max-width: 768px;
+  }
+
+  #titulo1Formulario {
+    font-size: 26px;
+    font-family: "Roboto", sans-serif;
+    text-shadow: 2px 2px 2px black;
+    font-weight: bold;
+    color: #ffffff;
+    width: 768px;
+    animation: fadeInOut 7.5s ease-in-out infinite;
+  }
+
+  #titulo2Formulario {
+    font-size: 26px;
+    font-family: "Roboto", sans-serif;
+    text-shadow: 2px 2px 2px black;
+    font-weight: bold;
+    color: #ffffff;
+    width: 768px;
     animation: fadeInOut 7.5s ease-in-out infinite;
   }
 
@@ -248,11 +577,6 @@
     height: 50px !important;
   }
 
-  footer {
-    margin-bottom: 0;
-    margin-top: 10%;
-  }
-
   .contenedorTarjetas {
     display: none !important;
   }
@@ -266,6 +590,1158 @@
   }
 }
 
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  #video-container {
+    display: none;
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+  }
+
+  .page {
+    text-align: center;
+  }
+
+  .container-fluid {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .buttons{
+    max-width: 1024px;
+  }
+
+
+  .buttons #instagram {
+    background-color: var(--instagram);
+  }
+
+  .buttons #youtube {
+    background-color: var(--youtube);
+  }
+
+  .buttons #spotify {
+    background-color: var(--spotify);
+  }
+
+  .buttons #facebook {
+    background-color: var(--facebook);
+  }
+
+  #logoedit2 {
+    width: 400px;
+  }
+
+  #page1.page {
+    background: url("../img/LogoPage1MobileTransparente.webp") no-repeat center center;
+    background-size: cover !important;
+    width: 1024px !important;
+    height: 1080px;
+    z-index: 1;
+  }
+
+  #page2.page {
+    background: url("../img/back-page2.webp") no-repeat center center;
+    background-size: cover !important;
+    width: 1024px !important;
+    height: 1080px;
+  }
+
+  #page3.page {
+    background: url("../img/back-Page3-2.webp") no-repeat center center;
+    background-size: cover !important;
+    width: 1024px !important;
+    height: 1080px;
+  }
+
+  .menu {
+    visibility: hidden;
+  }
+
+  .discos .disco{
+    margin-top: 20%;
+    max-width: 300px;
+    height: 300px;
+    margin: 0 auto;
+  }
+
+  .novedades {
+    font-size: 22px;
+    font-family: "Roboto", sans-serif;
+    color: rgb(255, 253, 253);
+    background-color: rgba(2, 2, 2, 1) !important;
+    max-width: 1024px;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: fadeInOut 7.5s ease-in-out infinite;
+  }
+
+  #player-title {
+    margin-top: 15% !important;
+    font-size: 20px !important;
+    margin-bottom: -5% !important;
+  }
+
+  #song-title {
+    width: 100% !important;
+    margin-top: 15% !important; 
+    font-size: 20px !important;
+  }
+
+  #audio-controls {
+    margin-top: 0;
+  }
+
+  #p-cartelera {
+    font-size: 18px;
+  }
+
+  /* Estilos para la página 2 */
+
+  #tituloCartelera{
+    display: flex;
+    justify-content: center;
+    margin-left: 30%;
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px; 
+    font-weight: bold;
+    width: 100%;
+    text-shadow: 0 0 2px rgb(187, 6, 6), 0 0 2px rgb(196, 17, 17), 0 0 25px rgb(236, 61, 17);
+  }
+  
+  .cartelera {
+    margin-top: 16%;
+    margin-left: -30%;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    font-family: "Roboto", sans-serif;
+    font-size: 18px;
+    text-align: center;
+    color: white;
+  }
+
+  .proximoDestinoCartelera {
+    display: flex;
+    background-color: rgba(7, 7, 7, 0.5) !important;
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  #p-cartelera { 
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px; 
+    margin-top: -2%;
+    background-color: rgba(22, 252, 202, 0.3);
+    border-radius: 5px;
+    text-shadow: 0 0 5px black;
+    width: 100%;
+    font-weight: bold;
+  }
+  
+  #destino {
+    width: 140px;
+    height: 140px;
+    opacity: 0.75;
+  }
+  
+  .fechas {
+    display: flex;
+    width: 80%;
+    margin-top: 5%;
+    text-align: center;
+    justify-content: center;
+    font-family: "Roboto", sans-serif;
+    font-size: 20px !important;
+    background-color: rgba(3, 97, 16, 0.75);
+    padding: 25px !important;
+    text-shadow: 2px 2px 0 rgb(18, 78, 3);
+    border-radius: 2px;
+    border: solid black 2px;
+    color: rgb(248, 245, 245);
+    font-weight: bold;
+  }
+
+  .botonEntradas {
+    display: flex-end !important;
+    font-size: 12px !important;
+  }
+
+  .auspiciantes{
+    display: none !important;
+  }
+
+  /* #video-page2 {
+    margin-left: 7% !important;
+    background-color: rgba(7, 7, 7, 0.5);
+    position: inherit;
+    justify-content: center;
+    top: 0;
+    left: 0;
+    width: 340px !important;
+    height: 640px;
+    z-index: -1;
+  } */
+
+  /* Estilos para la página 3 */
+  #contacto-formulario.contacto {
+    max-width: 400px !important;
+  } 
+
+
+  .form-group {
+    max-width: 400px !important;
+    background-color: rgba(241, 176, 36, 0.253);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+  }
+
+  label {
+    font-size: 18px;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+  }
+
+  #enviarBtn {
+    background-color: #f1a643;
+    color: black;
+    cursor: pointer;
+    font-size: 18px;
+    width: 400px !important;
+    height: 60px;
+    border-radius: 10px;
+    margin-left: 0;
+  }
+
+  .contacto {
+    width: 100%;
+    height: 100vh;
+  }
+
+  #titulo1Formulario.tituloFormulario {
+    font-size: 22px;
+    font-family: "Roboto", sans-serif;
+    text-shadow: 2px 2px 2px black;
+    font-weight: bold;
+    color: #ffffff;
+    width: 100%;
+    animation: fadeInOut 7.5s ease-in-out infinite;
+  }
+
+  #titulo2Formulario.tituloFormulario {
+    font-size: 22px;
+    font-family: "Roboto", sans-serif;
+    text-shadow: 2px 2px 2px black;
+    font-weight: bold;
+    color: #ffffff;
+    width: 100%;
+    animation: fadeInOut 7.5s ease-in-out infinite;
+  }
+
+  .buttons-page3 {
+    width: 300px !important;
+    margin-top: 10%;
+    height: 50px !important;
+  }
+
+  .btn.btn-primary, .btn.btn-success {
+    justify-content: center;
+  }
+
+  footer {
+    margin-top: 0 !important;
+    background-size: cover !important;
+    width: 1024px !important;
+    height: 100vh;
+    background-color: black;
+  }
+
+  .contenedorTarjetas {
+    display: none !important;
+  }
+
+  .integrantes {
+    visibility: visible !important;
+    font-family: "Roboto", sans-serif;
+    color: white;
+    display: flex;
+    justify-content: center;
+    text-shadow: 0 0 5px rgb(187, 6, 6), 0 0 5px rgb(196, 17, 17), 0 0 35px rgb(236, 61, 17);
+  }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1470px) {
+  #video-container {
+    display: none;
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+  }
+
+  .page {
+    text-align: center;
+  }
+
+  .container-fluid {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .buttons{
+    max-width: 1470px;
+  }
+
+
+  .buttons #instagram {
+    background-color: var(--instagram);
+  }
+
+  .buttons #youtube {
+    background-color: var(--youtube);
+  }
+
+  .buttons #spotify {
+    background-color: var(--spotify);
+  }
+
+  .buttons #facebook {
+    background-color: var(--facebook);
+  }
+
+  #logoedit2 {
+    width: 500px;
+  }
+
+  #page1.page {
+    background: url("../img/LogoPage1MobileTransparente.webp") no-repeat center center;
+    background-size: cover !important;
+    width: 1470px !important;
+    height: 1080px;
+    z-index: 1;
+  }
+
+  #page2.page {
+    background: url("../img/back-page2.webp") no-repeat center center;
+    background-size: cover !important;
+    width: 1470px !important;
+    height: 1080px;
+  }
+
+  #page3.page {
+    background: url("../img/back-Page3-2.webp") no-repeat center center;
+    background-size: cover !important;
+    width: 1470px !important;
+    height: 1080px;
+  }
+
+  
+
+  .discos {
+    justify-content: space-between;
+    width: 100% !important;
+  }
+  
+  .discos .disco{
+    margin-top: 10%;
+    max-width: 300px;
+    height: 300px;
+    margin: 0 auto;
+    justify-items: flex-end;
+  }
+
+  .novedades {
+    font-size: 22px;
+    font-family: "Roboto", sans-serif;
+    color: rgb(255, 253, 253);
+    background-color: rgba(2, 2, 2, 1) !important;
+    max-width: 1280px;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: fadeInOut 7.5s ease-in-out infinite;
+  }
+
+  #player-title {
+    margin-top: 10% !important;
+    font-size: 20px !important;
+    margin-bottom: -7% !important;
+  }
+
+  #song-title {
+    margin-top: 25% !important;
+    width: 100% !important;
+    font-size: 20px !important;
+  }
+
+  #audio-controls {
+    height: 64px;
+  }
+
+  #p-cartelera {
+    font-size: 18px;
+  }
+
+  /* Estilos para la página 2 */
+
+  #tituloCartelera{
+    display: flex;
+    justify-content: center;
+    margin-left: 30%;
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px; 
+    font-weight: bold;
+    width: 100%;
+    text-shadow: 0 0 2px rgb(187, 6, 6), 0 0 2px rgb(196, 17, 17), 0 0 25px rgb(236, 61, 17);
+  }
+  
+  .cartelera {
+    margin-top: 16%;
+    margin-left: -30%;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    font-family: "Roboto", sans-serif;
+    font-size: 18px;
+    text-align: center;
+    color: white;
+  }
+
+  .proximoDestinoCartelera {
+    display: flex;
+    background-color: rgba(7, 7, 7, 0.5) !important;
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  #p-cartelera { 
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px; 
+    margin-top: -2%;
+    background-color: rgba(22, 252, 202, 0.3);
+    border-radius: 5px;
+    text-shadow: 0 0 5px black;
+    width: 100%;
+    font-weight: bold;
+  }
+  
+  #destino {
+    width: 140px;
+    height: 140px;
+    opacity: 0.75;
+  }
+  
+  .fechas {
+    display: flex;
+    width: 80%;
+    margin-top: 5%;
+    text-align: center;
+    justify-content: center;
+    font-family: "Roboto", sans-serif;
+    font-size: 20px !important;
+    background-color: rgba(3, 97, 16, 0.75);
+    padding: 25px !important;
+    text-shadow: 2px 2px 0 rgb(18, 78, 3);
+    border-radius: 2px;
+    border: solid black 2px;
+    color: rgb(248, 245, 245);
+    font-weight: bold;
+  }
+
+  .botonEntradas {
+    display: flex-end !important;
+    font-size: 12px !important;
+  }
+
+  .auspiciantes{
+    display: none !important;
+  }
+
+  /* #video-page2 {
+    margin-left: 7% !important;
+    background-color: rgba(7, 7, 7, 0.5);
+    position: inherit;
+    justify-content: center;
+    top: 0;
+    left: 0;
+    width: 340px !important;
+    height: 640px;
+    z-index: -1;
+  } */
+
+  /* Estilos para la página 3 */
+  #contacto-formulario.contacto {
+    max-width: 400px !important;
+  } 
+
+
+  .form-group {
+    max-width: 400px !important;
+    background-color: rgba(241, 176, 36, 0.253);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+  }
+
+  label {
+    font-size: 18px;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+  }
+
+  #enviarBtn {
+    background-color: #f1a643;
+    color: black;
+    cursor: pointer;
+    font-size: 18px;
+    width: 400px !important;
+    height: 60px;
+    border-radius: 10px;
+    margin-left: 0;
+  }
+
+  .contacto {
+    width: 100%;
+    height: 100vh;
+  }
+
+  #titulo1Formulario.tituloFormulario {
+    font-size: 22px;
+    font-family: "Roboto", sans-serif;
+    text-shadow: 2px 2px 2px black;
+    font-weight: bold;
+    color: #ffffff;
+    width: 100%;
+    animation: fadeInOut 7.5s ease-in-out infinite;
+  }
+
+  #titulo2Formulario.tituloFormulario {
+    font-size: 22px;
+    font-family: "Roboto", sans-serif;
+    text-shadow: 2px 2px 2px black;
+    font-weight: bold;
+    color: #ffffff;
+    width: 100%;
+    animation: fadeInOut 7.5s ease-in-out infinite;
+  }
+
+  .buttons-page3 {
+    width: 300px !important;
+    margin-top: 10%;
+    height: 50px !important;
+  }
+
+  .btn.btn-primary, .btn.btn-success {
+    justify-content: center;
+  }
+
+  footer {
+    margin-top: 0 !important;
+    background-size: cover !important;
+    width: 1470px !important;
+    height: 100vh;
+    background-color: black;
+  }
+
+  .contenedorTarjetas {
+    display: none !important;
+  }
+
+  .integrantes {
+    visibility: visible !important;
+    font-family: "Roboto", sans-serif;
+    color: white;
+    display: flex;
+    justify-content: center;
+    text-shadow: 0 0 5px rgb(187, 6, 6), 0 0 5px rgb(196, 17, 17), 0 0 35px rgb(236, 61, 17);
+  }
+}
+
+@media screen and (min-width: 1471px) {
+  #video-container {
+    display: none;
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+  }
+
+  .page {
+    text-align: center;
+  }
+
+  .container-fluid {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .buttons{
+    max-width: 1920px;
+  }
+
+
+  .buttons #instagram {
+    background-color: var(--instagram);
+  }
+
+  .buttons #youtube {
+    background-color: var(--youtube);
+  }
+
+  .buttons #spotify {
+    background-color: var(--spotify);
+  }
+
+  .buttons #facebook {
+    background-color: var(--facebook);
+  }
+
+  #logoedit2 {
+    width: 600px;
+  }
+
+  #page1.page {
+    background: url("../img/LogoPage1MobileTransparente.webp") no-repeat center center;
+    background-size: cover !important;
+    width: 1920px !important;
+    height: 1080px;
+    z-index: 1;
+  }
+
+  #page2.page {
+    background: url("../img/back-page2.webp") no-repeat center center;
+    background-size: cover !important;
+    width: 1920px !important;
+    height: 1080px;
+  }
+
+  #page3.page {
+    background: url("../img/back-Page3-2.webp") no-repeat center center;
+    background-size: cover !important;
+    width: 1920px !important;
+    height: 1080px;
+  }
+
+  
+
+  .discos {
+    justify-content: space-between;
+    width: 100% !important;
+    margin-top: -5%;
+  }
+  
+  .discos .disco{
+    max-width: 350px;
+    height: 350px;
+    margin: 0 auto;
+    justify-items: flex-end;
+  }
+
+  .novedades {
+    font-size: 30px;
+    font-family: "Roboto", sans-serif;
+    color: rgb(255, 253, 253);
+    background-color: rgba(2, 2, 2, 1) !important;
+    max-width: 100% !important;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: fadeInOut 7.5s ease-in-out infinite;
+  }
+
+  #player-title {
+    margin-top: 5% !important;
+    font-size: 30px !important;
+    margin-bottom: -7% !important;
+  }
+
+  #song-title {
+    margin-top: 25% !important;
+    width: 100% !important;
+    font-size: 20px !important;
+  }
+
+  #audio-controls {
+    margin-top: 2% !important;
+    height: 64px;
+  }
+
+  #p-cartelera {
+    font-size: 18px;
+  }
+
+  /* Estilos para la página 2 */
+
+  #tituloCartelera{
+    display: flex;
+    justify-content: center;
+    margin-left: 30%;
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px; 
+    font-weight: bold;
+    width: 100%;
+    text-shadow: 0 0 2px rgb(187, 6, 6), 0 0 2px rgb(196, 17, 17), 0 0 25px rgb(236, 61, 17);
+  }
+  
+  .cartelera {
+    margin-top: 16%;
+    margin-left: -30%;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    font-family: "Roboto", sans-serif;
+    font-size: 18px;
+    text-align: center;
+    color: white;
+  }
+
+  .proximoDestinoCartelera {
+    display: flex;
+    background-color: rgba(7, 7, 7, 0.5) !important;
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  #p-cartelera { 
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px; 
+    margin-top: -2%;
+    background-color: rgba(22, 252, 202, 0.3);
+    border-radius: 5px;
+    text-shadow: 0 0 5px black;
+    width: 100%;
+    font-weight: bold;
+  }
+  
+  #destino {
+    width: 140px;
+    height: 140px;
+    opacity: 0.75;
+  }
+  
+  .fechas {
+    display: flex;
+    width: 80%;
+    margin-top: 5%;
+    text-align: center;
+    justify-content: center;
+    font-family: "Roboto", sans-serif;
+    font-size: 20px !important;
+    background-color: rgba(3, 97, 16, 0.75);
+    padding: 25px !important;
+    text-shadow: 2px 2px 0 rgb(18, 78, 3);
+    border-radius: 2px;
+    border: solid black 2px;
+    color: rgb(248, 245, 245);
+    font-weight: bold;
+  }
+
+  .botonEntradas {
+    display: flex-end !important;
+    font-size: 12px !important;
+  }
+
+  .auspiciantes{
+    display: none !important;
+  }
+
+  /* #video-page2 {
+    margin-left: 7% !important;
+    background-color: rgba(7, 7, 7, 0.5);
+    position: inherit;
+    justify-content: center;
+    top: 0;
+    left: 0;
+    width: 340px !important;
+    height: 640px;
+    z-index: -1;
+  } */
+
+  /* Estilos para la página 3 */
+  #contacto-formulario.contacto {
+    max-width: 400px !important;
+  } 
+
+
+  .form-group {
+    max-width: 400px !important;
+    background-color: rgba(241, 176, 36, 0.253);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+  }
+
+  label {
+    font-size: 18px;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+  }
+
+  #enviarBtn {
+    background-color: #f1a643;
+    color: black;
+    cursor: pointer;
+    font-size: 18px;
+    width: 400px !important;
+    height: 60px;
+    border-radius: 10px;
+    margin-left: 0;
+  }
+
+  .contacto {
+    width: 100%;
+    height: 100vh;
+  }
+
+  #titulo1Formulario.tituloFormulario {
+    font-size: 30px;
+    font-family: "Roboto", sans-serif;
+    text-shadow: 2px 2px 2px black;
+    font-weight: bold;
+    color: #ffffff;
+    width: 100%;
+    animation: fadeInOut 7.5s ease-in-out infinite;
+    text-shadow: 0 0 5px rgb(187, 6, 6), 0 0 5px rgb(196, 17, 17), 0 0 35px rgb(236, 61, 17);
+  }
+
+  #titulo2Formulario.tituloFormulario {
+    font-size: 30px;
+    font-family: "Roboto", sans-serif;
+    text-shadow: 2px 2px 2px black;
+    font-weight: bold;
+    color: #ffffff;
+    width: 100%;
+    animation: fadeInOut 7.5s ease-in-out infinite;
+    text-shadow: 0 0 5px rgb(187, 6, 6), 0 0 5px rgb(196, 17, 17), 0 0 35px rgb(236, 61, 17);
+  }
+
+  .buttons-page3 {
+    width: 300px !important;
+    margin-top: 10%;
+    height: 50px !important;
+  }
+
+  .btn.btn-primary, .btn.btn-success {
+    justify-content: center;
+  }
+
+  footer {
+    margin-top: 0 !important;
+    background-size: cover !important;
+    width: 1920px !important;
+    height: 100vh;
+    background-color: black;
+  }
+}
+
+@media screen and (orientation: landscape) {
+  
+  container-fluid{
+    display: flex;
+    flex-direction: row;
+  }
+
+  .page {
+    text-align: center;
+  }
+
+  .container-fluid {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .buttons{
+    max-width: 1920px;
+  }
+
+
+  .buttons #instagram {
+    background-color: var(--instagram);
+  }
+
+  .buttons #youtube {
+    background-color: var(--youtube);
+  }
+
+  .buttons #spotify {
+    background-color: var(--spotify);
+  }
+
+  .buttons #facebook {
+    background-color: var(--facebook);
+  }
+
+  #logoedit2 {
+    width: 600px;
+  }
+
+  #page1.page {
+    background: url("../img/LogoPage1MobileTransparente.webp") no-repeat center center;
+    background-size: cover !important;
+    width: 1920px !important;
+    height: 1080px;
+    z-index: 1;
+  }
+
+  #page2.page {
+    background: url("../img/back-page2.webp") no-repeat center center;
+    background-size: cover !important;
+    width: 1920px !important;
+    height: 1080px;
+  }
+
+  #page3.page {
+    background: url("../img/back-Page3-2.webp") no-repeat center center;
+    background-size: cover !important;
+    width: 1920px !important;
+    height: 1080px;
+  }
+
+  
+
+  .discos {
+    justify-content: space-between;
+    width: 100% !important;
+    margin-top: -5%;
+  }
+  
+  .discos .disco{
+    max-width: 350px;
+    height: 350px;
+    margin: 0 auto;
+    justify-items: flex-end;
+  }
+
+  .novedades {
+    font-size: 40px;
+    font-family: "Roboto", sans-serif;
+    color: rgb(255, 253, 253);
+    background-color: rgba(2, 2, 2, 1) !important;
+    max-width: 1470px;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: fadeInOut 7.5s ease-in-out infinite;
+  }
+
+  #player-title {
+    margin-top: 5% !important;
+    font-size: 30px !important;
+    margin-bottom: -7% !important;
+  }
+
+  #song-title {
+    margin-top: 25% !important;
+    width: 100% !important;
+    font-size: 20px !important;
+  }
+
+  #audio-controls {
+    margin-top: 2% !important;
+    height: 64px;
+  }
+
+  #p-cartelera {
+    font-size: 18px;
+  }
+
+  /* Estilos para la página 2 */
+
+  #tituloCartelera{
+    display: flex;
+    justify-content: center;
+    margin-left: 30%;
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px; 
+    font-weight: bold;
+    width: 100%;
+    text-shadow: 0 0 2px rgb(187, 6, 6), 0 0 2px rgb(196, 17, 17), 0 0 25px rgb(236, 61, 17);
+  }
+  
+  .cartelera {
+    margin-top: 16%;
+    margin-left: -30%;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    font-family: "Roboto", sans-serif;
+    font-size: 18px;
+    text-align: center;
+    color: white;
+  }
+
+  .proximoDestinoCartelera {
+    display: flex;
+    background-color: rgba(7, 7, 7, 0.5) !important;
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  #p-cartelera { 
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px; 
+    margin-top: -2%;
+    background-color: rgba(22, 252, 202, 0.3);
+    border-radius: 5px;
+    text-shadow: 0 0 5px black;
+    width: 100%;
+    font-weight: bold;
+  }
+  
+  #destino {
+    width: 140px;
+    height: 140px;
+    opacity: 0.75;
+  }
+  
+  .fechas {
+    display: flex;
+    width: 80%;
+    margin-top: 5%;
+    text-align: center;
+    justify-content: center;
+    font-family: "Roboto", sans-serif;
+    font-size: 20px !important;
+    background-color: rgba(3, 97, 16, 0.75);
+    padding: 25px !important;
+    text-shadow: 2px 2px 0 rgb(18, 78, 3);
+    border-radius: 2px;
+    border: solid black 2px;
+    color: rgb(248, 245, 245);
+    font-weight: bold;
+  }
+
+  .botonEntradas {
+    display: flex-end !important;
+    font-size: 12px !important;
+  }
+
+  .auspiciantes{
+    display: none !important;
+  }
+
+  /* #video-page2 {
+    margin-left: 7% !important;
+    background-color: rgba(7, 7, 7, 0.5);
+    position: inherit;
+    justify-content: center;
+    top: 0;
+    left: 0;
+    width: 340px !important;
+    height: 640px;
+    z-index: -1;
+  } */
+
+  /* Estilos para la página 3 */
+  #contacto-formulario.contacto {
+    max-width: 400px !important;
+  } 
+
+
+  .form-group {
+    max-width: 400px !important;
+    background-color: rgba(241, 176, 36, 0.253);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+  }
+
+  label {
+    font-size: 18px;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+  }
+
+  #enviarBtn {
+    background-color: #f1a643;
+    color: black;
+    cursor: pointer;
+    font-size: 18px;
+    width: 400px !important;
+    height: 60px;
+    border-radius: 10px;
+    margin-left: 0;
+  }
+
+  .contacto {
+    width: 100%;
+    height: 100vh;
+  }
+
+  #titulo1Formulario.tituloFormulario {
+    font-size: 30px;
+    font-family: "Roboto", sans-serif;
+    text-shadow: 2px 2px 2px black;
+    font-weight: bold;
+    color: #ffffff;
+    width: 100%;
+    animation: fadeInOut 7.5s ease-in-out infinite;
+    text-shadow: 0 0 5px rgb(187, 6, 6), 0 0 5px rgb(196, 17, 17), 0 0 35px rgb(236, 61, 17);
+  }
+
+  #titulo2Formulario.tituloFormulario {
+    font-size: 30px;
+    font-family: "Roboto", sans-serif;
+    text-shadow: 2px 2px 2px black;
+    font-weight: bold;
+    color: #ffffff;
+    width: 100%;
+    animation: fadeInOut 7.5s ease-in-out infinite;
+    text-shadow: 0 0 5px rgb(187, 6, 6), 0 0 5px rgb(196, 17, 17), 0 0 35px rgb(236, 61, 17);
+  }
+
+  .buttons-page3 {
+    width: 300px !important;
+    margin-top: 10%;
+    height: 50px !important;
+  }
+
+  .btn.btn-primary, .btn.btn-success {
+    justify-content: center;
+  }
+
+  footer {
+    margin-top: 0 !important;
+    background-size: cover !important;
+    width: 1920px !important;
+    height: 100vh;
+    background-color: black;
+  }
+
+}
 /* Define la animación de desvanecimiento gradual */
 @keyframes fadeInOut {
   0%,
@@ -300,26 +1776,16 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: "Roboto", sans-serif;
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  height: 100vh;
-  overflow-y: auto;
-  overflow-x: auto;
+  font-family: 'Roboto',sans-serif;
 }
 
 .page {
-  width: 100%;
-  height: 100vh;
   text-align: center;
 }
 
 .container-fluid {
-  width: 100%;
-  padding: 0;
-  margin-left: 0;
-  margin-right: 0;
+  width: 100vw;
+  margin: 0 auto;
 }
 
 #video-container {
@@ -334,8 +1800,8 @@ body {
 #page1 {
   justify-content: flex;
   background-size: cover;
-  width: 1920px;
-  height: 1080px;
+  width: 100%;
+  height: 100vh;
   z-index: 1;
 }
 
@@ -361,10 +1827,8 @@ body {
 } */
 
 .discos {
-  margin-top: 10%;
-  margin-left: 5%;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   width: 90%;
   margin: 0 auto;
@@ -381,8 +1845,16 @@ body {
   opacity: 0.75;
 }
 
+#disco1 {
+  margin-left: -35%;
+}
+
+#disco2 {
+  margin-left: 35%;
+}
+
 .imagen {
-  margin-top: 30%;
+  margin-top: 20%;
   background-size: cover;
   background-position: center center;
   width: 100%;
@@ -419,7 +1891,7 @@ body {
 }
 
 #menu1 {
-  left: 300px;
+  left: 200px;
 }
 
 #menu2 {
@@ -465,7 +1937,7 @@ body {
   transition: opacity 1s ease-in-out;
   overflow: hidden;
   white-space: nowrap;
-  width: 430px;
+  width: 450px;
   margin: 0 auto;
 }
 
@@ -515,13 +1987,13 @@ body {
   --spotify: #047a04;
 }
 
-/* Estilos para los botones "toPage1", "toPage2" y "toPage3" */
+/* Estilos para los botones "toPage1", "toPage2" y "toPage3"
 #toPage1,
 #toPage2,
 #toPage3 {
   display: flex;
   margin: 10px auto; /* Centra los botones horizontalmente y agrega un espacio entre ellos */
-  padding: 10px 20px;
+  /* padding: 10px 20px;
   background-color: rgba(241, 212, 114, 0.7);
   color: #000000;
   border: none;
@@ -538,9 +2010,9 @@ body {
 #toPage3:hover {
   background-color: rgba(5, 5, 5, 0.5);
   color: white;
-}
+}  */
 
-.botonesToDoPage1 {
+/* .botonesToDoPage1 {
   display: flex;
   justify-content: space-between;
 }
@@ -553,7 +2025,7 @@ body {
 .botonesToDoPage2 {
   display: flex;
   justify-content: space-between;
-}
+} */
 
 .buttons {
   display: flex;
@@ -633,12 +2105,13 @@ h3 {
 }
 
 #page2 {
-  display: -ms-inline-grid;
+  display: -ms-f-grid;
   background: url("../img/back-page2.webp") no-repeat center center;
+  justify-content: flex;
   background-size: cover;
-  max-width: 100%;
   width: 100%;
-  height: 1080px;
+  height: 100vh;
+  z-index: 1;
 }
 
 .fechas {
@@ -651,10 +2124,12 @@ h3 {
   font-size: 18px;
   background-color: rgba(3, 97, 16, 0.75);
   padding: 5px;
-  text-shadow: 2px 2px 0 black;
+  text-shadow: 2px 2px 0 rgb(18, 78, 3);
   border-radius: 2px;
   border: solid black 2px;
   margin-right: 10px; 
+  color: rgb(248, 245, 245);
+  font-weight: bold;
 }
 
 .botonEntradas {
@@ -666,13 +2141,33 @@ h3 {
   font-size: 14px;
   background-color: rgba(0, 0, 0, 0.75);
   padding: 15px;
-  text-shadow: 2px 2px 0 black;
+  text-shadow: 2px 2px 0 rgb(0, 0, 0);
   border-radius: 15px;
   border: solid black 2px;
-   
+  font-weight: bold;
+  text-shadow: 0 0 2px gold, 0 0 2px gold, 0 0 25px gold;
+  height: 50%;
 }
 
-#video-page2 {
+.saludo {
+  width: 100%;
+  margin-left: 30%;
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  background-color: rgba(0, 0, 0, 0.75);
+  padding: 5px;
+  text-shadow: 2px 2px 0 black;
+  border-radius: 2px;
+  border: solid rgba(0, 0, 0, 0.658) 2px;
+  margin-right: 10px; 
+  font-weight: bold;
+  text-shadow: 0 0 2px gold, 0 0 2px gold, 0 0 25px gold;
+}
+
+/* #video-page2 {
   display: flex;
   margin-left: 30%;
   justify-content: center;
@@ -682,7 +2177,7 @@ h3 {
   width: 926px;
   height: 640px;
   z-index: -1;
-}
+} */
 
 
 .tituloCartelera{
@@ -745,32 +2240,95 @@ h3 {
   font-size: 24px;
 }
 
+.saludoAuspiciantes {
+  width: 100%;
+  margin-left: 30%;
+  text-align: center;
+  justify-content: center;
+  display: none;
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  background-color: rgba(98, 220, 241, 0.75);
+  padding: 5px;
+  text-shadow: 2px 2px 0 black;
+  border-radius: 2px;
+  border: solid rgba(0, 0, 0, 0.658) 2px;
+  margin-right: 10px; 
+  font-weight: bold;
+  text-shadow: 0 0 2px rgb(16, 152, 243), 0 0 2px rgb(25, 156, 243), 0 0 25px gold;
+  margin-bottom: -110px;
+}
+
+.auspiciantes {
+  display: none; /* Utilizamos Flexbox para alinear los logos */
+  justify-content: space-around; /* Distribuye el espacio entre los logos */
+  align-items: center; /* Alinea verticalmente los logos */
+  flex-wrap: wrap; /* Envuelve los logos si no caben en una sola línea */
+}
+
+.auspiciantes-fila {
+  display: flex; /* Utilizamos Flexbox para alinear los auspiciantes en una fila */
+  justify-content: space-around; /* Centra los auspiciantes horizontalmente */
+  align-items: center; /* Alinea los auspiciantes verticalmente */
+  flex-wrap: wrap; /* Envuelve los auspiciantes si no caben en una sola fila */
+  margin-bottom: -50px;
+  margin-right: 37px;
+}
+
+.auspiciantes-fila2 {
+  display: flex; /* Utilizamos Flexbox para alinear los auspiciantes en una fila */
+  justify-content: space-around; /* Centra los auspiciantes horizontalmente */
+  align-items: center; /* Alinea los auspiciantes verticalmente */
+  flex-wrap: wrap; /* Envuelve los auspiciantes si no caben en una sola fila */
+  margin-bottom: -50px;
+  margin-left: 175px;
+}
+
+.auspiciante {
+  margin: 20px; /* Margen entre cada auspiciante */
+}
+
+.auspiciante img {
+  max-width: 175px; /* Tamaño máximo de cada logo */
+  height: auto; /* Altura automática para mantener la proporción */
+}
+
 #page3 {
   background: url("../img/back-Page3-2.webp") no-repeat center center;
+  justify-content: flex;
   background-size: cover;
-  max-width: 100%;
   width: 100%;
-  height: 1180px;
+  height: 100vh;
+  z-index: 1;
+  background-color: black;
 }
 
 /* FORMULARIO DE CONTACTO */
 
-.container {
-  align-items: center;
-}
-
 .contacto {
-  float: left;
-  width: 50%;
-  flex: 1;
-  margin-right: 20px;
+  width: 100%;
   padding: 20px;
+  display: flex;
+  flex-direction: column; /* Alinear elementos en columna */
+  align-items: center; /* Centrar horizontalmente */
 }
 
-.contactoRedes {
-  flex: 1;
-  padding: 20px;
-  margin-top: 25%;
+.contact-form {
+  max-width: 450px; /* Ancho máximo del formulario */
+  width: 100%; /* Aprovecha el espacio disponible */
+  padding: 24px;
+  text-align: center;
+  margin-bottom: 20px; /* Espacio entre el formulario y el siguiente título */
+}
+
+.tituloFormulario {
+  font-size: 28px;
+  font-family: "Roboto", sans-serif;
+  text-shadow: 2px 2px 2px black;
+  color: #ffffff;
+  overflow: visible;
+  animation: fadeInOut 7.5s ease-in-out infinite;
+  margin-bottom: 20px; /* Espacio entre títulos y elementos siguientes */
 }
 
 #instagram-page3 {
@@ -781,62 +2339,27 @@ h3 {
   background-color: rgb(13, 172, 13);
 }
 
-.tituloFormulario {
-  font-size: 28px;
-  font-family: "Roboto", sans-serif;
-  text-shadow: 2px 2px 2px black;
-  color: #ffffff;
-  width: auto;
-  white-space: nowrap;
-  overflow: visible;
-  padding: 0px;
-  border-radius: 5px;
-  animation: fadeInOut 7.5s ease-in-out infinite;
-}
-
-#titulo1Formulario {
-  margin-left: -35%;
-}
-
-#titulo2Formulario {
-  margin-left: 9%;
-}
-
 .buttons-page3 {
-  width: 400px !important;
-  margin-left: 5%;
+  width: 100%;
   margin-top: 40px;
-  justify-content: space-evenly !important;
+  justify-content: space-between;
   height: 50px !important;
   align-items: center;
 }
 
-.btn.btn-primary {
-  margin-left: 40px;
-  height: 50px !important;
-}
-
-.contact-form {
-  max-width: 450px;
-  margin-left: 5%;
-  padding: 24px;
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-.form-group {
+#formularioContacto {
+  width: 100%;
   background-color: rgba(241, 176, 36, 0.1);
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   margin-bottom: 20px;
-  width: 440px;
 }
 
 #enviarBtn {
   font-family: "Roboto", sans-serif;
   text-decoration: none;
   font-size: 24px;
-  width: 440px;
+  width: 100%;
   height: 55px;
   margin-top: 20px;
   text-align: center;
@@ -934,20 +2457,35 @@ textarea {
   height: 200px;
 }
 
-footer {
-  background-color: black;
-  color: white;
-  text-align: center;
-  padding: 20px 0;
-  position: relative;
-  bottom: 0;
-  width: 100%;
+/* LOGOS CONTACTO PAGE 3 */
+
+i {
+  font-size: 24px;
+  padding: 10px;
 }
 
-h3 {
+footer {
+  background: url("../img/footer.webp") no-repeat center center;
+  width: 100%;
+  background-size: cover;
+  background-color: black;
+  height: 1080px;
+}
+
+#footerID {
+  background-color: black;
+}
+
+p.copy{
+  text-shadow: 0 0 5px rgb(187, 6, 6), 0 0 5px rgb(196, 17, 17), 0 0 35px rgb(236, 61, 17);
+}
+
+#yubesIntegrantes {
   margin-top: 2%;
   font-family: "Roboto", sans-serif;
   color: rgb(255, 255, 255);
+  text-shadow: 0 0 5px rgb(187, 6, 6), 0 0 5px rgb(196, 17, 17), 0 0 35px rgb(236, 61, 17);
+
 }
 
 .integrantes {
@@ -964,7 +2502,7 @@ h3 {
   justify-content: center;
 }
 
-#mute-button {
+/* #mute-button {
   position: fixed;
   bottom: 150px;
   right: 20px;
@@ -973,7 +2511,7 @@ h3 {
   font-size: 25px;
   width: 5%;
   border-radius: 5px;
-}
+} */
 
 /*TARJETAS FOOTER */
 
@@ -996,7 +2534,7 @@ h3 {
   width: 240px;
   position: relative;
   border-radius: 10px;
-  box-shadow: 0 0 20px 9px rgb(241, 212, 114);
+  box-shadow: 0 0 2px rgb(187, 6, 6), 0 0 2px rgb(196, 17, 17), 0 0 25px rgb(236, 61, 17);
   overflow: hidden;
 }
 
@@ -1053,7 +2591,7 @@ h3 {
 .detalle {
   display: flex;
   position: absolute;
-  color: rgb(156, 153, 149);
+  color: rgb(245, 244, 242);
   font-family: "Roboto", sans-serif;
   flex-direction: column;
   background: linear-gradient(
@@ -1096,13 +2634,9 @@ h3 {
   transform: translateY(0);
 }
 
-/* LOGOS CONTACTO PAGE 3 */
-
-i {
-  font-size: 24px;
-  padding: 10px;
+.copy {
+  text-shadow: 0 0 5px rgb(187, 6, 6), 0 0 5px rgb(196, 17, 17), 0 0 35px rgb(236, 61, 17);
 }
-
 /* Estilo del enlace de LinkedIn */
 .copy a {
   margin-bottom: 20px;
@@ -1118,7 +2652,6 @@ i {
   background-color: #0077b5;
   color: #fff;
 }
-
 
 
 
