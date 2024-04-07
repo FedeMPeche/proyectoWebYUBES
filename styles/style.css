@@ -1784,8 +1784,10 @@ body {
 }
 
 .container-fluid {
-  width: 100vw;
+  width: 100%;
   margin: 0 auto;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 #video-container {
