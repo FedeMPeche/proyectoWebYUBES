@@ -1,4 +1,309 @@
-@media (min-width: 350px) and (max-width: 648px) {
+@media (max-width: 450px) {
+  #video-container {
+    display: none;
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+  }
+
+  .page {
+    text-align: center;
+  }
+
+  .container-fluid {
+    width: 100%;
+    margin: 0 auto;
+    flex-direction: column;
+  }
+
+  .buttons{
+    max-width: 450px !important;
+  }
+
+  .buttons #instagram {
+    background-color: var(--instagram);
+    font-size: 30px;
+  }
+
+  .buttons #youtube {
+    background-color: var(--youtube);
+    font-size: 30px;
+  }
+
+  .buttons #spotify {
+    background-color: var(--spotify);
+    font-size: 30px;  
+  }
+
+  .buttons #facebook {
+    background-color: var(--facebook);
+    font-size: 30px;
+  }
+
+  #logoedit2 {
+    width: 350px;
+  }
+
+  #page1.page {
+    background: url("../img/fondoMobile450.webp") no-repeat center center !important;
+    background-size: cover !important;
+    width: 450px !important;
+    height: 1080px;
+    z-index: 1;
+  }
+
+  #page2.page {
+    background: url("../img/back-page2.webp") no-repeat center center;
+    background-size: cover !important;
+    width: 450px !important;
+    height: 1080px;
+  }
+
+  #page3.page {
+    background: url("../img/back-Page3-2.webp") no-repeat center center;
+    background-size: cover !important;
+    width: 450px !important;
+    height: 1080px;
+  }
+
+  .menu {
+    visibility: hidden;
+  }
+
+  .discos .disco{
+    margin-top: 65% !important;
+    max-width: 200px;
+    height: 200px;
+    margin: 0 auto;
+  }
+
+  #disco1 {
+    margin-left: 0% !important;
+  } 
+
+  #disco2 {
+    margin-left: 0% !important;
+  }
+
+  .novedades {
+    font-size: 15px !important;
+    font-family: "Roboto", sans-serif;
+    color: rgb(255, 253, 253);
+    background-color: rgba(2, 2, 2, 1) !important;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: fadeInOut 7.5s ease-in-out infinite;
+  }
+
+  #player-title {
+    margin-top: 35% !important;
+    font-size: 16px !important;
+    margin-bottom: -35% !important;
+  }
+
+  #song-title {
+    width: 100% !important;
+    margin-top: 35% !important; 
+    font-size: 16px !important;
+  }
+
+  #audio-controls {
+    margin-top: 0;
+  }
+
+  #p-cartelera {
+    font-size: 18px;
+  }
+
+  /* Estilos para la página 2 */
+
+  #tituloCartelera{
+    display: flex;
+    justify-content: center;
+    margin-left: 30%;
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px; 
+    font-weight: bold;
+    width: 100%;
+    text-shadow: 0 0 2px rgb(187, 6, 6), 0 0 2px rgb(196, 17, 17), 0 0 25px rgb(236, 61, 17);
+  }
+  
+  .cartelera {
+    margin-top: 16%;
+    margin-left: -30%;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    font-family: "Roboto", sans-serif;
+    font-size: 18px;
+    text-align: center;
+    color: white;
+  }
+
+  .proximoDestinoCartelera {
+    display: flex;
+    background-color: rgba(7, 7, 7, 0.5) !important;
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  #p-cartelera { 
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px; 
+    margin-top: -2%;
+    background-color: rgba(22, 252, 202, 0.3);
+    border-radius: 5px;
+    text-shadow: 0 0 5px black;
+    width: 100%;
+    font-weight: bold;
+  }
+  
+  #destino {
+    width: 140px;
+    height: 140px;
+    opacity: 0.75;
+  }
+  
+  .fechas {
+    display: flex;
+    width: 90%;
+    margin-top: 5%;
+    text-align: center;
+    justify-content: center;
+    font-family: "Roboto", sans-serif;
+    font-size: 12px !important;
+    background-color: rgba(3, 97, 16, 0.75);
+    padding: 5px !important;
+    text-shadow: 2px 2px 0 rgb(18, 78, 3);
+    border-radius: 2px;
+    border: solid black 2px;
+    color: rgb(248, 245, 245);
+    font-weight: bold;
+  }
+
+  .botonEntradas {
+    display: flex-end !important;
+    font-size: 10px !important;
+    padding: 15px !important;
+  }
+
+  .auspiciantes{
+    display: none !important;
+  }
+
+  /* #video-page2 {
+    margin-left: 7% !important;
+    background-color: rgba(7, 7, 7, 0.5);
+    position: inherit;
+    justify-content: center;
+    top: 0;
+    left: 0;
+    width: 340px !important;
+    height: 640px;
+    z-index: -1;
+  } */
+
+  /* Estilos para la página 3 */
+  #contacto-formulario.contacto {
+    max-width: 400px !important;
+  } 
+
+
+  .form-group {
+    max-width: 400px !important;
+    background-color: rgba(241, 176, 36, 0.253);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+  }
+
+  label {
+    font-size: 18px;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+  }
+
+  #enviarBtn {
+    cursor: pointer;
+    font-size: 18px;
+    width: 362px !important;
+    height: 60px;
+    border-radius: 10px;
+    margin-left: 0;
+  }
+
+  .contacto {
+    width: 100%;
+    height: 100vh;
+  }
+
+  #titulo1Formulario.tituloFormulario {
+    font-size: 22px;
+    font-family: "Roboto", sans-serif;
+    text-shadow: 2px 2px 2px black;
+    font-weight: bold;
+    color: #ffffff;
+    width: 100%;
+    animation: fadeInOut 7.5s ease-in-out infinite;
+    text-shadow: 0 0 2px rgb(2, 2, 2), 0 0 2px rgb(0, 0, 0), 0 0 25px rgb(2, 2, 2);
+
+  }
+
+  #titulo2Formulario.tituloFormulario {
+    font-size: 22px;
+    font-family: "Roboto", sans-serif;
+    text-shadow: 2px 2px 2px black;
+    font-weight: bold;
+    color: #ffffff;
+    width: 100%;
+    animation: fadeInOut 7.5s ease-in-out infinite;
+    text-shadow: 0 0 2px rgb(2, 2, 2), 0 0 2px rgb(0, 0, 0), 0 0 25px rgb(2, 2, 2);
+  }
+
+  .buttons-page3 {
+    width: 300px !important;
+    margin-top: 10%;
+    height: 50px !important;
+  }
+
+  .btn.btn-primary, .btn.btn-success {
+    justify-content: center;
+  }
+
+  footer {
+    background: url("../img/footer450.webp") no-repeat center center !important;
+    background-size: cover !important;
+    width: 450px !important;
+    background-color: black;
+  }
+
+  .contenedorTarjetas {
+    display: none !important;
+  }
+
+  .integrantes {
+    visibility: visible !important;
+    font-family: "Roboto", sans-serif;
+    color: white;
+    display: flex;
+    justify-content: center;
+    text-shadow: 0 0 5px rgb(187, 6, 6), 0 0 5px rgb(196, 17, 17), 0 0 35px rgb(236, 61, 17);
+  }
+}
+
+
+@media (min-width: 451px) and (max-width: 648px) {
   #video-container {
     display: none;
   }
@@ -23,25 +328,24 @@
     max-width: 648px !important;
   }
 
-  .buttons a {
-    margin-right: 40px;
-  }
-
-
   .buttons #instagram {
     background-color: var(--instagram);
+    font-size: 40px;
   }
 
   .buttons #youtube {
     background-color: var(--youtube);
+    font-size: 40px;
   }
 
   .buttons #spotify {
     background-color: var(--spotify);
+    font-size: 40px;
   }
 
   .buttons #facebook {
     background-color: var(--facebook);
+    font-size: 40px;
   }
 
   #logoedit2 {
@@ -49,7 +353,7 @@
   }
 
   #page1.page {
-    background: url("../img/LogoPage1MobileTransparente.webp") no-repeat center center;
+    background: url("../img/fondoMobile648.webp") no-repeat center center !important;
     background-size: cover !important;
     width: 648px !important;
     height: 1080px;
@@ -75,10 +379,18 @@
   }
 
   .discos .disco{
-    margin-top: 55% !important;
+    margin-top: 35% !important;
     max-width: 200px;
     height: 200px;
     margin: 0 auto;
+  }
+
+  #disco1 {
+    margin-left: -10% !important;
+  }
+
+  #disco2 {
+    margin-left: 15% !important;
   }
 
   .novedades {
@@ -93,15 +405,15 @@
   }
 
   #player-title {
-    margin-top: 15% !important;
-    font-size: 24px !important;
-    margin-bottom: -5% !important;
+    margin-top: 25% !important;
+    font-size: 20px !important;
+    margin-bottom: -20% !important;
   }
 
   #song-title {
     width: 100% !important;
-    margin-top: 15% !important; 
-    font-size: 24px !important;
+    margin-top: 30% !important; 
+    font-size: 20px !important;
   }
 
   #audio-controls {
@@ -180,9 +492,11 @@
   }
 
   .botonEntradas {
-    display: flex-end !important;
-    font-size: 12px !important;
-    padding: 5px !important;
+    font-size: 10px !important;
+    margin: 0 auto;
+    padding: 5px;
+    background-color:#3b5999;
+    border: 2px solid #1e07e7;
   }
 
   .auspiciantes{
@@ -228,8 +542,6 @@
   }
 
   #enviarBtn {
-    background-color: #f1a643;
-    color: black;
     cursor: pointer;
     font-size: 18px;
     width: 400px !important;
@@ -251,6 +563,8 @@
     color: #ffffff;
     width: 100%;
     animation: fadeInOut 7.5s ease-in-out infinite;
+    text-shadow: 0 0 2px rgb(2, 2, 2), 0 0 2px rgb(196, 17, 17), 0 0 25px rgb(236, 61, 17);
+
   }
 
   #titulo2Formulario.tituloFormulario {
@@ -261,6 +575,8 @@
     color: #ffffff;
     width: 100%;
     animation: fadeInOut 7.5s ease-in-out infinite;
+    text-shadow: 0 0 2px rgb(2, 2, 2), 0 0 2px rgb(196, 17, 17), 0 0 25px rgb(236, 61, 17);
+
   }
 
   .buttons-page3 {
@@ -274,7 +590,7 @@
   }
 
   footer {
-    margin-top: 0 !important;
+    background: url("../img/footer648.webp") no-repeat center center !important;
     background-size: cover !important;
     width: 648px !important;
     height: 100vh;
@@ -295,7 +611,7 @@
   }
 }
 
-@media screen and (min-width: 649px) and (max-width: 768px) {
+@media (min-width: 649px) and (max-width: 768px) {
   #video-container {
     display: none;
   }
@@ -318,18 +634,22 @@
 
   .buttons #instagram {
     background-color: var(--instagram);
+    font-size: 40px;
   }
 
   .buttons #youtube {
     background-color: var(--youtube);
+    font-size: 40px;
   }
 
   .buttons #spotify {
     background-color: var(--spotify);
+    font-size: 40px;
   }
 
   .buttons #facebook {
     background-color: var(--facebook);
+    font-size: 40px;
   }
 
   #logoedit2 {
@@ -337,7 +657,7 @@
   }
 
   #page1.page {
-    background: url("../img/LogoPage1MobileTransparente.webp") no-repeat center center;
+    background: url("../img/fondoMobile768.webp") no-repeat center center !important;
     background-size: cover !important;
     width: 768px;
     height: 1080px;
@@ -359,9 +679,9 @@
   }
 
   footer {
-    width: 768px !important;
-    background: url("../img/footer.webp") no-repeat center center;
+    background: url("../img/footer768.webp") no-repeat center center;
     background-size: cover; 
+    width: 768px !important;
     margin: 0 auto;
     height: 100vh;
     margin-top: 0;
@@ -378,14 +698,14 @@
   }
 
   .discos .disco{
-    margin-top: 10%;
-    width: 250px;
-    height: 250px;
+    margin-top: 25%;
+    width: 275px;
+    height: 275px;
     padding: 20px;
   }
 
   .novedades {
-    font-size: 20px;
+    font-size: 24px;
     font-family: "Roboto", sans-serif;
     color: rgb(255, 253, 253);
     background-color: rgba(2, 2, 2, 1) !important;
@@ -396,12 +716,17 @@
   }
 
   #player-title {
-    margin-top: 7% !important;
+    margin-top: 20% !important;
+    margin-bottom: -15% !important;
+    font-size: 20px !important;
   }
 
   #song-title {
-    margin-top: 7% !important; 
+    margin-top: 30% !important; 
+    font-size: 20px !important;
   }
+
+  
 
   #p-cartelera {
     font-size: 18px;
@@ -529,8 +854,6 @@
   }
 
   #enviarBtn {
-    background-color: #f1a643;
-    color: black;
     cursor: pointer;
     font-size: 18px;
     width: 375px;
@@ -551,6 +874,8 @@
     color: #ffffff;
     width: 768px;
     animation: fadeInOut 7.5s ease-in-out infinite;
+    text-shadow: 0 0 2px rgb(2, 2, 2), 0 0 2px rgb(0, 0, 0), 0 0 25px rgb(2, 2, 2);
+
   }
 
   #titulo2Formulario {
@@ -561,6 +886,8 @@
     color: #ffffff;
     width: 768px;
     animation: fadeInOut 7.5s ease-in-out infinite;
+    text-shadow: 0 0 2px rgb(2, 2, 2), 0 0 2px rgb(0, 0, 0), 0 0 25px rgb(2, 2, 2);
+
   }
 
   .buttons-page3 {
@@ -590,7 +917,7 @@
   }
 }
 
-@media screen and (min-width: 769px) and (max-width: 1024px) {
+@media (min-width: 769px) and (max-width: 1024px) {
   #video-container {
     display: none;
   }
@@ -617,18 +944,22 @@
 
   .buttons #instagram {
     background-color: var(--instagram);
+    font-size: 40px;
   }
 
   .buttons #youtube {
     background-color: var(--youtube);
+    font-size: 40px;
   }
 
   .buttons #spotify {
     background-color: var(--spotify);
+    font-size: 40px;
   }
 
   .buttons #facebook {
     background-color: var(--facebook);
+    font-size: 40px;
   }
 
   #logoedit2 {
@@ -636,7 +967,7 @@
   }
 
   #page1.page {
-    background: url("../img/LogoPage1MobileTransparente.webp") no-repeat center center;
+    background: url("../img/fondoMobile1024.webp") no-repeat center center !important;
     background-size: cover !important;
     width: 1024px !important;
     height: 1080px;
@@ -662,33 +993,33 @@
   }
 
   .discos .disco{
-    margin-top: 20%;
+    margin-top: 15% !important;
     max-width: 300px;
     height: 300px;
     margin: 0 auto;
   }
 
   .novedades {
-    font-size: 22px;
+    font-size: 30px;
     font-family: "Roboto", sans-serif;
     color: rgb(255, 253, 253);
     background-color: rgba(2, 2, 2, 1) !important;
-    max-width: 1024px;
+    max-width: 1024px !important;
     white-space: nowrap;
     overflow: hidden;
     animation: fadeInOut 7.5s ease-in-out infinite;
   }
 
   #player-title {
-    margin-top: 15% !important;
-    font-size: 20px !important;
-    margin-bottom: -5% !important;
+    margin-top: 20% !important;
+    font-size: 24px !important;
+    margin-bottom: -20% !important;
   }
 
   #song-title {
     width: 100% !important;
-    margin-top: 15% !important; 
-    font-size: 20px !important;
+    margin-top: 45% !important; 
+    font-size: 22px !important;
   }
 
   #audio-controls {
@@ -814,8 +1145,6 @@
   }
 
   #enviarBtn {
-    background-color: #f1a643;
-    color: black;
     cursor: pointer;
     font-size: 18px;
     width: 400px !important;
@@ -837,6 +1166,8 @@
     color: #ffffff;
     width: 100%;
     animation: fadeInOut 7.5s ease-in-out infinite;
+    text-shadow: 0 0 2px rgb(2, 2, 2), 0 0 2px rgb(0, 0, 0), 0 0 25px rgb(2, 2, 2);
+
   }
 
   #titulo2Formulario.tituloFormulario {
@@ -847,6 +1178,8 @@
     color: #ffffff;
     width: 100%;
     animation: fadeInOut 7.5s ease-in-out infinite;
+    text-shadow: 0 0 2px rgb(2, 2, 2), 0 0 2px rgb(0, 0, 0), 0 0 25px rgb(2, 2, 2);
+
   }
 
   .buttons-page3 {
@@ -860,11 +1193,12 @@
   }
 
   footer {
-    margin-top: 0 !important;
-    background-size: cover !important;
+    background: url("../img/footer1024.webp") no-repeat center center;
+    background-size: cover; 
     width: 1024px !important;
+    margin: 0 auto;
     height: 100vh;
-    background-color: black;
+    margin-top: 0;
   }
 
   .contenedorTarjetas {
@@ -881,7 +1215,7 @@
   }
 }
 
-@media screen and (min-width: 1025px) and (max-width: 1470px) {
+@media (min-width: 1025px) and (max-width: 1470px) {
   #video-container {
     display: none;
   }
@@ -908,18 +1242,24 @@
 
   .buttons #instagram {
     background-color: var(--instagram);
+    font-size: 40px;
+    margin-left: 10%;
   }
 
   .buttons #youtube {
     background-color: var(--youtube);
+    font-size: 40px;
   }
 
   .buttons #spotify {
     background-color: var(--spotify);
+    font-size: 40px;
   }
 
   .buttons #facebook {
     background-color: var(--facebook);
+    font-size: 40px;
+    margin-right: 10%;
   }
 
   #logoedit2 {
@@ -927,7 +1267,7 @@
   }
 
   #page1.page {
-    background: url("../img/LogoPage1MobileTransparente.webp") no-repeat center center;
+    background: url("../img/fondoMobile1470.webp") no-repeat center center !important;
     background-size: cover !important;
     width: 1470px !important;
     height: 1080px;
@@ -956,34 +1296,34 @@
   }
   
   .discos .disco{
-    margin-top: 10%;
-    max-width: 300px;
-    height: 300px;
+    margin-top: 5% !important;
+    max-width: 350px;
+    height: 350px;
     margin: 0 auto;
     justify-items: flex-end;
   }
 
   .novedades {
-    font-size: 22px;
+    font-size: 40px;
     font-family: "Roboto", sans-serif;
     color: rgb(255, 253, 253);
     background-color: rgba(2, 2, 2, 1) !important;
-    max-width: 1280px;
+    max-width: 1470px;
     white-space: nowrap;
     overflow: hidden;
     animation: fadeInOut 7.5s ease-in-out infinite;
   }
 
   #player-title {
-    margin-top: 10% !important;
-    font-size: 20px !important;
-    margin-bottom: -7% !important;
+    margin-top: 2% !important;
+    font-size: 24px !important;
+    margin-bottom: -1% !important;
   }
 
   #song-title {
-    margin-top: 25% !important;
+    margin-top: 5% !important;
     width: 100% !important;
-    font-size: 20px !important;
+    font-size: 22px !important;
   }
 
   #audio-controls {
@@ -1109,8 +1449,6 @@
   }
 
   #enviarBtn {
-    background-color: #f1a643;
-    color: black;
     cursor: pointer;
     font-size: 18px;
     width: 400px !important;
@@ -1125,23 +1463,25 @@
   }
 
   #titulo1Formulario.tituloFormulario {
-    font-size: 22px;
+    font-size: 30px;
     font-family: "Roboto", sans-serif;
     text-shadow: 2px 2px 2px black;
     font-weight: bold;
     color: #ffffff;
     width: 100%;
     animation: fadeInOut 7.5s ease-in-out infinite;
+    text-shadow: 0 0 2px rgb(2, 2, 2), 0 0 2px rgb(0, 0, 0), 0 0 25px rgb(2, 2, 2);
   }
 
   #titulo2Formulario.tituloFormulario {
-    font-size: 22px;
+    font-size: 30px;
     font-family: "Roboto", sans-serif;
     text-shadow: 2px 2px 2px black;
     font-weight: bold;
     color: #ffffff;
     width: 100%;
     animation: fadeInOut 7.5s ease-in-out infinite;
+    text-shadow: 0 0 2px rgb(2, 2, 2), 0 0 2px rgb(0, 0, 0), 0 0 25px rgb(2, 2, 2);
   }
 
   .buttons-page3 {
@@ -1155,7 +1495,7 @@
   }
 
   footer {
-    margin-top: 0 !important;
+    background: url("../img/footer1470.webp") no-repeat center center !important;
     background-size: cover !important;
     width: 1470px !important;
     height: 100vh;
@@ -1176,7 +1516,7 @@
   }
 }
 
-@media screen and (min-width: 1471px) {
+@media (min-width: 1471px) {
   #video-container {
     display: none;
   }
@@ -1203,18 +1543,24 @@
 
   .buttons #instagram {
     background-color: var(--instagram);
+    font-size: 45px;
+    margin-left: 10%;
   }
 
   .buttons #youtube {
     background-color: var(--youtube);
+    font-size: 45px;
   }
 
   .buttons #spotify {
     background-color: var(--spotify);
+    font-size: 45px;
   }
 
   .buttons #facebook {
     background-color: var(--facebook);
+    font-size: 45px;
+    margin-right: 10%;
   }
 
   #logoedit2 {
@@ -1222,7 +1568,7 @@
   }
 
   #page1.page {
-    background: url("../img/LogoPage1MobileTransparente.webp") no-repeat center center;
+    background: url("../img/fondoPage1Webp.webp") no-repeat center center;
     background-size: cover !important;
     width: 1920px !important;
     height: 1080px;
@@ -1243,12 +1589,9 @@
     height: 1080px;
   }
 
-  
-
   .discos {
     justify-content: space-between;
     width: 100% !important;
-    margin-top: -5%;
   }
   
   .discos .disco{
@@ -1270,19 +1613,18 @@
   }
 
   #player-title {
-    margin-top: 5% !important;
+    margin-top: 12% !important;
     font-size: 30px !important;
-    margin-bottom: -7% !important;
+    margin-bottom: -12% !important;
   }
 
   #song-title {
-    margin-top: 25% !important;
     width: 100% !important;
-    font-size: 20px !important;
+    font-size: 22px !important;
+    margin-top: 51% !important;
   }
 
   #audio-controls {
-    margin-top: 2% !important;
     height: 64px;
   }
 
@@ -1405,8 +1747,6 @@
   }
 
   #enviarBtn {
-    background-color: #f1a643;
-    color: black;
     cursor: pointer;
     font-size: 18px;
     width: 400px !important;
@@ -1428,7 +1768,7 @@
     color: #ffffff;
     width: 100%;
     animation: fadeInOut 7.5s ease-in-out infinite;
-    text-shadow: 0 0 5px rgb(187, 6, 6), 0 0 5px rgb(196, 17, 17), 0 0 35px rgb(236, 61, 17);
+    text-shadow: 0 0 2px rgb(2, 2, 2), 0 0 2px rgb(0, 0, 0), 0 0 25px rgb(2, 2, 2);
   }
 
   #titulo2Formulario.tituloFormulario {
@@ -1439,7 +1779,7 @@
     color: #ffffff;
     width: 100%;
     animation: fadeInOut 7.5s ease-in-out infinite;
-    text-shadow: 0 0 5px rgb(187, 6, 6), 0 0 5px rgb(196, 17, 17), 0 0 35px rgb(236, 61, 17);
+    text-shadow: 0 0 2px rgb(2, 2, 2), 0 0 2px rgb(0, 0, 0), 0 0 25px rgb(2, 2, 2);
   }
 
   .buttons-page3 {
@@ -1453,7 +1793,7 @@
   }
 
   footer {
-    margin-top: 0 !important;
+    background: url("../img/footer.webp") no-repeat center center !important;
     background-size: cover !important;
     width: 1920px !important;
     height: 100vh;
@@ -1465,7 +1805,7 @@
   
   container-fluid{
     display: flex;
-    flex-direction: row;
+    flex-direction: row !important;
   }
 
   .page {
@@ -1503,7 +1843,7 @@
   }
 
   #page1.page {
-    background: url("../img/LogoPage1MobileTransparente.webp") no-repeat center center;
+    background: url("../img/fondoPage1Webp.webp") no-repeat center center;
     background-size: cover !important;
     width: 1920px !important;
     height: 1080px;
@@ -1686,8 +2026,6 @@
   }
 
   #enviarBtn {
-    background-color: #f1a643;
-    color: black;
     cursor: pointer;
     font-size: 18px;
     width: 400px !important;
@@ -1709,7 +2047,7 @@
     color: #ffffff;
     width: 100%;
     animation: fadeInOut 7.5s ease-in-out infinite;
-    text-shadow: 0 0 5px rgb(187, 6, 6), 0 0 5px rgb(196, 17, 17), 0 0 35px rgb(236, 61, 17);
+    text-shadow: 0 0 2px rgb(2, 2, 2), 0 0 2px rgb(0, 0, 0), 0 0 25px rgb(2, 2, 2);
   }
 
   #titulo2Formulario.tituloFormulario {
@@ -1720,7 +2058,7 @@
     color: #ffffff;
     width: 100%;
     animation: fadeInOut 7.5s ease-in-out infinite;
-    text-shadow: 0 0 5px rgb(187, 6, 6), 0 0 5px rgb(196, 17, 17), 0 0 35px rgb(236, 61, 17);
+    text-shadow: 0 0 2px rgb(2, 2, 2), 0 0 2px rgb(0, 0, 0), 0 0 25px rgb(2, 2, 2);
   }
 
   .buttons-page3 {
@@ -1845,6 +2183,7 @@ body {
 
 #disco1, #disco2 {
   opacity: 0.75;
+  margin-top: 75%;
 }
 
 #disco1 {
@@ -2139,16 +2478,16 @@ h3 {
   text-decoration: none;
   justify-content: center;
   font-family: "Roboto", sans-serif;
-  color: white;
+  color: black;
   font-size: 14px;
-  background-color: rgba(0, 0, 0, 0.75);
   padding: 15px;
-  text-shadow: 2px 2px 0 rgb(0, 0, 0);
   border-radius: 15px;
-  border: solid black 2px;
   font-weight: bold;
-  text-shadow: 0 0 2px gold, 0 0 2px gold, 0 0 25px gold;
+  text-shadow: 0 0 2px rgb(10, 240, 41), 0 0 2px gold, 0 0 25px gold;
   height: 50%;
+  margin: 0 auto;
+  background-color:#f6f7fa;
+  border: 5px solid #0c440f;
 }
 
 .saludo {
@@ -2166,7 +2505,7 @@ h3 {
   border: solid rgba(0, 0, 0, 0.658) 2px;
   margin-right: 10px; 
   font-weight: bold;
-  text-shadow: 0 0 2px gold, 0 0 2px gold, 0 0 25px gold;
+  text-shadow: 0 0 2px rgb(245, 4, 4), 0 0 2px rgb(155, 4, 4), 0 0 25px rgb(196, 4, 4);
 }
 
 /* #video-page2 {
@@ -2316,11 +2655,12 @@ h3 {
 }
 
 .contact-form {
-  max-width: 450px; /* Ancho máximo del formulario */
-  width: 100%; /* Aprovecha el espacio disponible */
+  max-width: 450px; 
+  width: 100%; 
   padding: 24px;
   text-align: center;
-  margin-bottom: 20px; /* Espacio entre el formulario y el siguiente título */
+  margin-bottom: 20px;
+  background-color: rgb(110, 110, 110, 0.5);
 }
 
 .tituloFormulario {
@@ -2331,6 +2671,7 @@ h3 {
   overflow: visible;
   animation: fadeInOut 7.5s ease-in-out infinite;
   margin-bottom: 20px; /* Espacio entre títulos y elementos siguientes */
+  text-shadow: 0 0 2px rgb(245, 4, 4), 0 0 2px rgb(155, 4, 4), 0 0 25px rgb(196, 4, 4) !important;
 }
 
 #instagram-page3 {
@@ -2351,7 +2692,7 @@ h3 {
 
 #formularioContacto {
   width: 100%;
-  background-color: rgba(241, 176, 36, 0.1);
+  background-color: rgba(255, 255, 255, 0.1);
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   margin-bottom: 20px;
@@ -2365,9 +2706,9 @@ h3 {
   height: 55px;
   margin-top: 20px;
   text-align: center;
-  background-color: #f1a643;
-  color: rgb(241, 212, 114) !important;
-  text-shadow: 2px 2px 3px black !important;
+  background-color: rgba(255, 255, 255, 1);
+  color: rgb(0, 0, 0);
+  font-weight: bold;
   border: none;
   border-radius: 5px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
@@ -2376,58 +2717,52 @@ h3 {
 }
 
 #enviarBtn:hover {
-  color: rgb(253, 252, 249) !important;
-  text-shadow: 2px 2px 3px black !important;
+  color: rgb(253, 252, 249);
+  text-shadow: 2px 2px 3px black;
   transform: translateY(-3px);
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
 }
 
 label {
-  text-shadow: 1px 1px 1px black;
-  color: rgba(240, 238, 236, 0.8);
+  font-family: 'Roboto', sans-serif;
+  color: white;
+  background-color: black;
+  font-weight: bold;
   display: block;
   text-align: center;
 }
 
 #nombre {
   font-family: "Roboto", sans-serif;
-  font-size: 24px;
+  font-size: 20px;
   font-weight: bold;
   margin: 0;
-  text-shadow: 0 0 5px gold, 0 0 10px gold, 0 0 15px gold;
-  background-image: url("../img/back-page1-solar.webp");
   background-size: cover;
   background-color: rgba(255, 255, 255, 0.027);
 }
 #email {
   font-family: "Roboto", sans-serif;
-  font-size: 24px;
+  font-size: 20px;
   font-weight: bold;
   margin: 0;
-  text-shadow: 0 0 5px gold, 0 0 10px gold, 0 0 15px gold;
-  background-image: url("../img/back-page1-solar.webp");
   background-size: cover;
   background-color: rgba(255, 255, 255, 0.027);
 }
 
 #telefono {
   font-family: "Roboto", sans-serif;
-  font-size: 24px;
+  font-size: 20px;
   font-weight: bold;
   margin: 0;
-  text-shadow: 0 0 5px gold, 0 0 10px gold, 0 0 15px gold;
-  background-image: url("../img/back-page1-solar.webp");
   background-size: cover;
   background-color: rgba(255, 255, 255, 0.027);
 }
 
 #mensaje {
   font-family: "Roboto", sans-serif;
-  font-size: 24px;
+  font-size: 20px;
   font-weight: bold;
   margin: 0;
-  text-shadow: 0 0 5px gold, 0 0 10px gold, 0 0 15px gold;
-  background-image: url("../img/back-page1-solar.webp");
   background-size: cover;
   background-color: rgba(255, 255, 255, 0.027);
 }
@@ -2436,19 +2771,18 @@ input::placeholder,
 textarea::placeholder {
   font-family: "Roboto", sans-serif;
   text-align: center;
-  font-size: 18px;
+  font-size: 20px;
   color: black;
   font-weight: bold;
   margin: 0;
-  text-shadow: 0 0 5px gold, 0 0 5px gold, 0 0 5px gold;
 }
 
 input[type="text"],
 input[type="email"],
 textarea {
-  color: black;
+  color: black !important;
+  background-color: rgb(255, 255, 255) !important;
   text-decoration: none;
-  text-shadow: 2px 2px 4px #eca816;
   font-size: 20px;
   width: 100%;
   padding: 10px;
@@ -2457,6 +2791,7 @@ textarea {
 
 textarea {
   height: 200px;
+  color: rgba(2, 2, 2, 0.781);
 }
 
 /* LOGOS CONTACTO PAGE 3 */
@@ -2479,18 +2814,19 @@ footer {
 }
 
 p.copy{
-  text-shadow: 0 0 5px rgb(187, 6, 6), 0 0 5px rgb(196, 17, 17), 0 0 35px rgb(236, 61, 17);
+  text-shadow: 0 0 5px rgb(3, 3, 3), 0 0 5px rgb(3, 3, 3), 0 0 35px rgb(3, 3, 3);
 }
 
 #yubesIntegrantes {
   margin-top: 2%;
   font-family: "Roboto", sans-serif;
   color: rgb(255, 255, 255);
-  text-shadow: 0 0 5px rgb(187, 6, 6), 0 0 5px rgb(196, 17, 17), 0 0 35px rgb(236, 61, 17);
+  text-shadow: 0 0 5px rgb(3, 3, 3), 0 0 5px rgb(3, 3, 3), 0 0 35px rgb(3, 3, 3);
 
 }
 
 .integrantes {
+  font-size: 22px;
   visibility: hidden;
   font-family: "Roboto", sans-serif;
   color: white;
@@ -2536,7 +2872,7 @@ p.copy{
   width: 240px;
   position: relative;
   border-radius: 10px;
-  box-shadow: 0 0 2px rgb(187, 6, 6), 0 0 2px rgb(196, 17, 17), 0 0 25px rgb(236, 61, 17);
+  text-shadow: 0 0 5px rgb(3, 3, 3), 0 0 5px rgb(3, 3, 3), 0 0 35px rgb(3, 3, 3);
   overflow: hidden;
 }
 
@@ -2637,7 +2973,7 @@ p.copy{
 }
 
 .copy {
-  text-shadow: 0 0 5px rgb(187, 6, 6), 0 0 5px rgb(196, 17, 17), 0 0 35px rgb(236, 61, 17);
+  text-shadow: 0 0 5px rgb(3, 3, 3), 0 0 5px rgb(3, 3, 3), 0 0 35px rgb(3, 3, 3);
 }
 /* Estilo del enlace de LinkedIn */
 .copy a {
@@ -2654,6 +2990,7 @@ p.copy{
   background-color: #0077b5;
   color: #fff;
 }
+
 
 
 
