@@ -2793,6 +2793,10 @@ textarea {
   color: rgba(2, 2, 2, 0.781);
 }
 
+#formularioContacto input[type="checkbox"] {
+  transform: scale(2);
+}
+
 /* LOGOS CONTACTO PAGE 3 */
 
 i {
